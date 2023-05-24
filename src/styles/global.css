@@ -4,17 +4,33 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: Verdana, sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
-	background-color: #fff;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #444;
+	@apply dark:bg-neutral-900 dark:text-neutral-300 font-sans-serif;
 }
+
+main, header {
+	@apply mx-auto px-4 max-w-3xl mb-3;
+}
+
+main h1 {
+	@apply text-4xl my-4
+}
+
+main h2 {
+	@apply text-3xl my-4
+}
+
+main h3 {
+	@apply text-2xl my-4
+}
+
+main h4 {
+	@apply text-xl my-2
+}
+
+main h5, main h6 {
+	@apply text-lg my-2
+}
+
 h1,
 h2,
 h3,
@@ -24,8 +40,30 @@ h6,
 strong,
 b {
 	color: #222;
+	@apply dark:text-neutral-300 font-bold;
 }
-a {
+
+main p {
+	@apply mb-2;
+}
+
+main ul, main ol {
+	@apply indent-2 mb-4;
+}
+
+main ol {
+	@apply list-decimal list-inside;
+}
+
+main ol .footnotes {
+
+}
+
+main ul {
+	@apply list-disc list-inside
+}
+
+main a {
 	color: #3273dc;
 }
 nav a {
@@ -51,11 +89,15 @@ img {
 code {
 	padding: 2px 5px;
 	background-color: #f2f2f2;
+	@apply dark:bg-neutral-900;
 }
+
 pre {
+
 	padding: 1rem;
 }
 pre > code {
+
 	all: unset;
 }
 blockquote {
@@ -64,4 +106,6 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+
+	@apply dark:text-neutral-400;
 }

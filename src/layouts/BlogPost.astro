@@ -32,8 +32,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<main>
 			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
 				<h1 class="title">{title}</h1>
+				<div class="mb-4">
 				<FormattedDate date={pubDate} />
 				{
 					updatedDate && (
@@ -42,7 +42,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						</div>
 					)
 				}
-				<hr />
+				</div>
 				<slot />
 			</article>
 		</main>
