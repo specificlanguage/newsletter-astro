@@ -1,6 +1,6 @@
 ---
 title: "CivWiki Monday Newsletter for May 8, 2023"
-date: "Jul 22 2022"
+date: "May 08 2023"
 image: "qbarra.png"
 author: "specificlanguage"
 ---
