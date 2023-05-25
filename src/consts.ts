@@ -3,3 +3,5 @@
 
 export const SITE_TITLE = 'CivWiki Monday Newsletter';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+
+export const MAX_HEADER_DEPTH = 3;

@@ -1,0 +1,35 @@
+---
+import type {MarkdownHeading} from "astro";
+import {MAX_HEADER_DEPTH} from "../consts";
+
+type Props = {
+    headings: MarkdownHeading[];
+};
+
+const {title, headings} = Astro.props;
+---
+
+<div class="fixed z-20 top-[8rem] bottom-0 right-[max(calc(50%-42rem))] w-[19.5rem]
+            py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[250px]">
+    <h6 class="text-base">{title}</h6>
+    <ul class="indent-4 text-sm">
+    {headings.map((hd: MarkdownHeading) => {
+        if (hd.depth > MAX_HEADER_DEPTH) return;
+        if (hd.depth == 2) {
+            return (
+                    <li class={"my-0.5"}>
+                        <a href={"#" + hd.slug}>{hd.text}</a>
+                    </li>
+            )
+        } else {
+            return (
+                <ul class="indent-10">
+                    <li class={"my-0.5"}>
+                        <a href={"#" + hd.slug}>{hd.text}</a>
+                    </li>
+                </ul>
+            )
+        }
+    })}
+    </ul>
+</div>
