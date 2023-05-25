@@ -68,8 +68,10 @@ main ul ul {
 }
 
 main a, main a strong {
-	color: #3ca2fc;
+	color: #015db2;
+	@apply hover:text-neutral-600 dark:hover:text-[#888] dark:text-[#3ca2fc];
 }
+
 nav a {
 	margin-right: 10px;
 }

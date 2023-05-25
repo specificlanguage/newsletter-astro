@@ -1,0 +1,14 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+    color: string;
+    darkColor: string;
+}
+
+const { color, darkColor } = Astro.props;
+
+---
+<div class={"rounded my-4 px-4 py-1 text-neutral-800 dark:text-neutral-300 " + color + " dark:" + darkColor}>
+    <slot/>
+</div>
