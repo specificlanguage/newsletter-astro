@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			"sans-serif": ['Quattrocento Sans', 'ui-sans-serif'],
-			"serif": ['Georgia', "Times New Roman", 'ui-serif'],
+			"serif": ['PT Serif', 'Georgia', "Times New Roman", 'ui-serif'],
 		},
 		container: {
 			center: true
@@ -15,5 +15,7 @@ module.exports = {
 			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 }
