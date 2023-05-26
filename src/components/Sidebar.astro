@@ -1,6 +1,7 @@
 ---
 import type {MarkdownHeading} from "astro";
 import {MAX_HEADER_DEPTH} from "../consts";
+import ColoredBlock from "./ColoredBlock.astro";
 
 type Props = {
     headings: MarkdownHeading[];
@@ -9,27 +10,32 @@ type Props = {
 const {title, headings} = Astro.props;
 ---
 
+{headings != undefined &&
 <div class="fixed z-20 top-[8rem] bottom-0 right-[max(calc(50%-42rem))] w-[19.5rem]
-            py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[250px]">
-    <h6 class="text-base">{title}</h6>
-    <ul class="indent-4 text-sm">
-    {headings.map((hd: MarkdownHeading) => {
-        if (hd.depth > MAX_HEADER_DEPTH) return;
-        if (hd.depth == 2) {
-            return (
-                    <li class={"my-0.5"}>
-                        <a href={"#" + hd.slug}>{hd.text}</a>
-                    </li>
-            )
-        } else {
-            return (
-                <ul class="indent-10">
-                    <li class={"my-0.5"}>
-                        <a href={"#" + hd.slug}>{hd.text}</a>
-                    </li>
-                </ul>
-            )
-        }
-    })}
-    </ul>
+            py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[260px]">
+    <a href="#"><h6 class="text-base mb-2">{title}</h6></a>
+    <ColoredBlock color="bg-neutral-200" darkColor="bg-stone-950">
+        <ul class="p-1 text-sm ml-1">
+        {headings.map((hd: MarkdownHeading) => {
+            console.log(hd);
+            if (hd.depth > MAX_HEADER_DEPTH) return;
+            if (hd.depth == 2) {
+                return (
+                        <li class={"my-1 list-outside"}>
+                            <a href={"#" + hd.slug}>{hd.text}</a>
+                        </li>
+                )
+            } else {
+                return (
+                    <ul class="px-6 ml-1">
+                        <li class={"my-1 indent-0 list-outside"}>
+                            <a href={"#" + hd.slug}>{hd.text}</a>
+                        </li>
+                    </ul>
+                )
+            }
+        })}
+        </ul>
+    </ColoredBlock>
 </div>
+}
