@@ -10,7 +10,7 @@ type Props = {
 const {title, headings} = Astro.props;
 ---
 
-{headings != undefined &&
+{(headings != undefined && headings.length != 0) &&
 <div class="fixed z-20 top-[8rem] bottom-0 right-[max(calc(50%-42rem))] w-[19.5rem]
             py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[260px]">
     <a href="#"><h6 class="text-base mb-2">{title}</h6></a>

@@ -1,0 +1,28 @@
+---
+title: "CivWiki Monday Newsletter for June 6, 2023"
+date: "June 6 2023"
+image: "LambatSunrise.png"
+author: "specificlanguage"
+---
+
+import {QuestionType} from "../../components/PollQuestion.js";
+import Poll from "../../components/Poll.tsx";
+
+
+<Poll submitURL={"/newsletter-06-06"} date={new Date()} questions={
+    [
+        {
+            question: "What kind of cat are you?",
+            options: ["Not a cat", "Cat", "What kind of question is this?"],
+            type: QuestionType.MultipleChoice,
+            required: true,
+            useOther: true
+        },
+        {
+            question: "How's your day going?",
+            options: ["Awesome!", "Well", "Okay", "Meh", "Bad"],
+            type: QuestionType.Checkboxes,
+            required: true,
+            useOther: false
+        }]
+}/>
