@@ -17,7 +17,6 @@ const {title, headings} = Astro.props;
     <ColoredBlock color="bg-neutral-200" darkColor="bg-stone-950">
         <ul class="p-1 text-sm ml-1">
         {headings.map((hd: MarkdownHeading) => {
-            console.log(hd);
             if (hd.depth > MAX_HEADER_DEPTH) return;
             if (hd.depth == 2) {
                 return (
