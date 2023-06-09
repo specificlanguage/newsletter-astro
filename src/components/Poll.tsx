@@ -7,9 +7,26 @@ export interface PollProps {
 }
 
 export default function Poll (props: PollProps) {
+
+    let submitted = false;
+
+    async function handleSubmit(e: Event) {
+        e.preventDefault();
+
+        // get formData
+
+
+
+
+        submitted = true;
+    }
+
+
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <i>Please note that all submitted information is anonymous, and no personal information will be submitted.</i>
+            {!submitted && <>
+
             {props.questions.map(question => (
                 <div>
                     <PollQuestion question={question.question}
@@ -19,7 +36,12 @@ export default function Poll (props: PollProps) {
                                   useOther={question.useOther}/>
                 </div>
             ))}
-            <button className="btn btn-lg p-2 mt-6 rounded-md border-white bg-blue-500 text-white" type="submit">Submit</button>
+            <button className="btn btn-lg p-2 mt-6 rounded-md border-white bg-blue-500 text-white"
+                    type="submit">Submit</button>
+            </>}
+            {submitted &&
+                <h4>Thanks for submitting polls! Results for the poll will be visible next week.</h4>
+            }
         </form>
     )
 }
