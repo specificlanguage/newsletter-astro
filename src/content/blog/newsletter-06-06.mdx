@@ -5,24 +5,19 @@ image: "LambatSunrise.png"
 author: "specificlanguage"
 ---
 
-import {QuestionType} from "../../components/PollQuestion.js";
-import Poll from "../../components/Poll.tsx";
+import {QuestionType} from "../../components/types/pollTypes.js";
+import Poll from "../../components/Poll.svelte";
 
 
-<Poll submitURL={"/newsletter-06-06"} date={new Date()} questions={
+<Poll submitURL={"/newsletter-06-06"} questions={
     [
         {
+            questionID: "cat",
             question: "What kind of cat are you?",
             options: ["Not a cat", "Cat", "What kind of question is this?"],
             type: QuestionType.MultipleChoice,
             required: true,
             useOther: true
-        },
-        {
-            question: "How's your day going?",
-            options: ["Awesome!", "Well", "Okay", "Meh", "Bad"],
-            type: QuestionType.Checkboxes,
-            required: true,
-            useOther: false
-        }]
+        }
+    ]
 }/>
