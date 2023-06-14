@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import type {PollQuestionProps} from "./types/pollTypes";
+    import {PollQuestionProps} from "./types/pollTypes";
     import PollQuestion from "./PollQuestion.svelte";
 
     export let submitURL: string
@@ -8,7 +8,8 @@
     export let submitted = false;
 
     function onSubmit(e) {
-        e.preventDefault();
+        alert("clicked")
+        console.log(e.target);
         const formData = new FormData(e.target);
 
         const data = {};
@@ -23,15 +24,16 @@
 </script>
 
 {#if !submitted}
+    <i>Please note that all information submitted is anonymous.</i>
     <form on:submit|preventDefault={onSubmit}>
-        <div>
-            {#each questions as question}
-                <PollQuestion question={question}/>
-            {/each}
-        </div>
+        {#each questions as question}
+            <PollQuestion client:load question={question}/>
+        {/each}
+        <button class="rounded mt-2 p-2 bg-blue-500" type="submit">Submit</button>
     </form>
 {:else }
-
+    <h3>Thanks for submitting!</h3>
+    <p>You'll see the results next week!</p>
 {/if}
 
 <style>

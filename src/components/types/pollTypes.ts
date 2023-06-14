@@ -4,7 +4,7 @@ export enum QuestionType{
     OpenResponse
 }
 
-export interface PollQuestionProps {
+export type PollQuestionProps = {
     questionID: string;
     question: string;
     options: string[]

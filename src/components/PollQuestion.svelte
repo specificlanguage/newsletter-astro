@@ -6,10 +6,13 @@
 
 </script>
 
-<div class="">
+<div class="p-2 mt-2">
 {#if question.type === QuestionType.MultipleChoice}
+    <div class="mb-3">
+        <strong>{question.question}</strong>
+    </div>
     {#each question.options as option}
-        <div class="h-fit my-1">
+        <div class="h-fit my-1 ml-1">
             <label>
                 <input type=radio bind:group={question.questionID}
                        name={question.questionID}
