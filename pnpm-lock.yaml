@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -23,9 +23,6 @@ dependencies:
   astro:
     specifier: ^2.6.3
     version: 2.6.3
-  daisyui:
-    specifier: ^3.0.3
-    version: 3.0.3(postcss@8.4.23)
   pg:
     specifier: ^8.11.0
     version: 8.11.0
@@ -1345,10 +1342,6 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: false
 
-  /colord@2.9.3:
-    resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
-    dev: false
-
   /comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
     dev: false
@@ -1382,31 +1375,10 @@ packages:
       which: 2.0.2
     dev: false
 
-  /css-selector-tokenizer@0.8.0:
-    resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==}
-    dependencies:
-      cssesc: 3.0.0
-      fastparse: 1.1.2
-    dev: false
-
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
-
-  /daisyui@3.0.3(postcss@8.4.23):
-    resolution: {integrity: sha512-RSbXsEBj2LonvjOKEI0I64F5xFJrFrthPgxRNeAZKmACQ3NoIoP45lO6UXLW3bm8PVOUGpKf1Br2SWwc1NqnHQ==}
-    peerDependencies:
-      postcss: ^8
-    dependencies:
-      colord: 2.9.3
-      css-selector-tokenizer: 0.8.0
-      postcss: 8.4.23
-      postcss-js: 4.0.1(postcss@8.4.23)
-      tailwindcss: 3.3.2
-    transitivePeerDependencies:
-      - ts-node
-    dev: false
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -1699,10 +1671,6 @@ packages:
     hasBin: true
     dependencies:
       strnum: 1.0.5
-    dev: false
-
-  /fastparse@1.1.2:
-    resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==}
     dev: false
 
   /fastq@1.15.0:

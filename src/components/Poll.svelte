@@ -1,24 +1,23 @@
 <script lang="ts">
 
-    import {PollQuestionProps} from "./types/pollTypes";
     import PollQuestion from "./PollQuestion.svelte";
+    import type {PollQuestionProps} from "./types/pollTypes";
 
     export let submitURL: string
     export let questions: PollQuestionProps[];
     export let submitted = false;
 
-    function onSubmit(e) {
-        alert("clicked")
-        console.log(e.target);
-        const formData = new FormData(e.target);
-
-        const data = {};
-        for (let field of formData) {
-            const [key, value] = field;
-            data[key] = value;
-        }
-
-        console.log(data);
+    async function onSubmit(e: SubmitEvent) {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget as HTMLFormElement);
+        console.log(formData);
+        const response = await fetch("/api/poll", {
+            method: "POST",
+            body: {
+                slug: submitURL,
+                ...formData},
+        });
+        const data = await response.json();
     }
 
 </script>

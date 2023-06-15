@@ -9,15 +9,23 @@ import {QuestionType} from "../../components/types/pollTypes";
 import Poll from "../../components/Poll.svelte";
 
 
-<Poll submitURL={"/newsletter-06-06"} questions={
+<Poll client:load submitURL={"/newsletter-06-06"} questions={
     [
         {
             questionID: "cat",
             question: "What kind of cat are you?",
-            options: ["Not a cat", "Cat", "What kind of question is this?"],
+            options: ["Not a cat", "Little kitten", "What kind of question is this?"],
             type: QuestionType.MultipleChoice,
+            required: true,
+            useOther: true
+            }, {
+            questionID: "like",
+            question: "Do you like this?",
+            options: ["Yeah", "Hell yeah!", "Not really", "Could be better"],
+            type: QuestionType.Checkboxes,
             required: true,
             useOther: true
         }
     ]
+
 }/>
