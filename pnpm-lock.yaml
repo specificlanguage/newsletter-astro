@@ -26,9 +26,12 @@ dependencies:
   '@sequelize/core':
     specifier: 7.0.0-alpha.23
     version: 7.0.0-alpha.23(pg-hstore@2.3.4)(pg@8.11.0)
+  '@types/node':
+    specifier: ^20.3.1
+    version: 20.3.1
   astro:
     specifier: ^2.6.4
-    version: 2.6.4
+    version: 2.6.4(@types/node@20.3.1)
   pg:
     specifier: ^8.11.0
     version: 8.11.0
@@ -71,7 +74,7 @@ packages:
     dependencies:
       '@astrojs/underscore-redirects': 0.1.0
       '@cloudflare/workers-types': 4.20230518.0
-      astro: 2.6.4
+      astro: 2.6.4(@types/node@20.3.1)
       esbuild: 0.17.19
       tiny-glob: 0.2.9
     dev: false
@@ -109,7 +112,7 @@ packages:
       astro: ^2.5.0
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.6.4
+      astro: 2.6.4(@types/node@20.3.1)
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -183,7 +186,7 @@ packages:
       svelte: ^3.55.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.4.1(svelte@3.59.1)(vite@4.3.8)
-      astro: 2.6.4
+      astro: 2.6.4(@types/node@20.3.1)
       svelte: 3.59.1
       svelte2tsx: 0.6.15(svelte@3.59.1)(typescript@5.0.4)
     transitivePeerDependencies:
@@ -199,7 +202,7 @@ packages:
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.6.4
+      astro: 2.6.4(@types/node@20.3.1)
       autoprefixer: 10.4.14(postcss@8.4.23)
       postcss: 8.4.23
       postcss-load-config: 4.0.1(postcss@8.4.23)
@@ -872,7 +875,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.1(svelte@3.59.1)(vite@4.3.8)
       debug: 4.3.4
       svelte: 3.59.1
-      vite: 4.3.8
+      vite: 4.3.8(@types/node@20.3.1)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -891,7 +894,7 @@ packages:
       magic-string: 0.30.0
       svelte: 3.59.1
       svelte-hmr: 0.15.2(svelte@3.59.1)
-      vite: 4.3.8
+      vite: 4.3.8(@types/node@20.3.1)
       vitefu: 0.2.4(vite@4.3.8)
     transitivePeerDependencies:
       - supports-color
@@ -994,6 +997,10 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: false
 
+  /@types/node@20.3.1:
+    resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
+    dev: false
+
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
     dev: false
@@ -1005,7 +1012,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.3.1
     dev: false
 
   /@types/unist@2.0.6:
@@ -1119,7 +1126,7 @@ packages:
     hasBin: true
     dev: false
 
-  /astro@2.6.4:
+  /astro@2.6.4(@types/node@20.3.1):
     resolution: {integrity: sha512-YM5H9SLHflxCB/3H8S2Bi+1Lbwn/MA9Vl/eOZmkCT491gvBsyuKCTsoUas6fwggeKn+fIR2XpdYd2F+unQve3g==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -1182,7 +1189,7 @@ packages:
       typescript: 5.0.4
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.3.8
+      vite: 4.3.8(@types/node@20.3.1)
       vitefu: 0.2.4(vite@4.3.8)
       yargs-parser: 21.1.1
       zod: 3.21.4
@@ -4119,7 +4126,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite@4.3.8:
+  /vite@4.3.8(@types/node@20.3.1):
     resolution: {integrity: sha512-uYB8PwN7hbMrf4j1xzGDk/lqjsZvCDbt/JC5dyfxc19Pg8kRm14LinK/uq+HSLNswZEoKmweGdtpbnxRtrAXiQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4144,6 +4151,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.3.1
       esbuild: 0.17.19
       postcss: 8.4.23
       rollup: 3.23.0
@@ -4159,7 +4167,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.3.8
+      vite: 4.3.8(@types/node@20.3.1)
     dev: false
 
   /vscode-css-languageservice@6.2.5:
@@ -4264,7 +4272,7 @@ packages:
   /wkx@0.5.0:
     resolution: {integrity: sha512-Xng/d4Ichh8uN4l0FToV/258EjMGU9MGcA0HV2d9B/ZpZB3lqQm7nkOdZdm5GhKtLLhAE7PiVQwN4eN+2YJJUg==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.3.1
     dev: false
 
   /wrap-ansi@8.1.0:

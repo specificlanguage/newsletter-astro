@@ -56,11 +56,3 @@
     <h3>Thanks for submitting!</h3>
     <p>You'll see the results next week!</p>
 {/if}
-
-<style>
-    form > div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-</style>

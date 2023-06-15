@@ -7,6 +7,8 @@ import { getCollection, } from 'astro:content';
 import FormattedDate from "../../components/FormattedDate.astro";
 import {readingTime, stripHTML} from "../../frontPageHelpers";
 
+export const prerender = false;
+
 const { page } = Astro.params;
 let pageNum: number;
 

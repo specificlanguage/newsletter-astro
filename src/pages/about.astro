@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+
+
+<Layout
+    title="About"
+    description="Learn more about the website!"
+    date={new Date('July 25, 2022')}
+    updatedDate={new Date('June 15, 2023')}
+    image="/placeholder-about.jpg"
+>
+    <p>Hi, I&#39;m specificlanguage. I write newsletters about Civ every Monday morning for your benefit.</p>
+    <p>I&#39;ve had a long history on Civ from entering in <a href="https://civwiki.org/wiki/Concordia/">Concordia</a> in CivTemp, <a href="https://civwiki.org/wiki/The_Commonwealth_(CivClassic">The Commonwealth</a>) to <a href="https://civwiki.org/wiki/Mount_September">Mount September</a> on CivClassic and the CivWiki.
+        I&#39;ve also posted guides for <a href="https://www.reddit.com/r/civclassics/comments/c4tj7x/a_guide_to_getting_started_on_civclassic/">getting started on Civ servers</a> and <a href="https://www.reddit.com/r/civclassics/comments/fsixnl/recommended_starter_nations_2020_edition/">making lists of newfriend nations</a>, and have been creating content related to Civ for a while now.</p>
+    <p>Currently, I&#39;m an admin on the CivWiki, but rarely play around the genre unfortunately. I had stints in
+        <a href="https://civwiki.org/wiki/Lusitania_(CivMC">Lusitania</a>), <a href="https://civwiki.org/wiki/Icenia_(CivMC">Icenia</a>), <a href="https://civwiki.org/wiki/The_Commonwealth">The Commonwealth</a> and <a href="https://civwiki.org/wiki/Mount_Augusta_(CivMC">Mount Augusta</a>), and <a href="https://civwiki.org/wiki/Lambat_(CivMC">Lambat</a>)
+        just to name a few, but mostly reside to <a href="https://civwiki.org">edit the CivWiki</a>
+        and write these newsletters.</p>
+    <p>These newsletters were born out of a need to <a href="https://civwiki.org/wiki/CivWiki:Features">rotate the Featured Article and Current Events every week</a>, and as an extension,
+        those Featured Articles and some Current Events you see on the news will get featured on CivWiki&#39;s front page and on these newsletters every week.</p>
+    <p>This effort has been done before, from <a href="https://www.reddit.com/r/Civcraft/comments/1a2psy/monday_mornings_with_akiyama_issue_1/">Akiyama64&#39;s run</a>
+        during Civcraft 2.0, to <a href="https://www.reddit.com/r/civclassics/comments/8fz7ar/monday_mornings_with_xavter_squareblob_issue_1/">Square and Xavter&#39;s run</a>
+        and <a href="https://www.reddit.com/r/civclassics/comments/fcnt25/civ_monday_mornings_issue_1/">Cooliomoose &amp; the CivThinkTank&#39;s run</a> on CivClassic.
+        I didn&#39;t intend to reach as far as some of them (although I guess that&#39;s how it happened now,
+        since at the time of writing I&#39;m approaching the upper 50s, where Akiyama&#39;s run stops),
+        but with the readership this has now, this website acts as a place to nicely house all of these issues.</p>
+    <p>This website was made in cooperation with the <a href="https://civwiki.org/">CivWiki.</a></p>
+    <hr>
+    <p>From July 2022 to June 2023, this website used <a href="https://github.com/jekyll/jekyll">jekyll</a> and the <a href="https://github.com/LeNPaul/Lagrange">&quot;Lagrange&quot; theme, made by Paul Le</a>. Prior to January 2023, the project was done with Amazon Web Servers, it was deployed to an S3 bucket to a Cloudfront static site content delivery network.
+        I also used a Route53 to add a hosted zone to be able for the domain to attach. Why all of this? It was the easiest way I could think of.</p>
+    <p>Today,</p>
+    <ul>
+        <li>This site is hosted using <a href="https://astro.build">Astro</a> with Server Side Rendering, <a href="https://tailwindcss.com">TailwindCSS</a>, with a small slice of <a href="https://svelte.dev">Svelte</a> injected in there.</li>
+        <li>I&#39;m hosting all of this on Cloudflare Pages, which incurs no costs. I&#39;ve been hosting the sites here since January 2023.</li>
+        <li>For the backend for polls, I&#39;m using <a href="https://neon.tech/">Neon</a>, a Serverless Postgres database as a service.</li>
+    </ul>
+    <p>Please kill me for going into Computer Science, because this site is slightly overengineered for what it&#39;s worth.</p>
+    <p><a href="https://ko-fi.com/specificlanguage">Despite this over-engineering, if you&#39;d like to financially support me, I have a Ko-fi page.</a>.
+</Layout></p>
