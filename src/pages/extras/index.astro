@@ -9,7 +9,7 @@ import FormattedDate from '../../components/FormattedDate.astro';
 
 export const prerender = true;
 
-const posts = (await getCollection('newsletter')).sort(
+const posts = (await getCollection('extras')).sort(
 	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
@@ -47,7 +47,7 @@ const posts = (await getCollection('newsletter')).sort(
 						posts.map((post) => (
 							<li>
 								<FormattedDate date={post.data.date} />
-								<a href={`/newsletter/${post.slug}/`}>{post.data.title}</a>
+								<a href={`/extras/${post.slug}/`}>{post.data.title}</a>
 							</li>
 						))
 					}
