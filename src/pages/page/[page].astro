@@ -60,10 +60,10 @@ console.log(pages);
         ))}
         {(page == 2) && <a href="/">Previous</a>}
         {(pageNum - 1 <= maxPages && pageNum > 2) &&
-                <a class="p-3 border-1 border-neutral-200  hover:bg-neutral-500 hover:text-white" href={"page/" + {pageNum-1}}>Next</a>
+                <a class="p-3 border-1 border-neutral-200  hover:bg-neutral-500 hover:text-white" href={"page/" + (pageNum - 1).toString()}>Next</a>
         }
         {pageNum + 1 <= maxPages &&
-                <a class="p-3 border-1 border-neutral-200  hover:bg-neutral-500 hover:text-white" href={"page/2/"}>Next</a>
+                <a class="p-3 border-1 border-neutral-200  hover:bg-neutral-500 hover:text-white" href={"page" + (pageNum + 1).toString()}>Next</a>
         }
     </main>
     <Footer />
