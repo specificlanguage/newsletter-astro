@@ -1,6 +1,5 @@
 import type {APIRoute} from "astro";
 import {addResponse} from "../../db";
-import {DatabaseError} from "@sequelize/core";
 
 
 
