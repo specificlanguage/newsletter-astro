@@ -8,7 +8,7 @@ export type PollQuestionProps = {
     questionID: string;
     question: string;
     options: string[]
-    type: QuestionType
-    required: boolean
-    useOther: boolean
+    type: QuestionType;
+    required: boolean;
+    useOther: boolean;
 }

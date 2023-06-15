@@ -1,0 +1,1 @@
+<div class="inline text-red-600">*</div>

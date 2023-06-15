@@ -1,24 +1,31 @@
 <script lang="ts">
     import {QuestionType} from "./types/pollTypes";
     import type {PollQuestionProps} from "./types/pollTypes";
+    import RequiredStar from "./RequiredStar.svelte";
 
     export let question: PollQuestionProps;
-    // console.log(question);
+    let selected = ""
+
+
 
 </script>
 
 <div class="p-2 mt-2">
     <div class="mb-3">
         <strong>{question.question}</strong>
+            {#if question.required && question.type === QuestionType.MultipleChoice}
+                <RequiredStar/>
+            {/if}
     </div>
     {#if question.type === QuestionType.MultipleChoice}
         {#each question.options as option}
             <div class="h-fit my-1 ml-1">
                 <label>
-                    <input type=radio bind:group={question.questionID}
+                    <input type=radio bind:group={selected}
                            name={question.questionID}
-                           value={option.toLowerCase().replace(" ", "")}/>
+                           value={option.toLowerCase().replace(/ /g, "")}/>
                     {option}
+
                 </label>
             </div>
         {/each}
@@ -26,9 +33,9 @@
         {#each question.options as option}
             <div class="h-fit my-1">
                 <label>
-                    <input type=checkbox bind:group={question.questionID}
+                    <input type=checkbox bind:group={selected}
                            name={question.questionID}
-                           value={option.toLowerCase().replace(" ", "")}/>
+                           value={option.toLowerCase().replace(/ /g, "")}/>
                     {option}
                 </label>
             </div>
