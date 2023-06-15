@@ -9,6 +9,13 @@ export const post: APIRoute = async ({request}) => {
     const slug = data.slug;
     delete data.slug;
 
+    if(slug === undefined){
+        return new Response(
+            JSON.stringify({ message: "Server error"}),
+            {status: 500}
+        )
+    }
+
     try {
         for(let key in data){
             await addResponse(slug, key, data[key]);

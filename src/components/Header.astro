@@ -1,21 +1,32 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import {SITE_DESCRIPTION, SITE_TITLE} from '../consts';
 import "../styles/global.css";
 ---
 
 <header>
 	<div class="mx-auto leading-loose max-w-3xl">
-		<h2 class="text-3xl mt-6 mb-2 font-bold">
+		<h2 class="text-3xl mt-6 font-bold">
 			<a href="/" class="no-underline">{SITE_TITLE}</a>
 		</h2>
-		<nav>
+		<h4 class="text-lg mb-2 font-bold text-neutral-500">
+			{SITE_DESCRIPTION}
+		</h4>
+		<nav class="mb-2 flow-root">
+			<div class="float-left">
 			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-			<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-			<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+			<HeaderLink href="/newsletter">Newsletter</HeaderLink>
+			<HeaderLink href="/extras">Extras</HeaderLink>
+			</div>
+			<div class="float-right">
+				<HeaderLink href="/about">About</HeaderLink>
+				<HeaderLink href="https://civwiki.org" target="_blank">CivWiki</HeaderLink>
+				<HeaderLink href="https://forms.gle/SZbWZQRDBxhPUNQF9" target="_blank">Contribute</HeaderLink>
+				<HeaderLink href="https://reddit.com/civwiki">Reddit</HeaderLink>
+				<HeaderLink href="https://discord.gg/RMSSH8T8Bs">Discord</HeaderLink>
+			</div>
 		</nav>
+		<hr class="border-neutral-500 border-2 my-2">
 	</div>
 </header>
 

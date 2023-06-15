@@ -2,8 +2,8 @@
 import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
-	const pages = await getCollection('blog');
-	type Props = CollectionEntry<'blog'>;
+	const pages = await getCollection('newsletter');
+	type Props = CollectionEntry<'newsletter'>;
 
 	const {slug} = Astro.params;
 	const page = pages.find((page) => page.slug === slug);

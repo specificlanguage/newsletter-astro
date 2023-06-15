@@ -29,6 +29,9 @@ dependencies:
   astro:
     specifier: ^2.6.4
     version: 2.6.4
+  fontawesome-free:
+    specifier: ^1.0.4
+    version: 1.0.4
   pg:
     specifier: ^8.11.0
     version: 8.11.0
@@ -1800,6 +1803,10 @@ packages:
     dependencies:
       micromatch: 4.0.5
       pkg-dir: 4.2.0
+    dev: false
+
+  /fontawesome-free@1.0.4:
+    resolution: {integrity: sha512-7sX6Lbg2oQiClFFFFitJlKg20h3YTBON6rdmq3uGjNwDo8G6EjF2bfj2OjjcCUmf4OvZCgyHaXfW2JseqissLw==}
     dev: false
 
   /format@0.2.2:
