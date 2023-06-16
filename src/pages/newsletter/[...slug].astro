@@ -2,21 +2,20 @@
 import { CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
-export const prerender = false;
+export async function getStaticPaths() {
+	const posts = await getCollection('newsletter');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'newsletter'>;
 
-	const pages = await getCollection('newsletter');
-	type Props = CollectionEntry<'newsletter'>;
-
-	const {slug} = Astro.params;
-	const page = pages.find((page) => page.slug === slug);
-	if (!page) {
-		Astro.redirect("/404");
-	}
-
-	const { Content, headings} = await page.render();
+const post = Astro.props;
+const { Content, headings} = await post.render();
 
 ---
 
-<BlogPost headings={headings} {...page.data}>
+<BlogPost headings={headings} {...post.data}>
 	<Content/>
 </BlogPost>

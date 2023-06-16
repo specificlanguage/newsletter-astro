@@ -38,11 +38,16 @@ const maxPages = Math.ceil(newsletterPages.length / 5);
 					</div>
 				</div>
 				))}
-			<div class="px-auto max-w-3xl">
-				{2 <= maxPages &&
-				<a class="p-3 border-1 border-neutral-200  hover:bg-neutral-500 hover:text-white" href={"page/2/"}>Next</a>
-				}
-			</div>
+				<div class="grid grid-cols-3 justify-items-center paginate">
+					<div>
+					</div>
+					<div class="text-neutral-500">
+						Page 1 / {maxPages}
+					</div>
+					<div>
+						<a href="/page/2">Next</a>
+					</div>
+				</div>
 		</main>
 		<Footer />
 	</body>

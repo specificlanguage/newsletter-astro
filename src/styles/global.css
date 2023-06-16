@@ -116,3 +116,7 @@ blockquote {
 hr {
 	@apply my-4;
 }
+
+.paginate > div > a{
+	@apply border-2 border-neutral-600 text-neutral-500 dark:border-neutral-400 p-3 hover:bg-neutral-500 hover:text-white
+}
