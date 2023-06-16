@@ -1,8 +1,6 @@
 import type {APIRoute} from "astro";
 import {addResponse} from "../../db";
 
-
-
 export const post: APIRoute = async ({request}) => {
 
     const data = await request.json();
