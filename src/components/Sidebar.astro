@@ -14,7 +14,7 @@ const {title, headings} = Astro.props;
 <div class="fixed z-20 top-[8rem] bottom-0 right-[max(calc(50%-42rem))] w-[19.5rem]
             py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[260px]">
     <a href="#"><h6 class="text-base mb-2">{title}</h6></a>
-    <ColoredBlock color="bg-neutral-200" darkColor="bg-stone-950">
+    <ColoredBlock color="bg-neutral-100" darkColor="dark:bg-stone-950">
         <ul class="p-1 text-sm ml-1">
         {headings.map((hd: MarkdownHeading) => {
             if (hd.depth > MAX_HEADER_DEPTH) return;
@@ -24,13 +24,23 @@ const {title, headings} = Astro.props;
                             <a href={"#" + hd.slug}>{hd.text}</a>
                         </li>
                 )
-            } else {
+            } else if (hd.depth == 3) {
                 return (
                     <ul class="px-6 ml-1">
-                        <li class={"my-1 indent-0 list-outside"}>
+                        <li class={"my-0.5 indent-0 list-outside"}>
                             <a href={"#" + hd.slug}>{hd.text}</a>
                         </li>
                     </ul>
+                )
+            } else {
+                return (
+                        <ul class="px-6 ml-1">
+                            <ul class="px-3 ml-1">
+                                <li class={"my-0.5 indent-0 list-outside"}>
+                                    <a href={"#" + hd.slug}>{hd.text}</a>
+                                </li>
+                            </ul>
+                        </ul>
                 )
             }
         })}

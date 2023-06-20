@@ -5,6 +5,7 @@ module.exports = {
 		fontFamily: {
 			"sans-serif": ['Quattrocento Sans', 'ui-sans-serif'],
 			"serif": ['PT Serif', 'Georgia', "Times New Roman", 'ui-serif'],
+			"headings": ['Noto Sans', "ui-serif"]
 		},
 		container: {
 			center: true

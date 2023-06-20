@@ -12,19 +12,19 @@ main, header {
 }
 
 main h1 {
-	@apply text-4xl my-4
+	@apply text-6xl my-4 tracking-tight font-headings
 }
 
 main h2 {
-	@apply text-3xl my-4
+	@apply text-3xl my-4 tracking-tight font-headings
 }
 
 main h3 {
-	@apply text-2xl my-4
+	@apply text-[24px] my-4 tracking-tight font-headings
 }
 
 main h4 {
-	@apply text-xl my-4
+	@apply text-[20px] my-4 font-headings
 }
 
 main h5, main h6 {
@@ -44,11 +44,11 @@ b {
 }
 
 main p {
-	@apply my-4 text-lg font-serif;
+	@apply my-4 text-lg/7 font-serif;
 }
 
 main ul, main ol {
-	@apply my-4 font-serif list-outside pl-10;
+	@apply my-4 font-serif list-outside pl-10 text-lg/7;
 }
 
 main ol {
@@ -115,4 +115,8 @@ blockquote {
 
 hr {
 	@apply my-4;
+}
+
+.paginate > div > a{
+	@apply border-2 border-neutral-600 text-neutral-500 dark:border-neutral-400 p-3 hover:bg-neutral-500 hover:text-white
 }
