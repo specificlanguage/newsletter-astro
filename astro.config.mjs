@@ -8,7 +8,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://newsletter-astro.pages.dev',
+  site: 'https://civwiki.news',
   output: 'server',
   integrations: [svelte(), mdx(), sitemap(), tailwind()],
   adapter: cloudflare()
