@@ -5,13 +5,17 @@ const URL = `postgres://${import.meta.env.PGUSER}:${import.meta.env.PGPASSWORD}@
 
 export async function addResponse (slug: string, questionID: string, answer: string) {
 
-    let client;
+    try {
+        let client;
 
-    client = new Client(URL);
-    await client.connect();
+        client = new Client(URL);
+        await client.connect();
 
-    const text = 'INSERT INTO responses(slug, "questionID", answer, "createdAt", "updatedAt") VALUES($1, $2, $3, now(), now())'
-    const values = [slug, questionID, answer]
+        const text = 'INSERT INTO responses(slug, "questionID", answer, "createdAt", "updatedAt") VALUES($1, $2, $3, now(), now())'
+        const values = [slug, questionID, answer]
 
-    await client.query(text, values);
+        await client.query(text, values);
+    } catch {
+        console.log("Error connecting to database.")
+    }
 }
