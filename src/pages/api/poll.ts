@@ -19,36 +19,19 @@ export const post: APIRoute = async ({request}) => {
         )
     }
 
-    try {
-        await client.connect();
-    } catch (e) {
-        console.log("Error connecting to database.")
-        console.error('Unable to add to the database: ' + e);
-        return new Response(
-            JSON.stringify({ message: "Server error, try again later"}),
-            {status: 500}
-        )
-    }
+    await client.connect();
 
-    try {
-        for(let key in data){
-            await addResponse(slug, key, data[key], client);
-            console.log("Added key " + key);
-        }
-        console.log("Added all items, returning.");
-        return new Response(
-            JSON.stringify({
-                message: "Response added successfully!"
-            }),
-            {status: 200}
-        )
-    } catch (error) {
-        console.error('Unable to add to the database:', error);
-        return new Response(
-            JSON.stringify({ message: "Server error, try again later"}),
-            {status: 500}
-        )
+    for(let key in data){
+        await addResponse(slug, key, data[key], client);
+        console.log("Added key " + key);
     }
+    console.log("Added all items, returning.");
+    return new Response(
+        JSON.stringify({
+            message: "Response added successfully!"
+        }),
+        {status: 200}
+    )
 }
 
 async function addResponse (slug: string, questionID: string, answer: string, client: Pool) {
@@ -60,5 +43,4 @@ async function addResponse (slug: string, questionID: string, answer: string, cl
     const response = await client.query(text, values);
 
     console.log("Added to table: " + response.rows.length + " rows");
-
 }
