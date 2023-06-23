@@ -11,5 +11,10 @@ export default defineConfig({
   site: 'https://civwiki.news',
   output: 'server',
   integrations: [svelte(), mdx(), sitemap(), tailwind()],
-  adapter: cloudflare()
+  adapter: cloudflare(),
+  vite: {
+    build: {
+      minify: false
+    }
+  }
 });

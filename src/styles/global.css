@@ -96,8 +96,7 @@ code {
 }
 
 pre {
-
-	padding: 1rem;
+	@apply p-1;
 }
 pre > code {
 
