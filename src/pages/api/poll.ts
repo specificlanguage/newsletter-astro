@@ -1,7 +1,9 @@
 import type {APIRoute} from "astro";
 import {Pool} from "@neondatabase/serverless";
 
+
 const URL = `postgres://${import.meta.env.PGUSER}:${import.meta.env.PGPASSWORD}@${import.meta.env.PGHOST}/${import.meta.env.PGDATABASE}?options=project%3D${import.meta.env.ENDPOINT_ID}`
+const client = new Pool({connectionString: URL});
 
 export const post: APIRoute = async ({request}) => {
 
@@ -16,8 +18,6 @@ export const post: APIRoute = async ({request}) => {
             {status: 500}
         )
     }
-
-    const client = new Pool({connectionString: URL});
 
     try {
         await client.connect();
