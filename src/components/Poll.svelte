@@ -25,7 +25,7 @@
             slug: submitURL,
             ...answers}
 
-        const response = await fetch("/api/poll", {
+        const response = await fetch("https://api.civwiki.news/poll", {
             method: "POST",
             body: JSON.stringify(body)
         });
@@ -44,6 +44,7 @@
 
 </script>
 
+<div class="my-4">
 {#if !submitted}
     <i>Please note that all information submitted is anonymous. A red star (<RequiredStar/>) means that this question is required.</i>
     <form on:submit|preventDefault={onSubmit}>
@@ -56,3 +57,4 @@
     <h3>Thanks for submitting!</h3>
     <p>You'll see the results next week!</p>
 {/if}
+</div>
