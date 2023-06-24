@@ -44,6 +44,7 @@ b {
 }
 
 main p {
+	line-height: 1.5;
 	@apply my-4 text-lg/7 font-serif;
 }
 
@@ -103,10 +104,9 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border: 1px solid #999;
 	color: #222;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
+	padding: 2px 20px 2px 20px;
+	margin: 0;
 	font-style: italic;
 
 	@apply dark:text-neutral-400;
