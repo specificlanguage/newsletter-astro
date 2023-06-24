@@ -25,7 +25,7 @@
             slug: submitURL,
             ...answers}
 
-        const response = await fetch("/api/poll", {
+        const response = await fetch("https://api.civwiki.news/poll", {
             method: "POST",
             body: JSON.stringify(body)
         });

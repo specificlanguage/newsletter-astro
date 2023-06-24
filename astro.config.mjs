@@ -12,9 +12,4 @@ export default defineConfig({
   output: 'server',
   integrations: [svelte(), mdx(), sitemap(), tailwind()],
   adapter: cloudflare(),
-  vite: {
-    build: {
-      minify: false
-    }
-  }
 });
