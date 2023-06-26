@@ -1,7 +1,7 @@
 export function stripHTML(originalString: string)  {
     return originalString.replace(/(<([^>]+)>)/gi, "")
         .replace(/import.*;/g, "")
-        .replace(/(?:__|[*#])|\[(.*?)\]\(.*?\)/g, "$1")
+        .replace(/(?:__|[*#])|!?\[(.*?)\]\(.*?\)/g, "$1")
         .replace(/#/g, "")
         .replace(/\*\*/g, "");
 }

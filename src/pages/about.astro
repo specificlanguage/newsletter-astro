@@ -32,10 +32,10 @@ import Layout from '../layouts/BlogPost.astro';
         I also used a Route53 to add a hosted zone to be able for the domain to attach. Why all of this? It was the easiest way I could think of.</p>
     <p>Today,</p>
     <ul>
-        <li>This site is hosted using <a href="https://astro.build">Astro</a> with Server Side Rendering, <a href="https://tailwindcss.com">TailwindCSS</a>, with a small slice of <a href="https://svelte.dev">Svelte</a> injected in there.</li>
+        <li>This site is hosted using <a href="https://astro.build">Astro</a> with Server Side Rendering, <a href="https://tailwindcss.com">TailwindCSS</a>, with a small slice of <a href="https://svelte.dev">Svelte</a> injected in there for interactivity on some sections.</li>
         <li>I&#39;m hosting all of this on Cloudflare Pages, which incurs no costs. I&#39;ve been hosting the sites here since January 2023.</li>
-        <li>For the backend for polls, I&#39;m using <a href="https://neon.tech/">Neon</a>, a Serverless Postgres database as a service.</li>
+        <li>For the backend for polls, I&#39;m using <a href="https://neon.tech/">Neon</a>, a Serverless Postgres database as a service. To process the poll responses, I'm using an AWS Lambda function with an API Gateway to connect it all up.</li>
     </ul>
     <p>Please kill me for going into Computer Science, because this site is slightly overengineered for what it&#39;s worth.</p>
-    <p><a href="https://ko-fi.com/specificlanguage">Despite this over-engineering, if you&#39;d like to financially support me, I have a Ko-fi page.</a>.
-</Layout></p>
+    <p><a href="https://ko-fi.com/specificlanguage">Despite this over-engineering, if you&#39;d like to financially support me, I have a Ko-fi page.</a></p>
+</Layout>
