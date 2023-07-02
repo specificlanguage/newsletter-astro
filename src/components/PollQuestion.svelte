@@ -30,6 +30,9 @@
             </div>
         {/each}
     {:else if question.type === QuestionType.Checkboxes}
+        <div class="-my-2 text-sm font-sans-serif mb-2 ">
+            <i>Select all that are applicable.</i>
+        </div>
         {#each question.options as option}
             <div class="h-fit my-1">
                 <label>
