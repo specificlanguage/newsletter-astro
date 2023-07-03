@@ -46,7 +46,7 @@
 
 <div class="my-4">
 {#if !submitted}
-    <i>Please note that all information submitted is anonymous. A red star (<RequiredStar/>) means that this question is required.</i>
+    <i>Please note that all information submitted is anonymous. A red star (<RequiredStar/>) means that this question is required to submit.</i>
     <form on:submit|preventDefault={onSubmit}>
         {#each questions as question}
             <PollQuestion question={question}/>
