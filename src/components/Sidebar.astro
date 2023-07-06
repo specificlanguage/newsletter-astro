@@ -2,11 +2,13 @@
 import type {MarkdownHeading} from "astro";
 import {MAX_HEADER_DEPTH} from "../consts";
 import ColoredBlock from "./ColoredBlock.astro";
+import ProgressBar from "./ProgressBar.svelte";
 
 type Props = {
     headings: MarkdownHeading[];
 };
 
+export const ssr = false;
 const {title, headings} = Astro.props;
 ---
 
@@ -20,13 +22,13 @@ const {title, headings} = Astro.props;
             if (hd.depth > MAX_HEADER_DEPTH) return;
             if (hd.depth == 2) {
                 return (
-                        <li class={"my-1 list-outside"}>
+                        <li class={"mt-1 list-outside"}>
                             <a href={"#" + hd.slug}>{hd.text}</a>
                         </li>
                 )
             } else if (hd.depth == 3) {
                 return (
-                    <ul class="px-6 ml-1">
+                    <ul class="px-4 ml-1">
                         <li class={"my-0.5 indent-0 list-outside"}>
                             <a href={"#" + hd.slug}>{hd.text}</a>
                         </li>
@@ -34,7 +36,7 @@ const {title, headings} = Astro.props;
                 )
             } else {
                 return (
-                        <ul class="px-6 ml-1">
+                        <ul class="px-4 ml-1">
                             <ul class="px-3 ml-1">
                                 <li class={"my-0.5 indent-0 list-outside"}>
                                     <a href={"#" + hd.slug}>{hd.text}</a>
@@ -46,5 +48,6 @@ const {title, headings} = Astro.props;
         })}
         </ul>
     </ColoredBlock>
+    <ProgressBar client:only="svelte"/>
 </div>
 }
