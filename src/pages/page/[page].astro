@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import {Page} from "astro";
 import FormattedDate from "../../components/FormattedDate.astro";
-import {readingTime, stripHTML} from "../../frontPageHelpers";
+import {readingTime, stripHTML} from "../../lib/frontPage.ts/frontPageHelpers";
 
 export const prerender = false;
 
