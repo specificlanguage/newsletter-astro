@@ -1,6 +1,6 @@
 ---
 title: "CivWiki Monday Newsletter for April 24, 2023"
-date: "Apr 04 2023"
+date: "Apr 24 2023"
 image: "imperiahall.png"
 author: "specificlanguage"
 ---
