@@ -8,12 +8,19 @@ import Sidebar from "../components/Sidebar.astro";
 
 type Props = CollectionEntry<'newsletter'>['data'];
 
-const { headings, title, description, date, updatedDate, image, author } = Astro.props;
+const { headings, title, description, date, updatedDate, image, author, squareImage } = Astro.props;
+
+console.log(squareImage);
+
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} image={image}/>
+		{squareImage && (
+			<meta property="og:image" content={"/" + squareImage} />
+			<meta property="twitter:image" content={"/" + squareImage} />
+		)}
 		<style>
 			.title {
 				font-size: 2em;
