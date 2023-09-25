@@ -1,0 +1,342 @@
+---
+title: "CivWiki Monday Newsletter for September 25, 2023"
+date: "Sep 25 2023"
+image: "vetraniosep2023.png"
+author: "specificlanguage"
+---
+import {QuestionType} from "../../components/types/pollTypes.js";
+import Poll from "../../components/Poll.svelte";
+import ColoredBlock from "../../components/ColoredBlock.astro";
+
+Good morning and happy Monday from New England!
+
+Thank you for bearing with me [with a week's delay](https://www.reddit.com/r/CivMC/comments/16lidto/theres_no_newsletter_this_week_keep_your_pants_on/), not to mention I was sick and in a slightly less good mental state. Irregular gaps might start to happen; ideally, I'll try to schedule them if there are filler episodes like two weeks ago when pretty much *nothing* happens.
+
+But damn, did I really get things done, I finished a couple projects that I wanted to do during quarantine (when I was feeling ok!) and I'm hoping to work on another, slightly bigger one that may be tangentially useful for Civ meetups.
+
+Uhhh... what was I saying? Let's just get to the news already...
+
+<ColoredBlock color="bg-green-200" darkColor="dark:bg-green-950">
+## Featured
+
+### Featured Image
+
+![](https://media.discordapp.net/attachments/1007753469723156580/1154794807080779929/2023-09-23_00.54.21.png?width=2248&height=921)
+
+This week's featured image is Auresti Castle in Pavia's Vetranio. It's a little surprising to say that we actually haven't had a featured image of Pavia since July, but here we are, and what a choice one this is -- I love the design of the castle along the sea, it has that rustic, European vibe that Pavia does so well. Another great build by them, and looking forward to much more!
+
+### Featured Article
+
+![](https://i.imgur.com/nuVychb.png)
+
+The [**HCF War**](https://civwiki.org/wiki/HCF_War_(Civcraft_2.0)) was the first major war during [Civcraft 2.0](https://civwiki.org/wiki/Civcraft_2.0). The second surge of players of [Hardcore Factions](https://civwiki.org/wiki/Jargon#HCF) players on Civcraft known as the Bloodcrew, the war scaled up after a raiding party of well-known HCF players such as ZeroRussia and Jarl_Heisenberg targeted [Carson](https://civwiki.org/wiki/Carson) and [Commonwealth](https://civwiki.org/wiki/Commonwealth_(Civcraft_2.0)) in the summer of 2013. In response, a coalition, self-named the [World Police](https://civwiki.org/wiki/World_Police) after previous iterations on [Civcraft 1.0](https://civwiki.org/wiki/Civcraft_1.0), was formed by citizens of [Aurora](https://civwiki.org/wiki/Aurora), [Bryn](https://civwiki.org/wiki/Bryn), Carson, and Kappi, among others that would join later. Skirmishes between the groups occurred across the server, especially in unaligned countries.
+
+The war eventually scaled to be one of the first major wars to involve several [vault](https://civwiki.org/wiki/Vault)s and breaks, with many players on both sides being pearled, numerous attempts by HCF Players to log in on VPN alts, and deliberate sabotage involving [snitches](https://civwiki.org/wiki/Snitch) on both sides to lag out players, The World Police also dealt with rumors of supplying the enemy, being revealed at the final vault break in February 2014, with the Commonwealth being griefed as a result. Unlike the end of most wars, however, activity fell following the war as nearly every major city was devastating following mass raiding by the Bloodcrew.
+
+*An image of players following the HCF War, courtesy of [issue 2 of the Lantern](https://www.reddit.com/r/Civcraft/comments/1f9rvg/the_lantern_2_hcf_war_stories_cliffnerd_interview/) and u/eagles_.*
+</ColoredBlock>
+
+<ColoredBlock color="bg-orange-200" darkColor="dark:bg-orange-950">
+### Featured Writing
+
+Wait a second, there's something else? [This week we have an op-ed from **tybug**](/extras/reputable-sources/), who's talking about the undeniable value of CivWiki and the need for **reliable sources.** Here's a peek:
+
+---
+
+*Civ is too small of a community to have many reliable individuals, let alone organizations. Further, Civ's tight-knit culture means that even if an opinion **is** prevalently held, there is nothing for CivWiki to cite; the opinion exists only in the cultural miasma of the current moment in time, with no concrete posts or writings to point to as a citation.*
+
+*I'd like to propose a solution. CivWiki should form a **source committee** as a blanket stand-in for Wikipedia-style reliable sources.*
+
+---
+
+[**Read their full article here!**](/extras/reputable-sources/)
+</ColoredBlock>
+
+## The News
+
+![](https://cdn.discordapp.com/attachments/1092693158950883339/1150510043930841159/2023-09-10_02.35.51.png)
+
+*A new render of Venozia's town hall in Venne.*
+
+### CivMC Updates
+
+A major update (1.23) was released on CivMC the previous week (September 14) that I didn't report on. **This constitutes the [first major update since July 17.](/newsletter/newsletter-07-24/#server-update)**
+
+This, among others, included:
+
+- [**Allows 1.20 clients to join the server**](https://github.com/CivMC/CivDocker/pull/184) *(however, despite the announcement, upon personal testing, this doesn't seem to be working)*
+- [Addition of the **Copper Workshop** in Factories](https://github.com/CivMC/CivDocker/pull/183/commits/b2eba2487735d168ec906236c5cff8598a839fd6) *(from Walkers)*
+- [**Fixes to Random Spawning** that significantly reduces lag](https://github.com/CivMC/RandomSpawn/pull/17) *(from Okx)*
+- [Allows Tinted Glass in Shop Relays in ItemExchange](https://github.com/CivMC/CivDocker/pull/187) *(from Gjum)*
+- [Customization of kill messages](https://github.com/CivMC/CivChat2/pull/14) *(from Walkers)*
+- Release of the bastion config, new city spawns, patreon factory heads, chunk updates, and much more administrative work.
+
+[*See here for the full update log.*](https://i.imgur.com/p29SnsU.png)
+
+---
+
+In addition, RedDevel is working on other stuff that isn't part of the major update:
+
+* As an update to their Civ101 guide, [they've been creating wiki.civmc.net as a way to easily guide new players on the server.](https://wiki.civmc.net) ***This is not intended as a replacement for the CivWiki**, as it documents mechanics rather than player-run events.*
+* Additionally, [several requested brews have finally made their way onto the server](https://i.imgur.com/FmTbIYs.png); the full brew list can be also found [on the wiki](https://wiki.civmc.net/pages/plugins/fun/brewery#list-of-discoverable-brews).
+
+---
+
+### Here's Two Weeks of CivMC News I Didn't Write
+
+![](https://media.discordapp.net/attachments/381522903084040193/1154814885205647491/2023-09-22_15.png)
+
+*A newly constructed Market Square in Adria, Griffin.*
+
+Although the following three (four?) events seemed related at the time they were reported on, none of them were, and just happened to occur in close proximity. These points may be presented out of order chronologically, but for readability's sake, it will make sense.
+
+Who's ready for their head to get super dizzy?
+
+#### Oh No, It's Build Night
+
+- For some background, Nara's neighbor Arsenia (who's had [their share of controversies and conflicts](/newsletter/newsletter-07-24/#alliance-crap)) had a continued dispute over overlapping bastions within their territory.
+  - The aggravated party depends on who you ask, but at the end of the day, Arsenia wanted the bastion overlap removed.
+- [Volterra's build night on Saturday ended up in Nara](https://www.reddit.com/r/CivMC/comments/16kqrch/an_announcement_from_the_volterran_weather_service/), where Elysian Pact players attempted to peacefully reroute a river that overlapped within their territory.
+- Arsenia and some Gang Shi individuals, alerted by snitches, came to observe. More on Gang Shi later.
+- SQOpenSpellbook claims that he "accidentally pulled back his bow" and shot Hg_80 in the head;
+  - mTfUJi claims that Hg_80 lagged out,
+  - [Hg_80 accused Spellbook of pearling him after he and Bronnakus criticized Butter_Villager's art on Reddit](https://www.reddit.com/r/CivMC/comments/16io6fn/the_ravens_are_hungry/k0ls8d8/), although this particular claim is slightly unfounded
+  - Gwua mostly claims that this was for "no good reason"
+- Whatever the reason, Hg_80 was killed and pearled by Arsenia and Elysian Pact players. Fastestgrass was eventually pearled in the fighting as well as the fighting swung back and forth between Shiroyama and Arsenia territory.
+- In the aftermath, Hg_80 and fastestgrass were eventually freed within the night, Arsenia officials were banned from Nara territory.
+- butter_villager and SQOpenSpellbook were pearled by Gang Shi as punishment. Gang Shi themselves were not necessraily involved in the conflict, and Gwua has said that these were individuals acting up, calling the situation "disappointing".
+
+[For a more humorous and obviously AI-written version of this, please check out Hakr's version.](https://www.reddit.com/r/CivMC/comments/16kuli8/a_quick_summary_of_events_which_unfolded_last/)
+
+#### 日本語の便り
+
+![](https://preview.redd.it/chbdhvxcmdpb1.png?width=1909&format=png&auto=webp&s=16a13df6051d36ed0bc8bbc4c3011d41f6dffaec)
+
+*A newly constructed bridge over the frozen river in Baile.*
+
+I'm sure your screen readers are going to have a fun time with that header.
+
+- A messy breakup with Janet Blackquill and Gensokyo occurred after arguments with a banned player within the latter's discord. There are a lot of *\*waves hands\** issues that I have decided not to get into.
+- As a result, [Janet recorded and leaked information to Narans, which would be eventually be revealed in a public reddit post](https://www.reddit.com/r/CivMC/comments/16krxs3/some_replaymod_recordings_with_drama/).
+  - Among the accusations were Gensokyo actively searching for snitches placed by Nara within the territory.
+  - Janet claimed this was intended for concrete evidence to "wipe Nara of the map"
+- Nara did not do anything with information once received, and Gensokyo was pretty confused about the leak of information.
+- This was generally an out-of-game conflict, and mTfUJi spent time repairing the border and relations between the two nations to prevent further conflict.
+
+While much of this based on Janet's, Topaz's and mTfUJi's accounts, nearly all of the conflict was resolved out of game. Except for one thing, that was never reported by all three parties, only by Oceanstar:
+
+- TheJKH, as part of the build night conflict, pearled FerroVir while being followed into Gensokyo, and placed him in Gensokyo's train station.
+
+This may have been possibly done by Ferro to stream his location, as Gang Shi and allies have not dropped his Pearl-On-Sight status. Not to mention that this was [falsely reported by Oceanstar in their summary (accusing BradoTomato instead)](https://www.reddit.com/r/CivMC/comments/16ln5cy/a_summary_of_last_weeks_events/). When talking with ShadySauce, it basically just sounds like TheJKH was doing a massive troll.
+
+#### Cordoba Confusion
+
+![](https://media.discordapp.net/attachments/963450138192404491/1152525266355236894/2023-09-13_23.12.34.png?width=2248&height=1265)
+
+*A picture of the newly completed Coliseum in SPQR.*
+
+Please proceed reading this section with caution when opening links, especially when at work.
+
+For context, Gang Shi and Cordoba fought a war [earlier this year](/newsletter/newsletter-02-06#pettier-drama-yes-theres-more), which made them on suspicion, but further grievances like including a [sword name](https://imgur.com/qVxW7bu).
+
+- The day after *both* of these things happened, [Gang Shi discovered a pilot tunnel that lead to an island close to Gang Shi](https://www.reddit.com/r/CivMC/comments/16lmrg2/cordoben_culture/).
+- Upon discovering a statue of George Floyd and [an implied chest insulting Gwua](https://youtu.be/TDsLa3GuHzU), they began tearing down the statue.
+- Cordoba proceeded to engage Gwua and jbblocker who were present, and forced them off the island, which included DeathPath1 and BradoTomato.
+- While no casualties were inflicted, upon confrontation on Discord, [they were met with "mockery"](https://imgur.com/a/NETuUgM) from both Cordobans and, a little surprisingly, Romans.
+- Gang Shi have also said that they do not wish to incite another conflict against Cordoba, declaring that they [only want to "call into question the blatant disrespectful racism and those defending it."](https://www.reddit.com/r/CivMC/comments/16lmrg2/cordoben_culture/)
+
+The response from Reddit was met with support of Gang Shi's accusations.
+
+- [It was met with particular concern from major players over moderation with the offensive content,](https://www.reddit.com/r/CivMC/comments/16lmrg2/cordoben_culture/k13blik/) with additional concern that if this wasn't modmailed, [this should have raised red flags a long time ago](https://www.reddit.com/r/CivMC/comments/16lmrg2/cordoben_culture/k1934q6/).
+- [Mark Antony defended his statement saying that "Wilson [was] lashing out in a childish tantrum after fuckijg[sic] around in Nara last night."](https://www.reddit.com/r/CivMC/comments/16lmrg2/cordoben_culture/k138oim/) (the latter accusation is also verifiably false).
+  - Many were confused by this statement, as [this had nothing to do with the accusations of insensitivity at hand,](https://www.reddit.com/r/CivMC/comments/16lmrg2/cordoben_culture/k13aup0/) and were generally disdainful for the way that SPQR was defending Cordoba in the previous conflict as well as this particular incident.
+
+If you know the Civ iceberg as well as I do, there are a considerable number of things that make me concerned with this behavior, not to mention that the server has gotten news coverage in the past for things like this.
+
+#### Are We Done Yet?
+
+![](https://cdn.discordapp.com/attachments/1007753469723156580/1152854199579713627/2023-09-17_15.40.27.png)
+
+*Finchley in Pavia. Now only waiting for [Finchley Central Tube Station.](https://www.youtube.com/watch?v=p6mgBZmoqoU)*
+
+The answer is no, those were just the funny features. We actually have to do the headlines that you see on the bottom of the news, or the stuff that the Today show leaves for the local news features.
+
+- As a celebration for the first anniversary of Donut Day, [Estalia handed out awards for most exceptional donut (pictures) and more](https://www.reddit.com/r/CivMC/comments/16iq5r3/donut_day_first_anniversary_awards_results/)
+- [ChrisChrispie, JuniorTide, and Orinnari have been released from Butternut and Gang Shi following the Butternut-SEC War.](https://www.reddit.com/r/CivMC/comments/16oznlu/hot_off_the_press_the_september_edition_of_the/) *Crossposted from the Icenian Times.*
+  - Icenia is also starting its next councillor election for Spooky Month.
+  - They're also [offering a subsidy (read: cool promotion) for opening a shop within the country to spur further development](https://www.reddit.com/r/CivMC/comments/16ny6ra/open_a_shop_in_icenia_city_and_get_paid_doing_it/).
+  - Not to mention that they're also [holding a build contest and handing out emeralds as prizes for winning entries](https://i.imgur.com/1I4WVLQ.png).
+- [Amicitia knighted Magme_Valerio with attendance across the server](https://www.reddit.com/r/CivMC/comments/16ipitt/the_sapphire_wave_edition_2_09142023/), commending him for his devotion to "Amicitia's goals of friendship, diplomacy, and culture." *Crossposted from the Sapphire Wave.*
+- Additionally, [Amicitia joined the BUILD alliance partway through last week](https://www.reddit.com/r/CivMC/comments/16ntk1t/the_kingdom_of_amicitia_joins_build/), now joining the Fempire Union, the Imperial Federation and Mount Augusta, after forging allies with each nation for the past month.
+- Speaking of alliances, [the Temporal Empire joined the Protective Pact of International Security](https://www.reddit.com/r/CivMC/comments/16g4poe/the_temporal_empire_joins_the_ppis/) along with Warmia, Lelum Polelum, and DonFuer. They also [elected PhysicsGamer as their new speaker of the alliance](https://www.reddit.com/r/CivMC/comments/16hg02g/the_ppis_elects_a_spokesperson/).
+- The Monument Group [sold off just under 10% of its company](https://www.reddit.com/r/CivMC/comments/16jn39j/monument_group_share_sale_is_now_live_17_lots_of/) following a stock sale this past weekend, resulting in nearly 6,000 diamonds in profit
+- After losing an stick fight against fastestgrass, [retro finally became the mayor of Transylvania with 50% of the vote](https://i.imgur.com/XJ8SMnM.png). Let's only hope that his ruling [isn't like his reddit posts](https://www.reddit.com/r/CivMC/comments/16qjtj2/transylvanian_history/)
+- [SPQR held their Roman Games](https://www.reddit.com/r/CivSPQR/comments/16l8ck4/spqr_concludes_roman_games/) the previous weekend, hosting a double elimination Farley War tournament.
+- Gang Shi was also on tight security this past week [after a false leak from Elysian Pact members hinted at an Gang Shi invasion.](https://i.imgur.com/Sfw3aJQ.png) The rumors were false.
+- Pavian Archduke CedarValiant I resigned and triggered Pavia's twelfth national election, with the electors voting for Gobblin to serve as Archduke.
+  - Pavian Archduke Gobblin III announced a slew of new decrees, including [one to improve censuses](https://drive.google.com/file/d/16DIr_i17utbr5QOWogGcWbQeO8YpS_Ss/view), [one that defines landuse](https://drive.google.com/file/d/1j64ik51WvZ7cKzdpzUnjH0CFoiHOmntH/view?usp=drive_link), and [one that establishes a Council of Universal Betterness](https://drive.google.com/file/u/1/d/19UJX0Nzd7pDA6tjNVkn2YTxiTloSyc9V/view?usp=drive_link).
+  - Additionally, [a friendship agreement was made between Pavia and Baile.](https://drive.google.com/file/d/1L_ltAjOyOn-mc7rOgbVQNiB3cYK_VGJO/view?usp=drive_link)
+- [Brunsvik announced their return to the server](https://www.reddit.com/r/CivMC/comments/16kcsfv/brunsvik_foerver_brunsvik_was_a_nation_made_by_my/) following continued grief and their territory's takeover by none other than the Catholic Church
+  - *Editor's note: It's always really funny when something gets done by the Catholic Church and it gets in the news this way, lol*
+- Speaking of returns, [the Jomsviking Confederation returns as a new nation in the northwest corner of the server near Vinland](https://www.reddit.com/r/CivMC/comments/16r1l8v/jomsviking_migration/).
+
+### Around the Metagame Meta
+
+- [CivCubed is introducing Subgroups, marketed as a better way to assign permissions within groups](https://i.imgur.com/PocFmnD.png) rather than the standard Mods and Admins in NameLayer, to make things easier for Citadel and access permissions.
+- [TheJmqn proposed nations to create a Freedom of Information Act (or similar),](https://www.reddit.com/r/CivMC/comments/16irr05/encouraging_nations_to_pass_a_freedom_of/) to allow free information to flow for everyone and "to allow for history to be better preserved and to make things more easily accessibly to everyone".
+- [Another public appeal for Carter_t23 was posted](https://www.reddit.com/r/CivMC/comments/16pe066/carter_t23_sentencing_request_public_appeal/) by the Catholic Church, asking admins for response on their accusations of "opening up and continuing discussion on topics not appropriate for a 13 year old audience."
+  - This was quickly shot down by nearly all of CivMC, [with admin SoundTech stating that "he was banned for being outright racist"](https://www.reddit.com/r/CivMC/comments/16pe066/carter_t23_sentencing_request_public_appeal/k1qmy1r/)
+  - This entire thread is not even worth a read. You can't just spin it to say that "He had a civil discussion about these from a Catholic viewpoint" when you actually just spew heinous things about slavery.
+  - I've said it once this week, and I'll say it again, Civ has gotten news coverage, and not good coverage, in the past for terrible things like this.
+  - *Editor's note: I take it back, It's not funny when the Catholic Church gets mentioned like this*
+- [If you wanted to learn what you'd get if you broke more than 5000 fossils, here you go](https://www.reddit.com/r/CivMC/comments/16j3526/the_results_of_5293_fossils_cracked/) from ComradeNick
+- [Oceanstar did a commendable job trying to copy me last week with their summary of last week's events :)](https://www.reddit.com/r/CivMC/comments/16ln5cy/a_summary_of_last_weeks_events/).
+
+## The Fun Stuff
+
+![](https://cdn.discordapp.com/attachments/963450138192404491/1152095529870839808/huge_2023-09-14_23.15.23.png)
+
+*Yoahtl's new stadium at their new athletic complex in the jungle, built by x1025.*
+
+### Builds
+
+- Pavia [has been doing a lot of building the past couple of weeks](blob:https://imgur.com/e3e25a49-8475-4340-8010-42fc2656d1fe), [with a new castle in Vetranio](https://cdn.discordapp.com/attachments/1007753469723156580/1154794804480311367/2023-09-23_00.56.35.png) as well [as continued developments in the city.](https://cdn.discordapp.com/attachments/1007753469723156580/1152854272334102620/2023-09-17_15.31.50.png)
+- Nearby Griffin has also constructed [a brand new market square to within Adria](https://cdn.discordapp.com/attachments/789868626214912030/1154815394457079999/2023-09-22_16.13.02.png), which expands the city so much more into the countryside
+- Of course SPQR [finished its Coliseum for its Roman Games the past couple of weeks](https://imgur.com/a/skBcQbS)
+- New nation Baile is working on new structures, [starting with a large bridge over their frozen river](https://cdn.discordapp.com/attachments/963450138192404491/1154043858578051082/image.png)
+- Yoahtl is [building another stadium complex that's way bigger and way more modern than last iteration, holy shit](https://cdn.discordapp.com/attachments/963450138192404491/1151031086235799572/huge_2023-09-11_23.52.47.png)
+- Didn't get around to it but [Tortugan did some renovations this past week](https://cdn.discordapp.com/attachments/963450138192404491/1151008164582539264/image.png)
+- Oceanstar [decided to show off their own WIP settlement last week so I guess I have no choice](https://imgur.com/a/C3VNxP3)
+- Shapha's vault showcase [continues with another improved proposed version of Pavia's vault](https://www.reddit.com/r/CivMC/comments/16l5qx2/vault_science_iii_pendingsheltergev/)
+- Potato_Deity shows off an update of their [Tsardom of Sneg](https://www.reddit.com/r/CivMC/comments/16mve2q/growth_of_tsardom/)
+- [MaybeGravy shows off their new decorations in Margaritaville (rip Jimmy) for the spooky season.](https://www.reddit.com/r/CivMC/comments/16og3vv/encouraging_everyone_to_decorate_their_nation_for/) I've deliberately left this off the newsletter so I can highlight this when we start going into October lmao
+- Sneg [accidentally built the same town hall as in Mount Augusta](https://www.reddit.com/r/CivMC/comments/16q2kwd/tsardom_and_equality/), which, I'm not really surprised when you can [find the tutorial on how to build it online](https://www.youtube.com/watch?v=UmNLoUX7pMg)
+
+### Cool Content
+
+- [Shadno has released a painting resource pack of Civ pictures for use](https://www.reddit.com/r/CivMC/comments/16jhzqq/the_civ_paintings_pack_resourcepack/), which include such hits as "Gang Shi Lawncare Services".
+- So you know, I'm not like a huge fan of [butter_villager art like this one out here but I have to at least commend the art](https://www.reddit.com/r/CivMC/comments/16io6fn/the_ravens_are_hungry/), come on Bron and Hg at least be a little nicer -- although maybe some variety would be nice
+- [TheJmqn has released the 20th version of his claims map](https://www.reddit.com/r/CivMC/comments/16nmx4v/civmc_unofficial_map_20_the_gilded_age_it_is/), which really shows how far the server has gone
+
+### Memes
+
+God, after doing all this stuff this week I *want* to make a Civ iceberg, this is getting ridiculous.
+
+- [**How about an updated sequel to the most upvoted posts on the reddit,  to CivMC Slander**](https://www.reddit.com/r/CivMC/comments/16qnncy/civmc_slander_3_the_return/)
+- [Did you think you were that confident to take a president title off a former Gang Shi PvPer?](https://www.reddit.com/r/CivMC/comments/16frj0n/conclusion_to_the_stick_wars_for_transylvanian/) I didn't think so
+- [When the comcast company decides to shut off your internet as a joke](https://www.reddit.com/r/CivMC/comments/16ikq8w/welp_im_stuck_with_playing_pokemon_blue_and/)
+- As much as I "enjoy" Owain's AI antics [I cannot consider these AI renditions of the Butternut-SEC conflict as art, so memes it goes](https://www.reddit.com/r/CivMC/comments/16iuht2/the_buttsecs_war_as_visualized_by_ai_without_any/)
+- [ChrisChrispie accuses the PPIS alliance of shitting BRICS](https://www.reddit.com/r/CivMC/comments/16iunjq/pissbrics/)
+- [Oh fuck you're gonna make me believe](https://www.reddit.com/r/CivMC/comments/16qmzoi/icenian_culture/)
+- [**Real footage of The_JKH pearling Ferro (not clickbait) (not Andrew Tate)**](https://cdn.discordapp.com/attachments/1050117632990400552/1155665660425285632/ferro.mov)
+- The trick is, [I don't care about 90% of what this newsletter actually says either!](https://www.reddit.com/r/CivMC/comments/16lthx0/now_i_remember_why_i_hate_you_all/)
+- [My question is whether people want to wear a Civ shirt, let alone a Civ election shirt in real life](https://www.reddit.com/r/CivMC/comments/16n62dk/boars_are_voting_zolo_in_for_governor_right_now/)
+- [As an Icenian myself, I too am all the same](https://www.reddit.com/r/CivMC/comments/16o093t/cultural_victory/)
+
+### Non-Civ Content
+
+![](https://nypost.com/wp-content/uploads/sites/2/2023/03/newspress-collage-26332748-1680070461325.jpg?quality=75&strip=all&1680056158)
+
+*Hold up, what? Why is the baseball picture taking the picture slot? I pre-vet these pictures like, four days before live...*
+
+#### Sports Corner
+
+No sportsbetting please, we're civilized people.
+
+- We're one week to the end of the MLB season *(it ends next Sunday...)* and pretty much everything in the playoffs is decided **EXCEPT** the AL West -- with the Seattle Mariners, Houston Trashtros, and the Texas Rangers all within 0.5 games of each other going into Friday's game.
+  - Even worse, Seattle's final ten games include(d?) 7 against Texas, and 3 against Houston.
+  - Not to mention that whoever isn't first in the AL West are likely to get Wild Card slots [depending on confusing tiebreakers, and whether the Toronto Blue Jays are actually going to compete](https://youtu.be/JBX_gXCPvhs?si=021PhrSwfnh91V-z&t=2091).
+  - Of course, I'm rooting for my Mariners to make the playoffs but it's seriously anybody's game. Probably going to be the most emotionally whiplashed week [for any AL West fan](https://www.si.com/mlb/angels/news/angels-rumors-writer-thinks-la-most-likely-to-trade-mike-trout-to-philadelphia-for-all-star-top-prospect-ml0802), no matter which team you're on. Please check up on your local Oakland A's fan, [he needs some love.](https://www.sfgate.com/athletics/article/as-fans-coliseum-grief-anger-sadness-18382735.php)
+- In football this week, [#6 Ohio State was on the road at #9 Notre Dame](https://www.espn.com/college-football/game/_/gameId/401521330); curiously, the Fighting Irish were widely favored by the public to win even though vegas had Ohio State as the odds-on-favorite.
+  - The game was a defensive struggle in the first half, but Ohio State grinded out a 10 point lead midway through the 3rd quarter.
+  - Notre Dame's offense woke up immediately after and scored touchdowns on their next two possessions to take a 14-10 lead with only a few minutes left in the game.
+  - Ohio State ended up driving all the way down the field, converting long first downs along the way, ending up with the ball at the 1 yard line with 7 seconds left in the game. Notre Dame couldn't get 11 defenders on the field after a timeout and Ohio State scored the game-winning touchdown as time expired on the next play.
+- I can't complete this week's football news [without mentioning the Miami Dolphins; they scored 70 (yes, seventy) points on the Denver Broncos](https://www.youtube.com/watch?v=wmW4z9yhmN8)... that's the most points scored in an NFL game in 57 years! *Editor's note: [that's also Scorigami](https://nflscorigami.com/)*
+  - Pickems are actually very close even in week 2, [with icyski winning with 13 games picked alongside 3 others being tied for first](https://cdn.discordapp.com/attachments/1150995758196207707/1153701884964647006/IMG_9087.png)
+
+#### Content Worth Seeing
+
+* While in quarantine, I had the opportunity to finally watch some things that I've been meaning to, including
+  * [Andor, probably the *best* post-merger Star Wars content, sequels included](https://www.youtube.com/watch?v=cKOegEuCcfw)
+  * [Spirited Away](https://www.youtube.com/watch?v=ByXuk9QqQkk) and [Princess Mononoke](https://www.youtube.com/watch?v=4OiMOHRDs14), mostly due to my SO "forcing" me to watch it during quarantine, but was thoroughly enjoyed and made me realize why Studio Ghibli is so beloved. Topaz is probably going to kill me for not watching it until now
+  * Pixar's [Elemental](https://www.youtube.com/watch?v=hXzcyx9V0xw), which was unironically the worst out of the things I watched, but it's still a good film because of all the amazing animation, the story could use some work but it's a good film, I don't care what you animation purists say
+  * Jet Lag's [newest season of Sam, Ben and Adam (mostly Adam) playing Tag across Europe again](https://www.youtube.com/watch?v=IV1dbqcg9bI), another iteration of probably the best Jet Lag season ever. Amy is great, too
+  * Dropout's [latest (complete) campaign of Dimension 20 set within your brain](https://www.youtube.com/watch?v=9pT1OhH3F1Y), featuring Hank Green somehow making science facts extremely intimidating. I'm probably going to have to finally buy their subscription.
+* Ok enough about, me, let's talk about [Nara's Finn, who must be pet before eating, without exception](https://i.imgur.com/q1KOTXk.png)
+* MechcanicalRift [quite literally read a short investigation of Pigeonism](https://docs.google.com/document/d/1icv_WitFKd_Tt5Ue4J3MbCKBJiqHZXpVl3n9A_3eK44/edit?usp=sharing) in voice chat for one hour.
+
+### Poll of the Week
+
+#### Last Week Redux
+
+I already talked about the polls last week on the newsletter cancellation post, but for the sake of continuity here's what two weeks' ago poll looked like:
+
+The first question was, **would you like to see more events on Civ?**
+
+![](https://i.imgur.com/vHk87db.png)
+
+This should be a no-brainer, people like events and I like them too. It raises activity, brings press to your country and makes the server feel more alive and lived in.
+
+The second question was, **what time works for events?**
+
+![](https://i.imgur.com/ODac1cx.png)
+
+It should come as no surprise that everyone would prefer their evening-time counterparts, as the US dominates their respective evening section, while the Europeans prefer their evening time, etc. There are few stragglers who would prefer anytime, but I think it's pretty clear that you need to cater to either one crowd or the other.
+
+#### This Poll for Next Week
+
+This week, I kind of wanted to look at something a little niche:
+
+![](https://hackmd.io/_uploads/HJeQX_RJ6.png)
+
+**NOTE TO SELF TO DELETE THE PICTURE ABOVE FOR EDITING PURPOSES**
+
+<ColoredBlock color="bg-sky-200" darkColor="dark:bg-sky-950">
+    <Poll client:load submitURL={"/newsletter-09-25"} questions={
+        [
+            {
+                questionID: "updatefrequency",
+                question: "Would you like less frequent updates with more content, or more frequent updates with less content?",
+                options: [
+                    "Less frequent updates, with more content",
+                    "I like the way updates are now",
+                    "More frequent updates, but with less content",
+                ],
+                type: QuestionType.MultipleChoice,
+                useOther: false,
+                required: false
+            },
+        ]
+    }/>
+</ColoredBlock>
+
+Taking a look at the update we saw this week, I want to see what people prefer and whether they care about updates to continue server hype.
+
+## Coronavirussy Cry for Help
+
+![](https://cdn.discordapp.com/attachments/1123735801956663347/1153891588016189460/2023-09-19_20.07.41.png)
+
+*ChrisChrispie, JuniorTide, and Orinnari's return to Icenia.*
+
+Thanks for reading this monster of a newsletter -- it's not because I didn't want to write it last week, but once I recovered it was just late enough that I didn't have time to start writing all three giant stories.
+
+A huge thanks for everyone who came out and answered my questions including mTfUJi, Topaz, fastestgrass, ImmediateDescent, Gwua, SQOpenSpellbook, TheJKH, ShadySauce, Walkers, and Creepi0n, and BritishWanderer for providing help.
+
+A special unthanks for Gjum for being busy while my computer is having problems >:(
+
+Before you go, **[have a look at tybug's op-ed this week about reliable sources on Civ](https://hackmd.io/extras/reputable-sources/)**. It's well written and should help editors make CivWiki better!
+
+- If you'd like to get your stuff in the newsletter ***like this op-ed today!!!***, either [Write a featured article](https://forms.gle/SZbWZQRDBxhPUNQF9), or contact me to write an op-ed at `@specificlanguage` on Discord. My DMs are "open" for questions if you've got any for either request!
+
+Until next time gamers,
+
+---
+
+[***EDIT CIVWIKI***](https://civwiki.org)
+
+---
+
+- [**< < < Last week's newsletter (September 11)**](/newsletter/newsletter-09-11)
+- [Submit a featured article](https://forms.gle/SZbWZQRDBxhPUNQF9) - *You know you want to!*
+- [View and post comments on r/CivWiki](https://reddit.com/r/civwiki)
+- [View a shortened version of this newsletter on CivWiki](https://civwiki.org/wiki/CivWiki:Features)
