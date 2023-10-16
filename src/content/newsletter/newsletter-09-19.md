@@ -1,7 +1,7 @@
 ---
-title: "CivWiki Monday Newsletter for September 19, 2022"
-date: "Sep 19 2022"
-image: "naralibrary.png"
+title: "CivWiki Monday Newsletter for September 18, 2023"
+date: "Sep 11 2023"
+image: "snegsep2023.png"
 author: "specificlanguage"
 ---
 
