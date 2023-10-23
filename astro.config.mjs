@@ -3,7 +3,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 import svelte from "@astrojs/svelte";
-import {inspectUrls} from "@jsdevtools/rehype-url-inspector";
+import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,12 +12,11 @@ export default defineConfig({
   markdown: {
     rehypePlugins: [
       [
-        inspectUrls, {
-        selectors: ["a[href]"],
-        inspectEach(url) {
-          url.node.properties.target = "_blank";
+        rehypeExternalLinks,
+        {
+          rel: ["nofollow"],
+          target: ["_blank"]
         }
-      }
       ]
     ],
   },
