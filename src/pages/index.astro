@@ -30,10 +30,10 @@ const maxPages = Math.ceil(newsletterPages.length / 5);
 					<p class="-mb-1 dark:text-neutral-400 text-neutral-700">{stripHTML(entry.body).slice(0, 450)}...</p>
 					<div class="flow-root space-x-5 text-neutral-800 dark:text-neutral-200 ">
 						<p class="text-sm font-sans-serif float-left">
-							<i class="fa-regular fa-clock"/> {readingTime(stripHTML(entry.body))}
+							<i class="fa-regular fa-clock"/>{" "}{readingTime(stripHTML(entry.body))}
 						</p>
 						<p class="text-sm font-sans-serif float-left">
-							<i class="fa-regular fa-calendar"/> <FormattedDate date={entry.data.date}/>
+							<i class="fa-regular fa-calendar"/>{" "}<FormattedDate date={entry.data.date}/>
 						</p>
 					</div>
 				</div>
