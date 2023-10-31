@@ -3,14 +3,18 @@
     import PollQuestion from "./PollQuestion.svelte";
     import type {PollQuestionProps} from "./types/pollTypes";
     import RequiredStar from "./RequiredStar.svelte";
+    import LoadingSpinner from "./LoadingSpinner.svelte";
 
     export let submitURL: string
     export let questions: PollQuestionProps[];
     export let submitted = false;
+    let submitting = false;
 
 
     async function onSubmit(e: SubmitEvent) {
         e.preventDefault();
+        submitting = true;
+
         const formData = new FormData(e.target as HTMLFormElement);
         const answers = {}
         for(let [k, v] of formData.entries()){
@@ -37,8 +41,7 @@
             return;
         }
 
-        const data = await response.json();
-        console.log(data);
+        await response.json();
         submitted = true;
     }
 
@@ -51,7 +54,15 @@
         {#each questions as question}
             <PollQuestion question={question}/>
         {/each}
-        <button class="rounded mt-2 p-2 bg-blue-500" type="submit">Submit</button>
+        <button class="rounded mt-2 p-2 bg-blue-500 text-white" disabled={submitting} type="submit">
+            {#if !submitting}
+                Submit
+            {:else}
+                <div class="ml-2.5 mr-3">
+                    <LoadingSpinner/>
+                </div>
+            {/if}
+        </button>
     </form>
 {:else }
     <h3>Thanks for submitting!</h3>

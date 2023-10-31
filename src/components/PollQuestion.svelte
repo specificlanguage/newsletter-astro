@@ -43,7 +43,11 @@
                 </label>
             </div>
         {/each}
-    {:else}
-        <input type=text name={question.questionID} placeholder="Type here..."/>
+    {:else if question.type === QuestionType.ShortResponse}
+        <input type="text" name={question.questionID} placeholder="Type here..."
+        class="rounded-md p-1 w-1/2 text-black text-lg border-4 border-transparent"/>
+    {:else }
+        <textarea name={question.questionID} placeholder="Type some answer here..."
+        class="rounded-md p-1 w-3/4 text-black text-lg border-4 border-transparent"/>
     {/if}
 </div>

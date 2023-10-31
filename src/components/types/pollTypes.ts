@@ -1,13 +1,15 @@
 export enum QuestionType{
     MultipleChoice,
     Checkboxes,
-    OpenResponse
+    ShortResponse,
+    OpenResponse,
+
 }
 
 export type PollQuestionProps = {
     questionID: string;
     question: string;
-    options: string[]
+    options?: string[]
     type: QuestionType;
     required: boolean;
     useOther: boolean;
