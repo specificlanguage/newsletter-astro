@@ -34,8 +34,6 @@
             body: JSON.stringify(body)
         });
 
-        console.log(response);
-
         if(!response.ok){
             alert("Something went wrong, try submitting again later.")
             return;

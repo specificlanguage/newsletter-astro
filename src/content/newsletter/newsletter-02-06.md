@@ -1,5 +1,5 @@
 ---
-title: "CivWiki Monday Newsletter for February 06, 2023"
+title: "CivWiki Monday Newsletter for February 6, 2023"
 date: "Feb 06 2023"
 image: "griffinroadnetwork.png"
 author: "specificlanguage"

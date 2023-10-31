@@ -66,7 +66,6 @@ if(pageNum > page.lastPage){
             Page {page.currentPage} / {page.lastPage}
         </div>
         <div>
-            {console.log(page.currentPage + 1)}
             {page.currentPage + 1 <= page.lastPage &&
                     <a class="p-3 border-1 border-neutral-200  hover:bg-neutral-500 hover:text-white" href={"/page/" + (page.currentPage + 1).toString()}>Next</a>
             }
