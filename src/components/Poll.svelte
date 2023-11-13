@@ -7,11 +7,18 @@
 
     export let submitURL: string
     export let questions: PollQuestionProps[];
-    export let submitted = false;
+    let submitted = false;
     let submitting = false;
 
 
     async function onSubmit(e: SubmitEvent) {
+
+        function errorSubmit(){
+            alert("Something went wrong, try submitting again later.")
+            submitted = false;
+            submitting = false;
+        }
+
         e.preventDefault();
         submitting = true;
 
@@ -32,15 +39,16 @@
         const response = await fetch("https://api.civwiki.news/poll", {
             method: "POST",
             body: JSON.stringify(body)
-        });
-
-        if(!response.ok){
-            alert("Something went wrong, try submitting again later.")
-            return;
-        }
-
-        await response.json();
-        submitted = true;
+        }).then(response => {
+            if(response.ok){
+                submitted = true;
+            } else {
+                errorSubmit();
+            }
+        }).catch(e => {
+            console.log(e);
+            errorSubmit();
+        })
     }
 
 </script>
