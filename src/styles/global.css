@@ -40,7 +40,7 @@ h6,
 strong,
 b {
 	color: #222;
-	@apply dark:text-neutral-300 font-bold;
+	@apply dark:text-neutral-100 font-black;
 }
 
 main p {
