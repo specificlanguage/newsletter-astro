@@ -16,6 +16,6 @@ const { Content, headings} = await page.render();
 
 ---
 
-<BlogPost headings={headings} {...page.data}>
+<BlogPost headings={headings} body={page.body} {...page.data}>
 	<Content/>
 </BlogPost>
