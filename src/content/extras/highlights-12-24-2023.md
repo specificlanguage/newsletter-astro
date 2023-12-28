@@ -89,4 +89,4 @@ Please spend this normal newsletter Monday with family and friends, don't spend 
 ---
 
 - [**< < < Last week's newsletter (December 18)**](/newsletter/newsletter-12-18-2023)
-- **> > > This week's newsletter (December 27/28)** (currently unavailable)
+- [**> > > This week's newsletter (December 28)**](/newsletter/newsletter-12-28-2023)
