@@ -72,7 +72,7 @@ The pictures used were
 - [a farm in the Pavian countryside from Seekinq](https://i.imgur.com/paWekCH.png)
 - [cherry blossoms around Shiroyama from Mark_Antony](https://i.imgur.com/tKsk9PO.png)
 - [a skyline view of Icenia from Drekamor](https://www.reddit.com/r/CivMC/comments/166dzs2/icenia_city/)
-- [a view of Icenia's stadium complex from x1025](https://i.imgur.com/Mhn4YGZ.jpg)
+- [a view of Yoahtl's stadium complex from x1025](https://i.imgur.com/Mhn4YGZ.jpg)
 - [Mount Augusta's voter tree square from me](https://i.imgur.com/ThkztyI.jpg)
 - [RedDevel's Mehri castle from me](https://i.imgur.com/i8skunr.jpg)
 
