@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
+import {readingTime, stripHTML} from "../../lib/frontPage.ts/frontPageHelpers";
 
 
 export const prerender = true;
@@ -49,6 +50,7 @@ const posts = (await getCollection('extras')).sort(
 							<li>
 								<FormattedDate date={post.data.date} />
 								<a href={`/extras/${post.slug}/`}>{post.data.title}</a>
+								<p class="ml-2 my-0 leading-7 align-middle text-sm text-neutral-500">({readingTime(stripHTML(post.body))})</p>
 							</li>
 						))
 					}
