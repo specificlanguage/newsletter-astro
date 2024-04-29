@@ -1,0 +1,58 @@
+---
+
+---
+import ColoredBlock from "../components/ColoredBlock.astro"
+import Layout from '../layouts/BlogPost.astro';
+
+<Layout
+  title="Ads & Pricing"
+  description="Learn more about the website!"
+  date={new Date('April 27, 2024')}
+  image="/placeholder-about.jpg"
+  body={""}
+>
+
+  ## Adtacular Summer!
+
+  With the rising number of businesses on Civ, I'm opening up advertising space in the newsletter once again for the rest of the summer (or really, until the newsletter ends!) There are generally no restrictions on the ads themselves, with the only exception being **that all ads must be directly related to Civ.** Any ads for non-Civ purposes will be automatically rejected. (I also will not accept IRL money for these ads.)
+
+  This time, the price of the ad will be determined by size:
+
+  <ColoredBlock color="bg-red-200" darkColor="dark:bg-red-950">
+
+    *All payments should be sent to MB Sort Code **HS-7362**.*
+
+    * **Text based ad**: 10d/run (see example below)
+    * *Text must have 250 characters or less*
+    * You can specify the background color you'd like (except Black or White background)
+    * Links allowed, but no pictures
+
+    <ColoredBlock color="bg-yellow-200 text-black" darkColor="dark:bg-yellow:950 text-black" style="flex flex-col py-2 space-y-1 text-black">
+      <span className="py-2 text-black text-2xl">A message from the UNC</span>
+      <span className="text-black">In case anyone is confused, there is a tradition of having BritishWanderer make these posts, since he has the best individual relations with the community. It was likely written by somebody who would have been shat all over had they been the one to actually make the post, and I doubt BritishWanderer even read it before he copypasted it here on their behalf.
+    </span>
+    </ColoredBlock>
+
+    ---
+
+    * **Banner ad**: 12d/run (see example below)
+    * Image size should be of similar ratio to 768x96 (8:1)
+
+    ![](/ads/ad.jpg)
+
+    ---
+
+    * **Full image ad**: 20d/run
+    * Image size should be of similar ratio to 768x324 (2:1)
+
+  </ColoredBlock>
+
+  To run an ad:
+  - Pay at **Sort Code HS-7362**, along with a message containing your ad, either as a link to an image or the ad read itself.
+  - All charges will be due at *[Sunday, 9pm Eastern time](https://time.is/compare/0900PM_05_May_2024_in_New_York)* for the following Monday (e.g. for next week, May 6, all ads are due on May 5, at Sunday, 9pm Eastern). Please check your time zone for proper timings.
+  - If your ad is rejected for any reason, for either Civ-unrelatedness or [violation of content policies](https://www.reddit.com/r/CivMC/wiki/index), you will be refunded 50% of your charge. *This is non-negotiable*.
+
+  As a side effect, this does mean that newsletters will be published **every week** for the next five months for consistency's sake.
+
+  For any questions, please send them to `@specificlanguage` on Discord!
+</Layout>
