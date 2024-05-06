@@ -1,0 +1,354 @@
+---
+title: "CivWiki Newsletter for May 6, 2024"
+date: "May 6 2024"
+image: "2024/griffin-may-2024.png"
+author: "specificlanguage"
+---
+import {QuestionType} from "../../components/types/pollTypes.js";
+import Poll from "../../components/Poll.svelte";
+import ColoredBlock from "../../components/ColoredBlock.astro";
+
+Good morning and happy Monday from New England!
+
+As we enter May 2024, we're closing in on the 2nd anniversary of CivMC (and more importantly, the newsletter!) I once again cannot thank everyone enough for their continued readership of this very stupid thing.
+
+I was reflecting earlier this week in a Pavia chat about how things like this are, while nice things to have, "make the server more interesting/unique and fun." Even though when this goes away communication will be a lot harder to come by, I'm very honored to be a part of Civ's weekly life for the past couple of years, it's really something impressive that this newsletter has hung on for all this time.
+
+That's enough sap talk, I think it's time to get to the news!
+
+---
+
+## Featured
+
+### Featured Image
+
+![](https://i.imgur.com/jO59s6F.jpeg)
+
+For this week's featured image, we're taking a break from building-intensive pictures as we take a look at Griffin's vast flower fields to the west of Adria. Fittingly for spring, the area is filled with roses, lilacs, fields of crops, and small groves, all around a decommissioned aqueduct-now-railroad. It's a lovely render that is probably one of the best areas of landscaping on Civ, a very underappreciated art form in the genre. Great work!
+
+### Featured Article
+
+![](https://static.miraheze.org/civwikiwiki/3/3f/Esi_lighthouse.png)
+
+**The [Lighthouse Accord](https://civwiki.org/wiki/Lighthouse_Accord)** was an agreement between the [Free Danzilonan Republic](https://civwiki.org/wiki/Free_Danzilonan_Republic) and [Mery](https://civwiki.org/wiki/Mery), establishing rights for settlers on islands near Danzilona's territory. The two nations both originated from Danzilonan and [U3P](https://civwiki.org/wiki/U3P)-like roots, particularly in [Civcraft 3.0](https://civwiki.org/wiki/Civcraft_3.0) and [Nova Danzilona](https://civwiki.org/wiki/Nova_Danzilona). Although the two nations were then founded separately, they hoped to charter an agreement that would give rights on its Eastern Shining Isles, and be given both English and Mery names, not unlike a place similar to [Gibraltar](https://en.wikipedia.org/wiki/Gibraltar), for example.
+
+The treaty was initially proposed by [Des23](https://civwiki.org/wiki/Des23) but was withdrawn quickly due to dissatisfaction from the [Church of Ranubis](https://civwiki.org/wiki/Ranubism), however, it was re-proposed and passed soon after. While they allow Mery residency and protection on the isles, they also have promoted Mery culture on the islands as well. Although the accord was passed, FDR relations soured as laws were passed to prevent conflicts of interest within government as well as purging those not aligned with the Ranubian faith. This forced original treaty writer Des23 to emigrate from FDR to Mery. Although Danzilona still exists today, Mery's existence is in a dormant state; the islands are still present but are today uninhabited.
+
+*The Eastern Shining Isles lighthouse, the Lighthouse Accord's namesake.*
+
+<ColoredBlock color="bg-yellow-200" darkColor="dark:bg-yellow-700">
+  *I'm always open for featured article submissions to be put here. Feel free to message me `@specificlanguage` on Discord for any ideas.*
+</ColoredBlock>
+
+---
+
+### This Week Last Year
+
+<ColoredBlock color="bg-red-200" darkColor="dark:bg-red-950">
+
+    On the week of [May 8](/newsletter/newsletter-05-08)...
+
+    - Tensions between [the Cidian Union and Warmia continued following disputes over territorial claims](https://www.reddit.com/r/CivMC/comments/133860e/the_cinian_union_rejects_the_treaty_of_houston/). Oceanstar, the leader of Edius was pearled but was released over the weekend along with pending negotiations. Other parties, [including the Elysian Pact](https://www.reddit.com/r/CivMC/comments/13aoebe/the_situation_between_warmia_and_the_cinian_union/jj7x0c8/) and Mount Augusta, were also involved in defusing the situation.
+    - Sentencing following the "The "That's Nuts!" War" by the SEC [has been controversial for fastestgrass](https://www.reddit.com/r/CivMC/comments/133zub7/sec_pearlssentencing_of_gang_shisec_war/), whom many argue acted under false information which prompted his lengthy pearl sentence.
+    - [The NEST treaty, signed by Nara and Estalia,](https://www.reddit.com/r/CivMC/comments/1366wyq/announcing_the_nest_the_naraestalia_sanctuary/) agreed upon a mutual defense alliance between the two parties.
+    - [Gamertime and JuniorTide have announced the Pavian Stock Exchange.](https://www.reddit.com/r/CivMC/comments/1372lmy/announcing_the_pavian_stock_exchange_apex/)
+    - CivMC created [Twitter/X](https://twitter.com/_Civmc_), [TikTok](https://www.tiktok.com/@_civmc_), [Instagram](https://www.instagram.com/civmcserver/) accounts this past week -- although they are today currently inactive.
+
+</ColoredBlock>
+
+---
+
+<ColoredBlock color="bg-sky-200 text-black" darkColor="dark:bg-sky-950 text-black" style="flex flex-col py-2 space-y-1 text-black">
+    <span className="py-2 text-black dark:text-white text-2xl">This ad has been paid for by SoundTech</span>
+    <span>AdminTown election board voted soundtech most handsome and smart civ player with the best beard (suck it Quanton)</span>
+</ColoredBlock>
+
+*To place an ad here, take a peek at [the information page](/ads).*
+
+---
+
+## The News
+
+![](https://i.imgur.com/ArDBGQr.png)
+
+*A view down GMall and Suramir, Estalia (cr: me!)*
+
+### Server Update
+
+CivMC had a small update this past week, 1.27.0, a quality of life update which included:
+
+- [Updating auth and monitoring templates, and container deployment](https://github.com/CivMC/Civ/pull/481)
+    - This resulted in slightly easier container deployment times, although generally has no effect on gameplay
+- [Fixing factories losing items when full](https://github.com/CivMC/Civ/pull/394) (*from MrJeremyFisher*)
+- [Adding more explicit confirmation when deleting NL group](https://github.com/CivMC/Civ/pull/383) (*from Drekamor*)
+- [Adding `/nllim`, a command that shows invited players on a group](https://github.com/CivMC/Civ/pull/350) (*from MrJeremyFisher*)
+- [Updating /ignorelist to allow clicking of users or groups](https://github.com/CivMC/Civ/pull/404) to copy the un-ignore command (*from Orinnari*)
+- [Fixing chunk meta not saving](https://github.com/CivMC/Civ/pull/391) and [occasional portal falling](https://github.com/CivMC/Civ/pull/386) (*from Okx*)
+
+Admins have also teased the 1.20 update, although [despite their efforts to release it this weekend](https://i.imgur.com/Go4JVI8.png), it didn't show [as had continued issues.](https://i.imgur.com/CDPUy5g.png) Let's hope for next weekend!
+
+### Around the Server
+
+- A [sentencing was released for Gracipie](https://www.reddit.com/r/CivMC/comments/1ciz49a/regarding_gracipie/) after raiding the Temporal Empire.
+    - In general, his sentencing was pretty steep, serving 1 month pearl time within Savaguard and 27 compacted drug brews ([presumably steroids](https://www.reddit.com/r/CivMC/comments/1ciz49a/regarding_gracipie/l2cup4g/))
+    - However, in a complete ironic fashion, Gracipie, who many oldfriends know was Zachtack, [was banned by association after interacting in the Bunkies server](https://i.imgur.com/Z5rLL49.png) with many banned players. (tw: transphobic content)
+    - This being said, the image above is most definitely not worth looking at.
+- Paddington [made a follow-up rant responding to many concerns that SPQR and Volterra had.](https://www.reddit.com/r/CivMC/comments/1ci9cjj/back_by_popular_demand_me/) I'm not summarizing this one, you can take a look at this one yourself, god knows I've had enough mental instability for one week.
+- Monument Bank [released their financial report for April 2024](https://drive.google.com/file/d/10hUQFlD8iMPo58U15wyyQcfqB8sh9U4K/view?usp=sharing), with revenue reaching its highest point in the Bank's history.
+    - Additionally, [Tusk Armory launched an IPO](https://i.imgur.com/FmsK12q.png) with 100 shares (10%) of the company being sold off. The IPO will be continuing until this Wednesday, April 8, so peek in if you can afford the prices!
+    - Furthermore, on Sunday, [Monument Bank also launched a Kallumbia branch run by Sirboss](https://i.imgur.com/KMHIGVF.png).
+    - But that's not all! Monument Bank also announced [shared accounts, branded as Multiplayer Accounts](https://i.imgur.com/dgk9t2E.png). Set up in a similar way to NameLayer groups, it allows multiple people the ability to use commands within the same Bank account.
+- [Transylvania claimed Gensokyo following the latter's inactivity on Civ](https://www.reddit.com/r/CivMC/comments/1cjigqp/general_act_of_the_declaration_of_claim_over/), although the use of the territory would be limited to agriculture purposes.
+    - Gensokyo previously refused to hand [over territory one year ago to the Transylvanians before](https://civwiki.news/newsletter/newsletter-05-15/#borderlines-part-2) due to their conduct on other servers (although it wasn't explicitly stated, this was generally the case when they were finding initial places to settle) -- in a way, this is a little of a comeuppance.
+    - Anyway, [most of the comments were pretty happy that Gensokyo was being taken over by an active nation](https://www.reddit.com/r/CivMC/comments/1cjigqp/general_act_of_the_declaration_of_claim_over/l2g885i/), and Nara were happy to support them within this treaty as well. [Even former enemies were pretty hopeful for their success.](https://www.reddit.com/r/CivMC/comments/1cjigqp/general_act_of_the_declaration_of_claim_over/)
+- [Transylvania also signed a Non-Alliance Pact with Eldoria](https://www.reddit.com/r/CivMC/comments/1chwpgu/eldoria_and_transylvania_nap/), a nation run by Dark_FFC, committing to peaceful relations and pearl extradition.
+- [Meenos was pearled by Ibis in the nether](https://i.imgur.com/FOm67Ct.png).
+    - Meenos believes that Ibis was under orders of Moria to pearl him in an effort to prevent ASN intervention and "monopolize the Nether", as [their primary business is within Nether-based resources.](https://i.imgur.com/KxYgWii.png)
+    - After a six-hour rescue operation from the ASN, his pearl was freed.
+    - This is a continued reminder that for your own protection, you should be friendly pearled within the nether for your own safety.
+- [The Lyrean Commonwealth was happy to announce Lambat's entry into the organization](https://i.imgur.com/wu5Rwn5.png), and announced their commitment to maintaining the lands in the territory due to the significant amount of heritage they contributed to the Civ genre.
+- [BeeBoo3670 was elected as Tribune of SPQR](https://i.imgur.com/tjlgGx2.png) from what looked like a close race, with unique strategies being employed by all candidates. BeeBoo [released a thank-you video for all those who voted for them](https://www.reddit.com/r/CivMC/comments/1ci7s93/spqr_has_a_new_tribune_in_town/).
+- [Icenia elected its Senate for May, which required a tiebreaker between Raeders and august](https://i.imgur.com/78JuK7q.png) -- although surprisingly, President ChrisChrispie almost sneaked into this runoff election with the commitment that "I would start playing again" with 10 votes
+- Frosty [was elected as Withervale's newest Senator](https://i.imgur.com/w3cOorq.png), as well as the 6th seat of the Withervale Council! We look forward to his efforts in the senate, and to another senator election in the near future as Withervale continues to grow.
+- Pacem [announced the establishment of their new Post Office](https://i.imgur.com/7YJYFQB.png), set to "revolutionize the way mail is handled and delivered in Pacem."
+
+### Metagame Highlights
+
+- An announcement was made by the admins this week that [the Veinfriend mod did not follow the server's rules](https://i.imgur.com/LqSH6Ow.png).
+    - For those unaware of the Veinfriend mod, [this was a mod that was in development by Sheeve_](https://i.imgur.com/4cGRXAV.png) and was only being handed out to select individuals.
+        - It made diamond vein excavation easier by highlighting previously found ores within a vein and those that were in their area to be checked, which made mining considerably easier and less time consuming to visualize, but reading the block's position was not allowed.
+        - However, the main point was that it *stored diamond veins on a server* for later preservation and extraction.
+    - [Admins argued](https://i.imgur.com/fBodO4n.png) that the graphical and block-reading modifications [did violate their rules](https://i.imgur.com/2vA2IVp.png), specifically the rule on "Reading environmental data is not allowed, *This includes the location of blocks...*".
+    - Players correctly pointed out that [Litematica being allowed is an exception to this rule;](https://i.imgur.com/nkkfCSr.png) although some have misinterpreted it as being wholesale allowed whereas it is only allowed for non-infrastructure purposes, namely vanity builds (like many you see on this newsletter).
+    - To clarify the rule further, [admins released an updated ruling on the Litematica rule](https://i.imgur.com/Bt4w5kz.png), which only further clarifies the legitimate use of Litematica. It also surprises me to say how many people don't realize that *NOTHING HAS CHANGED*.
+    - Motoko [has made a similar script](https://github.com/VastInfiniteNet/JsMacros-for-CivMc-and-profit/blob/master/HUD/oreCube.js) that manually just draws a cube above your head, which is just reading the player's position.
+    - Anyway, [the debate in #community-support on this is pretty terrible and sounds like MtA rules-lawyering, so I'd like to move on from this](https://i.imgur.com/X3ghzNg.png)
+- Owain quietly announced that [some players have picked up CivReign's development](https://i.imgur.com/c9XTxax.png) and hope to release it under the same name in the future.
+- CivCubed [has moved development over to 1.20.5](https://i.imgur.com/snsQsFa.png) and kickstarted development once again, including new features involving bundles and fingerprints.
+- CivMC also had an enigmatic announcement on whether to pick [heads or tails...](https://i.imgur.com/HPJKpMA.png)
+- **A rare CivWiki update from me:** [Talk pages now are way easier to navigate and read](https://i.imgur.com/pDIB7jS.png) which should make discussions on the CivWiki (and not the discord) way easier than before.
+
+---
+
+<ColoredBlock color="bg-red-200 text-black" darkColor="dark:bg-red-950 text-black" style="flex flex-col py-2 space-y-1 text-black">
+    <span className="py-2 text-black dark:text-white text-2xl">A message from Lowball Luxuries</span>
+    <span>Hello I am Highroll, and my partner Invader and I are proud to announce the opening of Lowball Luxuries in the nation of Pavia at 722 -3091, grab some of our 20d netherite repair pics and more! Go to the discord to see all the products we offer!</span>
+    <span>[https://discord.gg/GnDNHQC9](https://discord.gg/GnDNHQC9)</span>
+</ColoredBlock>
+
+*To place an ad here, take a peek at [the information page](/ads).*
+
+---
+
+## The Fun Stuff
+
+![](https://i.imgur.com/pKFyBLZ.jpeg)
+
+*Chalstone Palace, on the islands of Lucassio (cr: Gobblin)*
+
+### Builds
+
+For those who think that these can't be built with Litematica... well of course we had to, do you think we're morons?
+
+- Another magnificent build in Pavia [comes in the form of Chalstone Palace from Gobblin & company](https://i.imgur.com/pKFyBLZ.jpeg). Really fantastic and is an excellent display of their seasoned building techniques.
+- [Griffin fields were featured this week](https://i.imgur.com/jO59s6F.jpeg), but can I also [interest you in a few hot air balloons?](https://i.imgur.com/JYSD5mb.png) (cr: Seekinq)
+- [This is a GMall screenshot I've been saving for a few weeks](https://i.imgur.com/ArDBGQr.png), but I don't think screenshots are as good as this seems in person. It's so big and vibrant that it'll show so much better in person. (cr: specificlanguage)
+- [Here is Transylvania's cathedral](https://i.imgur.com/Yzsrvru.png) which, in my opinion, looks closer to Macy's flagship store in New York -- although I entirely know that the only people that are looking at this are Transylvanians that Ctrl-F'd their way here.
+- [I truly think that Winterbourne looks so much better at night than in the daytime](https://i.imgur.com/kzCnspg.png) (cr: Princess_Bow)
+- For several weeks, [phobitica's been on a world tour and Pacem was photographed a few weeks ago](https://i.imgur.com/gMq0jHg.png)! I may have used it recently but it's so good I have no choice.
+- I did mention earlier that Pacem's Post Office [got established, but has anyone actually seen the size of this thing?](https://i.imgur.com/blEy92D.png) These guys have got a huge... skyscraper...
+- With new builds resuming in Kallumbia, [it's great to see that the bank has some great architecture](https://i.imgur.com/2QYmsY4.png) (cr: Sirboss01)
+- Dango Avenue [is an area in the old city of Shiroyama](https://i.imgur.com/lYW3GlE.png) that has some wonderful outdoor decor... (cr: Bronnakus)
+
+### Cool Content
+
+- ...[which was great enough to become a picturesque postcard!](https://www.reddit.com/r/CivMC/comments/1ck8jhq/nara_postcard_dango_ave/) (cr: Koojikii)
+- [Not to mention a great review of Shiroyama & the area from Aiounnae Kael](https://www.reddit.com/r/CivMC/comments/1ck1t5u/in_praise_of_a_city_a_fishes_shiroyama_tour/)
+- Ok, it's an ad you're going to see later but the [production quality on the Head Depot is actually so good](https://i.imgur.com/UK3mYMl.png) and deserves real appreciation (cr: HurinThalion)
+
+### Memes
+
+- [I never should have doubted Sirboss memes, especially when they're about the K0mmi situation](https://www.reddit.com/r/CivMC/comments/1cgrs31/a_chimp_with_a_machine_gun/)
+- Claiming [a territory](https://www.reddit.com/r/CivMC/comments/1chp1xf/new_territory_claim/), on [top of someone else's claim](https://www.reddit.com/r/CivMC/comments/1ci06fg/new_territory_claim/), on [top of someone else's claim](https://www.reddit.com/r/CivMC/comments/1cicnrf/new_territory_claim/) is such an F tier joke that it's not actually funny at all
+- [something about stomach issues?](https://i.imgur.com/GNEPERK.png) I just stole this from Icenia's resident chat because the picture is funny
+- [Imagine being a stupid idiot falling for such an obvious trap](https://www.reddit.com/r/CivMC/comments/1ck50zv/gang_shis_last_surprise/)
+- Only true Septembrians [remember that this is actually the Tophloon Walled City schematic](https://www.reddit.com/r/CivMC/comments/1cidg4t/chat_i_cant_believe_icenia_is_hiding_this_from_us/)
+- [Ibis? More like... I pissed my pants trying to think of an original joke](https://www.reddit.com/r/CivMC/comments/1ciizq3/oh_boy_time_to_grief_the_nether_says_chudbis_as/)
+- [This is how I spend my Friday nights](https://www.reddit.com/r/CivMC/comments/1cjh5bh/how_are_we_doing_today_civmc_communitysupport/)
+- ["Yes officer, I am sorry for murder and I am asking the victim for forgiveness"](https://www.reddit.com/r/CivMC/comments/1cjnbqd/serious_apology_to_chris_chrispie/) has the same energy as [Scott the Woz](https://www.youtube.com/watch?v=x31rjxZCw_k&t=0s)
+- [There is no way in hell ProgrammerDan or Bonkill would make Devoted 3 on a spaceship 10 light years away from earth](https://www.reddit.com/r/CivMC/comments/1cjtopd/serious_thoughts_on_current_affiars/)
+- [Clearly there is a lone, single basketball fan in the building](https://www.reddit.com/r/CivMC/comments/1cl4gkr/good_job_squid_good_job/)
+- I can't believe I'm saying this, [but Ghas News might be around by the time I'm out](https://www.reddit.com/r/CivMC/comments/1ck7lp1/ghas_news/)
+
+### Non-Civ Content
+
+- totally [not me working on a baseball thing](https://speclang-pickem-dev.netlify.app)
+
+Now that that's out of the way, here's a very specifically music-themed non-civ content this week. Consider this a choose-your-own-adventure "post theme" for the next section?
+
+- I've been a fan of the band Justice for years and they've recently [released a new album *Hyperdrama*](https://open.spotify.com/album/6ooBxhsOVedpX4zPTCyL86?si=9qnwDR7zRLmjUafs8UOanA) -- blending a lot of the style of their newer disco stuff with the harsh sounds they're known for.
+- For the very small venn diagram section that consists of lesbians and rhythm game players, [here's a heaven studio mix of HOT TO GO!](https://www.youtube.com/watch?v=_b6XKn1WUFM)
+- Full disclaimer: I am not a rap fan or follow any of the Drake/Kendrick drama, but for the other small venn diagram section of rap fans and Civ players, [I just find it funny that Not Like Us is already in the clubs lmao](https://www.reddit.com/r/KendrickLamar/comments/1ckn51f/they_already_playing_they_not_like_us_in_the_club/)
+- Did you know that for every Hearthstone expansion, they make brand-new board themes? For their (somewhat) recent Western expansion, [there's a great homage to Western scores a la Ennio Morricone that is just fun to listen to](https://www.youtube.com/watch?v=-jPR3IhKpNc)
+- Well, if for some reason you didn't fall into any of the venn diagrams above, [did you want to see something silly anyway](https://www.youtube.com/watch?v=cxUKAPh42Vs)
+
+---
+
+<ColoredBlock color="bg-blue-200 text-black" darkColor="dark:bg-blue-950 text-black" style="flex flex-col py-2 space-y-1 text-black">
+    <span className="py-2 text-black dark:text-white text-2xl">Deposit via Monument Bank branch (Pavia)!</span>
+    <span>Open your Monument Bank account today with NO initial deposit required! Earn interest, transfer funds to over 230 other civvas, with no fees. Bank with any our branches in Pavia, IF, Nara, Volterra, Icenia & Baile.</span>
+    <span>https://discord.gg/civpavia</span>
+</ColoredBlock>
+
+*To place an ad here, take a peek at [the information page](/ads).*
+
+---
+
+## Poll of the Week
+
+![](https://i.imgur.com/gMq0jHg.png)
+
+*Pacem's Town Square, taken while kissing in front of the Hot Dog Truck (cr: phobitica)*
+
+Last week, we had **69 responses** (nice).
+
+### World Wonders, Part 3
+
+I don't want to bore you with world wonder introductions, but here's last week's results for that...
+
+![](https://i.imgur.com/HenbEgM.png)
+
+Predictably, Pavia and Estalia come up big with their great builds, but one that surprised me is Develhof falling short... apparently, not enough people have visited it to be cool enough in most people's eyes. Sorry RedDevel.
+
+Here's what it looks like for all the wonders we've seen so far.
+
+![](https://i.imgur.com/x8Z1oqy.png)
+
+In future weeks, I'll probably only keep the top 10 from previous weeks.
+
+---
+
+### Do You Feel Heard?
+
+This was a question sourced [from a Topaz poll](https://www.reddit.com/r/CivMC/comments/vkp0zp/national_participation_survey_results/) from earlier on in the server. However, I'm somehow lost the link to the poll so I'll find it later in my editing process if I somehow find it again.
+
+![](https://i.imgur.com/pmgCnWN.png)
+
+I don't want to dive too much into analysis on here but I do think part of the reason for this is because of the slightly cliquey and group-centric nature of Civ. Now, whether that's the case, that's up to you to decide!
+
+---
+
+### AI???
+
+The last question was an open response on **whether AI could possibly play Civ.** This was a question I pulled out of my ass and is really closer to a thought experiment.
+
+Among some interesting responses included...
+
+> Define ‘play’
+> Definitely, but under the current rules it'll never be able to.
+
+Of course, in any realistic state this scenario is generally impossible. But this sounds like a Squareblob spiral that could be so bad it wraps around to being at least sort of good, which is why I asked. Now onto the real responses...
+
+> It could but in terms of socializing and nuance regarding claims it could be difficult to have it distinguish between unclaimed resources and areas to remain outside of.
+
+> Civ is a lot of different things- do you want a builder, resource trader, politician, PvPer, etc? You might be able to teach an AI to do some of the more basic tasks, but trying to get an AI with the ability for long-term strategy and cohesive design seems a little impractical
+
+> No, because it’s well known by now that real creativity isn’t something AI can provide. Civ is about enjoying exactly that creativity or you could even call it freedom in game wise.
+
+> I feel this question isn't appropriate yet, or at least the answer is easily determinable. In short, No. AI is advancing at an incredible rate but is nowhere near the level it needs to properly play civ.
+
+This question was deliberately vague, although these responses seem fair. I know people like Owain_X have been experimenting with AI recently, and it wouldn't be far-fetched to say that there could be a player on Civ that could reasonably mimic `#general` chat, or more appropriately `#community_support`.
+
+In-game though, that's a much different beast, as you need it to conform to a playstyle. While AI can reasonably play Minecraft, the nuances of Civ are so drastic compared to Vanilla that it would take a major adaptation for an AI to do something that would be closer to Civ, since it's not about beating the game, it's about creativity. I think all of these points hit the nail on the head, and my Philosophy major friends would be interested in these responses.
+
+---
+
+### Vote Now!
+
+This is Wonders seed #4 out of 9. Remember, if you don't see something you consider your "wonder" now, there's still five more to go!
+
+<ColoredBlock color="bg-sky-200" darkColor="dark:bg-sky-950">
+  <Poll client:load submitURL={"/newsletter-04-22-2024"} questions={[
+      {
+        questionID: "wonders4",
+        question: "Which of these places do you consider as world wonders?",
+        options: [
+          "Olympic Area, Yoahtl",
+          "Adria, Griffin",
+          "Jah Park (and surrounding buildings), Icenia",
+          "Tricon Building, Commonwealth",
+          "Lusitania City",
+          "Gensokyo City",
+          "The Notch Face, Derzavia",
+        ],
+        type: QuestionType.Checkboxes,
+        useOther: false,
+        required: false
+      },
+      {
+        questionID: "dead_nation_impact",
+        question: "Of these inactive nations, which ones do you think had the most potential or impact on the Civ genre?",
+        type: QuestionType.Checkboxes,
+        options: [
+            "Gang Shi",
+            "Rhode Island",
+            "Arsenio Pact/Eddie Murphy",
+            "Butternut",
+            "Cortesia Del Mar",
+            "Gensokyo",
+            "Lusitania",
+        ],
+        useOther: false,
+        required: false
+      },
+      {
+        questionID: "nation_rep",
+        question: "Do you think nation reputation actually matters? Why or why not?",
+        type: QuestionType.OpenResponse,
+        useOther: false,
+        required: false,
+      },
+    ]
+  }/>
+</ColoredBlock>
+
+---
+
+![](https://i.imgur.com/UK3mYMl.png)
+
+*To place an ad here, take a peek at [the information page](/ads).*
+
+---
+
+## It's May Again? Cry for Help
+
+![](https://i.redd.it/96bzskmopgyc1.png)
+
+*A postcard of Dango Avenue, Shiroyama from Koojikii & Bronnakus.*
+
+Something funny about the timing: if my math is correct, the second anniversary of the newsletter is coming up very soon (May 18th). This does also mean that the second anniversary of CivMC is also coming up soon which is kinda cool, isn't it?
+
+(For those curious, my back of the hand calculations also say that this is the 80th newsletter so far, with the 69th newsletter being unremarkably [February 12th, 2024](https://civwiki.news/newsletter/newsletter-02-12-2024))
+
+Thanks to everyone who contributed and answered a few questions including Owain_X, ziuam8847, Hurin_Thalion, SoundTech, RedDevel, Xcios, BritishWanderer, meenos and whoever else I talked to this week for information!
+
+For those who are looking to contribute to the newsletter:
+
+<ColoredBlock color="bg-yellow-200" darkColor="dark:bg-yellow-800">
+    - If you want to advertise your own businesses with pictures or the texts above, [send some ads over!](/ads)
+    - If you want to help write **in any capacity, (whether or not I've reached out to you already)**, let me know at `@specificlanguage` on Discord. I might be busy and not be able to assign anything to you, but I kind of want a new headcount to see what the future of the news looks like.
+</ColoredBlock>
+
+With that, I believe that's all I wanted to say. What a big week this was, and what a week it'll be next week. Until next time, everyone!
+
+---
+
+[***EDIT CIVWIKI***](https://civwiki.org)
+
+---
+
+- [**< < < Last week's newsletter (April 29)**](/newsletter/newsletter-04-29-2024)
+- Suggest a featured article to `@specificlanguage` on Discord!
+- [Submit an ad](/ads) for the newsletter!
+- [View and post comments on r/CivWiki](https://reddit.com/r/civwiki)
+- [View a shortened version of this newsletter on CivWiki](https://civwiki.org/wiki/CivWiki:Features)
