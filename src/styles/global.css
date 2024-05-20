@@ -40,7 +40,11 @@ h6,
 strong,
 b {
 	color: #333;
-	@apply dark:text-neutral-100 font-black;
+	@apply dark:text-neutral-100 font-bold;
+}
+
+b, strong {
+	@apply font-bold
 }
 
 main p {
@@ -100,9 +104,9 @@ pre {
 	@apply p-1;
 }
 pre > code {
-
 	all: unset;
 }
+
 blockquote {
 	color: #222;
 	padding: 2px 20px 2px 20px;

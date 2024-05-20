@@ -48,12 +48,12 @@
         {/each}
     {:else if question.type === QuestionType.ShortResponse}
         <div class="h-fit m-1">
-            <input type="text" name={question.questionID} placeholder="Type here..."
+            <input type="text" name={question.questionID} placeholder="Type here...  (but you don't have to!)"
             class="rounded-md ml-1 p-1 w-1/2 text-black text-lg border-4 border-transparent"/>
         </div>
     {:else }
         <div class="h-fit m-1">
-            <textarea name={question.questionID} placeholder="Type some answer here..."
+            <textarea name={question.questionID} placeholder="Type some answer here... (but you don't have to!)"
             class="rounded-md p-1 w-3/4 text-black text-lg border-4 border-transparent"></textarea>
         </div>
     {/if}
