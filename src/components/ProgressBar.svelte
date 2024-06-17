@@ -11,7 +11,6 @@
     }
 
     onMount(() => {
-        console.log("hello");
         progress = Math.round(calcProgress());
         document.onscroll = () => {
             progress = Math.round(calcProgress());
