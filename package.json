@@ -18,6 +18,7 @@
     "@neondatabase/serverless": "^0.4.26",
     "@types/node": "^20.12.7",
     "astro": "^4.10.2",
+    "date-fns": "^3.6.0",
     "rehype-external-links": "^3.0.0",
     "svelte": "^4.2.15",
     "tailwindcss": "^3.4.3",

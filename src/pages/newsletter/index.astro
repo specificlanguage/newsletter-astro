@@ -4,15 +4,34 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
+import {startOfMonth, format, parseISO} from 'date-fns';
 import FormattedDate from '../../components/FormattedDate.astro';
 import {readingTime, stripHTML} from "../../lib/frontPage.ts/frontPageHelpers";
 
 
 export const prerender = true;
 
-const posts = (await getCollection('newsletter')).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
+const posts = (await getCollection('newsletter'))
+
+// Print all dates of posts
+
+// Group objects by month in an object
+let groups = new Map();
+posts.forEach((post) => {
+	const monthStart = startOfMonth(post.data.date);
+	const key = format(monthStart, "yyyy-MM");
+	if (!groups.has(key)) {
+		groups.set(key, { display: format(monthStart, "MMMM yyyy"), posts: []});
+	}
+	groups.get(key).posts.push(post);
+	return groups;
+});
+
+// Sort groups by month from newest to oldest
+groups.forEach((group) => {
+	group.posts.sort((a, b) => b.data.date - a.data.date);
+});
+
 ---
 
 <!DOCTYPE html>
@@ -44,16 +63,29 @@ const posts = (await getCollection('newsletter')).sort(
 		<main>
 			<p><i>This page has every newsletter, ever.</i></p>
 			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<FormattedDate date={post.data.date} />
-								<a href={`/newsletter/${post.slug}/`}>{post.data.title}</a>
-								<p class="ml-2 my-0 leading-7 align-middle text-sm text-neutral-500">({readingTime(stripHTML(post.body))})</p>
-							</li>
-						))
-					}
+					{Array.from(groups.entries()).sort().reverse().map(([key, group]) => (
+						<div class="flex justify-between">
+							<h2 class="my-0.5">{group.display}</h2>
+							<a class="place-content-center" href="#">Back to top</a>
+						</div>
+
+						<ul>
+							{group.posts.map((post) => (
+								<li class="flex justify-start space-x-1">
+									<FormattedDate date={post.data.date} />
+									<a href={`/newsletter/${post.slug}/`}>{post.data.title}</a>
+									<p class="pl-2 my-0 leading-7 text-sm text-neutral-500">({readingTime(stripHTML(post.body))})</p>
+								</li>
+							))}
+						</ul>
+					))}
+								<!--{group.posts.map((post) => (-->
+								<!--	<li>-->
+								<!--		<FormattedDate date={post.data.date} />-->
+								<!--		<a href={`/newsletter/${post.slug}/`}>{post.data.title}</a>-->
+								<!--		<p class="ml-2 my-0 leading-7 align-middle text-sm text-neutral-500">({readingTime(stripHTML(post.body))})</p>-->
+								<!--	</li>-->
+								<!--))}-->
 				</ul>
 			</section>
 		</main>
