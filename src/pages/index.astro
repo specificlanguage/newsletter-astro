@@ -5,9 +5,9 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection, } from 'astro:content';
 import FormattedDate from "../components/FormattedDate.astro";
-import {readingTime, stripHTML} from "../lib/frontPage.ts/frontPageHelpers";
+import {getNewsletterCollection, readingTime, stripHTML} from "../lib/frontPageHelpers";
 
-const newsletterPages = (await getCollection("newsletter"));
+const newsletterPages = await getNewsletterCollection()
 newsletterPages.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const pages = newsletterPages.slice(0, 5);
 
