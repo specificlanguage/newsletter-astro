@@ -4,7 +4,17 @@ date: "Jan 13 2025"
 image: "aerosenchantedcity.png"
 author: "specificlanguage"
 ---
+import {getEntry} from "astro:content";
+import FeatureLink from "../../../../components/magazine/FeatureLink.svelte";
+import NavigationLinks from "../../../../components/magazine/NavigationLinks.svelte";
+import order from "../../../../lib/order/2025-01.json";
 
 This is a temporary index page that will act as the homepage for the newsmagazine, with each section having different subpages associated with it.
 
-[test subpage](/newsletter/2025/01/test)
+<FeatureLink
+  feature={await getEntry('newsletter', '2025/01/test')}
+  arrowDirection="right"
+/>
+
+<NavigationLinks featureRight={await getEntry('newsletter', '2025/01/test')}/>
+

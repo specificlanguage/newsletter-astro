@@ -1,10 +1,13 @@
 ---
-title: "CivWiki Test"
+title: "The Royals"
 date: "Jan 13 2025"
 image: "aerosenchantedcity.png"
-author: "specificlanguage"
+author: "ArtificialDriver"
+description: "A regular, light-hearted column relating Royal happenings in the UK to happenings on Civ."
 ---
+import {getEntry} from "astro:content";
+import NavigationLinks from "../../../../components/magazine/NavigationLinks.svelte";
 
 This is a temporary test page that is a subpage of the entire magazine, with each section linking to it.
 
-[return back](/newsletter/2025/01/)
+<NavigationLinks featureLeft={await getEntry('newsletter', '2025/01')}/>
