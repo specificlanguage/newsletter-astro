@@ -1,0 +1,11 @@
+---
+title: "Interesting & Unheard of News"
+date: "Jan 13 2025"
+image: "2024/pavia-jul-2024.jpeg"
+author: "ToonySR"
+description: "News that might have flown under the radar! From ToonySR."
+---
+import {getEntry} from "astro:content";
+import NavigationLinks from "../../../../components/magazine/NavigationLinks.svelte";
+
+<NavigationLinks featureLeft={await getEntry('newsletter', '2025/01')}/>

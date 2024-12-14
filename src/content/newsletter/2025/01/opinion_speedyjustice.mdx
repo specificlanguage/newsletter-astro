@@ -1,0 +1,13 @@
+---
+title: "The Patriot's Corner"
+date: "Jan 13 2025"
+image: "iceniasep2023.png"
+author: "SpeedyJustice"
+description: "Some thoughts from SpeedyJustice about what's happening around Civ."
+---
+import {getEntry} from "astro:content";
+import NavigationLinks from "../../../../components/magazine/NavigationLinks.svelte";
+
+This is a temporary test page that is a subpage of the entire magazine, with each section linking to it.
+
+<NavigationLinks featureLeft={await getEntry('newsletter', '2025/01')}/>

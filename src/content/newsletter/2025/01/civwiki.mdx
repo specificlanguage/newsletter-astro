@@ -1,0 +1,11 @@
+---
+title: "What's on the CivWiki"
+date: "Jan 13 2025"
+image: "2024/pavia-jul-2024.jpeg"
+author: "specificlanguage & tybug"
+description: "Highlights that you'll find on the CivWiki this month!"
+---
+import {getEntry} from "astro:content";
+import NavigationLinks from "../../../../components/magazine/NavigationLinks.svelte";
+
+<NavigationLinks featureLeft={await getEntry('newsletter', '2025/01')}/>

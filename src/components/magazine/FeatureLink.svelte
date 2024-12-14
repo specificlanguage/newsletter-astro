@@ -8,6 +8,7 @@
 
 <a class={
         "rounded-3xl my-1 px-4 py-0.5 h-52 md:h-40 flex " +
+        "dark:bg-neutral-700 bg-neutral-200 " +
         "border-2 border-neutral-500 " +
         "text-neutral-600 dark:text-neutral-400 " +
         "hover:bg-gray-400 dark:hover:bg-gray-700 "

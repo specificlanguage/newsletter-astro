@@ -25,13 +25,13 @@ const maxPages = Math.ceil(newsletterPages.length / 5);
 		<main>
 			{pages.map((entry) => (
 				<div class="mb-10">
-					<a href={"newsletter/" + entry.slug}><img src={"/" + entry.data.image}/></a>
+					<a href={"newsletter/" + entry.slug}><img src={entry.data.image.startsWith("https") ? entry.data.image : "/" + entry.data.image}/></a>
 					<a href={"newsletter/" + entry.slug}><h2 class="-mb-2 font-extrabold font-headings">{entry.data.title}</h2></a>
 					<p class="-mb-1 dark:text-neutral-400 text-neutral-700">{stripHTML(entry.body).slice(0, 450)}...</p>
 					<div class="flow-root space-x-5 text-neutral-800 dark:text-neutral-200 ">
-						<p class="text-sm font-sans-serif float-left">
+						{entry.slug.startsWith("newsletter") ? <p class="text-sm font-sans-serif float-left">
 							<i class="fa-regular fa-clock"/>{" "}{readingTime(stripHTML(entry.body))}
-						</p>
+						</p> : null}
 						<p class="text-sm font-sans-serif float-left">
 							<i class="fa-regular fa-calendar"/>{" "}<FormattedDate date={entry.data.date}/>
 						</p>
