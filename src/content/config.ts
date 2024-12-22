@@ -33,6 +33,7 @@ const extras = defineCollection({
 			.transform((val) => new Date(val)),
 		author: z.string(),
 		image: z.string().optional(),
+		description: z.string().optional()
 	}),
 });
 

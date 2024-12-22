@@ -2,6 +2,8 @@
 title: "Civflection: Journalism on Civ"
 date: "Dec 23 2024"
 author: "Pandastical"
+image: "https://i.imgur.com/d8vmlNI.jpeg"
+description: "The newsletter is going away, even though it's staying. What other journalism is on Civ?"
 ---
 
 The CivWiki Newsletter is more than just a newsletter. Really, it’s a serverwide institution. The longevity of the newsletter, and the official backing of the permanent CivWiki organization, has given it a level of reliability and community-trust that no other product offers. Nations and players come and go. But the newsletter has always been there each week to recount those comings-and-goings.
@@ -14,7 +16,7 @@ But of course, just like the NYT isn’t the only newspaper, the newsletter isn�
 
 ---
 
-The first one I want to discuss is the Bedford Herald, which represents probably the most common form of newspaper in Civ, being the national paper. National papers are papers run by, and primarily intended for, domestic consumption. That’s not to say they don’t include international affairs or are hidden from the international community. Rather, they are primarily centered around their own community, with international affairs being the bonus. I myself ran one once on CivReigns called the Laurentian Dispatch, so I feel I know a thing or two about this model.
+The first one I want to discuss is the [Bedford Herald](https://www.reddit.com/r/CivPavia/comments/1h6f95k/the_bedford_herald_1222024/), which represents probably the most common form of newspaper in Civ, being the national paper. National papers are papers run by, and primarily intended for, domestic consumption. That’s not to say they don’t include international affairs or are hidden from the international community. Rather, they are primarily centered around their own community, with international affairs being the bonus. I myself ran one once on CivReigns called the [Laurentian Dispatch](https://sites.google.com/view/thelaurentiandispatch/home), so I feel I know a thing or two about this model.
 
 The strengths of the national model are obvious. By giving the community its own explicitly national publication, they have a distinct source for national news, reporting, and just a distinct communal product they can point to and share. You read about your compatriot’s builds, about elections, about your own government. It’s an invaluable product for that country’s community, providing a perfect chance for participation and a place for anyone to reach the broader community.
 
@@ -22,7 +24,7 @@ But, just like it serves as a product for the community, a newspaper also reflec
 
 ---
 
-The Bedford Herald is a pretty traditional version of one, particularly in the way it's made. It is made to look like an actual newspaper, and has great production quality in that regard. However, another form of Civ Journalism can be found in the Diamond Chronicler. This newspaper is similar in more-or-less being a national model, focused on the Imperial Federation. Its news output has been so valuable that it has been used in court trials. However, it is the template that's particularly interesting.
+The Bedford Herald is a pretty traditional version of one, particularly in the way it's made. It is made to look like an actual newspaper, and has great production quality in that regard. However, another form of Civ Journalism can be found in the [Diamond Chronicler](https://discord.gg/gBxFUTpV68). This newspaper is similar in more-or-less being a national model, focused on the Imperial Federation. Its news output has been so valuable that it has been used in court trials. However, it is the template that's particularly interesting.
 
 Rather than looking like a real newspaper, the DC is a completely discord-only newspaper. The news comes through Discord announcements, they’ve held interviews on discord; the whole nine yards. While it's certainly less flashy and visually impressive compared to the real newspaper organization, the simplicity makes it easy to update and arrange. No time has to be spent on making it look pretty; its straight text directly delivered through the Discord.
 
@@ -34,10 +36,14 @@ Still, the Discord newspaper format has proven effective for the DC, and I suspe
 
 ---
 
-Another really interesting development has been the AP Media Company. The Alenarith Protectorate had already been hosting Icenian Senate Debates before this company was announced. But they consolidated a bit and made it official by funding this new venture, which plans to pay reporters/writers from across the server to write on current events. Of particular interest are some possible audio/visual productions. I’m specifically reminded of the old ‘ANN News’ that Owain_X did on CivClassics. Something like that, being part comedic, part informative, would be really cool to see.
+Another really interesting development has been the [AP Media Company](https://www.reddit.com/r/CivMC/comments/1hh9r4k/announcing_the_ap_media_company/). The Alenarith Protectorate had already been hosting Icenian Senate Debates before this company was announced. But they consolidated a bit and made it official by funding this new venture, which plans to pay reporters/writers from across the server to write on current events. Of particular interest are some possible audio/visual productions. I’m specifically reminded of the old ‘[ANN News](https://www.youtube.com/watch?v=qeL3gSSun9E&list=PLKYxhk4xmOr-4Gs2NgQpbV3GXtlKyPyxX)’ that Owain_X did on CivClassics. Something like that, being part comedic, part informative, would be really cool to see.
 
-While it isn’t journalism, I have to mention talk tuah CivTalk, the new podcast that just launched. As of writing this, they’ve only released one episode. But I think it has a lot of potential. Civ has always been a server of personal ambitions, ideas, and relationships. A podcast to tell those stories has limitless potential, considering how many kooky characters this genre has spawned.
+While it isn’t journalism, I have to mention talk tuah [CivTalk](https://www.reddit.com/r/CivMC/comments/1hfukft/civtalk_pilot_episode/), the new podcast that just launched. As of writing this, they’ve only released one episode. But I think it has a lot of potential. Civ has always been a server of personal ambitions, ideas, and relationships. A podcast to tell those stories has limitless potential, considering how many kooky characters this genre has spawned.
 
 So, in the end? I think that the future of CivMC journalism is actually looking quite bright. Although the newsletter is changing, it remains a consistent fixture for the community. Meanwhile, a number of new outlets and publications have sprung up, all with different focuses and ideas. Where each of these go remains to be seen; Civ newspapers have a trend of experiencing burnout and stopping, unfortunately. But hopefully, all of these have bright futures ahead!
 
-*Pandastical is a Civ player who has played since CivUniverse, primarily in the nations of Acadia and the Imperial Federation. Recently, he’s gotten interested in researching Civ history. His Discord is @mat_civ, and his reddit is u/Sea-Discipline-6113.*
+---
+
+*[Pandastical](https://civwiki.org/wiki/Pandastical) is a Civ player who has played since CivUniverse, primarily in the nations of Acadia and the Imperial Federation. Recently, he’s gotten interested in researching Civ history. His Discord is @mat_civ, and his reddit is u/Sea-Discipline-6113.*
+
+*[If you'd like to return back to this week's newsletter, click here!](https://civwiki.news/newsletter/newsletter-12-24-2024)*

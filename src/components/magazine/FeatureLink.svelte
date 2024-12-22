@@ -2,7 +2,21 @@
 
   import type {CollectionEntry} from "astro:content";
 
-  export let feature: CollectionEntry<"newsletter">;
+  export let feature: CollectionEntry<"newsletter" | "extras">;
+
+  const img_url = feature.data.image ? (
+      feature.data.image.startsWith("https") ? feature.data.image : "/" + feature.data.image
+  ) : "/collage-2.png"
+
+  // const img_url = feature.data.image ? ("/" + feature.data.image() => (
+  //     if (feature.data.image?.startsWith("https://")){
+  //         return ""
+  //     } else if (feature.data.image) {
+  //         return "/" + feature.data.image;
+  //     } else {
+  //         return "/collage-2.png" // I'm just redirecting to something that works.
+  //     }
+  // )
 
 </script>
 
@@ -22,8 +36,8 @@
             <p class="m-0 text-sm">{feature.data.author}</p>
             <p class="my-2 text-base">{feature.data.description}</p>
         </div>
-        <div class="w-1/2 md:w-1/3 flex">
-            <img src={"/" + feature.data.image} class="m-auto"/>
+        <div class="w-1/2 md:w-1/3 p-4 flex">
+            <img src={img_url} class="w-full h-full"/>
         </div>
     </div>
 
