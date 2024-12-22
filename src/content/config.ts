@@ -16,7 +16,8 @@ const newsletter = defineCollection({
 			.transform((str) => (str ? new Date(str) : undefined)),
 		author: z.string(),
 		image: z.string(),
-		squareImage: z.string().optional()
+		squareImage: z.string().optional(),
+		description: z.string().optional(),
 	}),
 });
 

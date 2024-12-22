@@ -2,6 +2,9 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import '../styles/fonts.css';
+import '../styles/fontawesome/css/all.min.css';
+
 
 export interface Props {
 	title: string;
@@ -42,7 +45,5 @@ const { title, description, image } = Astro.props;
 <meta property="twitter:image" content={"/" + image} />
 
 <!-- Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/e0384c89e9.js" crossorigin="anonymous"></script>
+

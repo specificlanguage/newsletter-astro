@@ -1,0 +1,80 @@
+---
+title: "CivWiki Newsmagazine for January 2025"
+date: "Jan 13 2025"
+image: "aerosenchantedcity.png"
+author: "specificlanguage"
+---
+import {getEntry} from "astro:content";
+import ColoredBlock from "../../../../components/ColoredBlock.astro";
+import FeatureLink from "../../../../components/magazine/FeatureLink.svelte";
+import NavigationLinks from "../../../../components/magazine/NavigationLinks.svelte";
+import order from "../../../../lib/order/2025-01.json";
+
+This is a temporary index page that will act as the homepage for the newsmagazine, with each section having different subpages associated with it.
+
+<div className="space-y-4">
+<ColoredBlock color={"bg-emerald-600"}>
+  <h3>Features</h3>
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/civwiki')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/interview')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/lookback')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/royals')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/opinion_speedyjustice')}
+    arrowDirection="right"
+  />
+</ColoredBlock>
+
+<ColoredBlock color={"bg-blue-600"}>
+  <h3>The News</h3>
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/news')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/economics')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/interesting')}
+    arrowDirection="right"
+  />
+</ColoredBlock>
+
+<ColoredBlock color={"bg-yellow-700"}>
+  <h3> Highlights across Civ</h3>
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/fun_stuff')}
+    arrowDirection="right"
+  />
+
+  <FeatureLink
+    feature={await getEntry('newsletter', '2025/01/polls')}
+    arrowDirection="right"
+  />
+
+</ColoredBlock>
+
+</div>
+
+
+<NavigationLinks featureRight={await getEntry('newsletter', '2025/01/test')}/>
+
