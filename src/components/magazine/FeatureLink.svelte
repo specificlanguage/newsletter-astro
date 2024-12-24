@@ -8,16 +8,6 @@
       feature.data.image.startsWith("https") ? feature.data.image : "/" + feature.data.image
   ) : "/collage-2.png"
 
-  // const img_url = feature.data.image ? ("/" + feature.data.image() => (
-  //     if (feature.data.image?.startsWith("https://")){
-  //         return ""
-  //     } else if (feature.data.image) {
-  //         return "/" + feature.data.image;
-  //     } else {
-  //         return "/collage-2.png" // I'm just redirecting to something that works.
-  //     }
-  // )
-
 </script>
 
 <a class={
@@ -27,7 +17,7 @@
         "text-neutral-600 dark:text-neutral-400 " +
         "hover:bg-gray-400 dark:hover:bg-gray-700 "
     }
-   href={'/newsletter/' + feature.slug}>
+   href={"/" + feature.collection + "/" + feature.slug}>
 
     <!-- Body flexbox -->
     <div class="flex space-x-2">

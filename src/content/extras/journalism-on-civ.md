@@ -6,6 +6,8 @@ image: "https://i.imgur.com/d8vmlNI.jpeg"
 description: "The newsletter is going away, even though it's staying. What other journalism is on Civ?"
 ---
 
+![](https://i.imgur.com/d8vmlNI.jpeg)
+
 The CivWiki Newsletter is more than just a newsletter. Really, it’s a serverwide institution. The longevity of the newsletter, and the official backing of the permanent CivWiki organization, has given it a level of reliability and community-trust that no other product offers. Nations and players come and go. But the newsletter has always been there each week to recount those comings-and-goings.
 
 Until now, that is.

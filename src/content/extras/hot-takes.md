@@ -12,6 +12,8 @@ Ooh boy, let's see those hottest takes imaginable!
 
 Oh.....
 
+![](https://i.imgflip.com/74x9gd.jpg)
+
 Well, I was like, I know some people have been having controversial takes on Civ, so of course for the last newsletter let's just say "screw it" and go for the chaos. So let's take a look at what the past couple of years has brought people:
 
 > Admins SHOULD be pushing meta changing features as often as they want to play around with mechanics. Playerbase hate it? Revert. Else we will be stuck in the same dull server until Wing finishes a new and revamped sneaker collection of his own and closes the server.
