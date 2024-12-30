@@ -72,7 +72,7 @@ main ul ul {
 	@apply my-0
 }
 
-main a, main a strong {
+main a, main a strong, footer a {
 	color: #015db2;
 	@apply hover:text-neutral-600 dark:hover:text-[#888] dark:text-[#3ca2fc];
 }
