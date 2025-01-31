@@ -6,8 +6,9 @@
     "jsxImportSource": "react",
     "module": "ESNext",
     "target": "esnext",
+    "baseUrl": ".",
     "paths": {
-      "component:*": ["src/components/*"]
+      "@components/*": ["src/components/*"]
     }
   }
 }

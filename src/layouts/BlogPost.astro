@@ -9,7 +9,9 @@ import {stripHTML} from "../lib/frontPageHelpers";
 
 type Props = CollectionEntry<'newsletter'>['data'];
 
-const { headings, title, description, date, updatedDate, image, author, squareImage, body } = Astro.props;
+const { headings, title, description, date, updatedDate, image, author, squareImage, body, slug } = Astro.props;
+
+console.log(slug)
 
 ---
 
@@ -46,7 +48,7 @@ const { headings, title, description, date, updatedDate, image, author, squareIm
 				<slot />
 			</article>
 		</main>
-		<Sidebar title={title} headings={headings}/>
+		{slug.startsWith('newsletter-') && <Sidebar title={title} headings={headings}/>}
 		<Footer />
 	</body>
 </html>

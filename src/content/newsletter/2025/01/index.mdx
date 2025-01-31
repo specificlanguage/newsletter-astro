@@ -1,0 +1,136 @@
+---
+title: "CivWiki Newsmagazine for January 2025"
+date: "Jan 31 2025"
+image: "2025/jan2025-newsmagazine.png"
+author: "specificlanguage"
+---
+import ColoredBlock from "@components/ColoredBlock.astro";
+import NavigationLinks from "@components/magazine/NavigationLinks.svelte";
+import {getEntry} from "astro:content";
+import FeatureLink from "@components/magazine/FeatureLink.svelte";
+import 'public/2025/jan2025-newsmagazine.png';
+
+## From the Editor
+
+![](public/2025/jan2025-newsmagazine.png)
+
+Hello, and welcome to the new format!
+
+For those unfamiliar, I used to run a newsletter (although, in practice, simply a weekly blog) about happenings across the Civ genre; it covered primarily CivMC news, but also happened to run things for CivReign and other servers in development during this time period. After two and a half years with no relief, this was the alternative solution, where I figured out that a monthly compilation of news and more became a better solution. Although I'm still writing a bunch, I find this better for sustainability!
+
+That being said, as a result of being a more magazine-like feel, I'm trying to make the newsmagazine transform into a more insightful and broad look at Civ, on a more macro-level view than the micro-level view as previous. Think of it as the *New York Times* turning into the *The Economist*, or something like that.
+
+This edition, you'll be seeing two distinct themes from outside contributors: economy & history. BritishWanderer and Gamertime, both head figures within the Monument Group, wrote pieces about the major economic news and the philosophy & inner workings behind the ever-popular stock market. You'll also see some pieces from x1025 and Pandastical, who are writing about the history of the Olympics on Civ, and their perspective in the New Vegas - JSDF war on CivRealms.
+
+We also have three more pieces: one from reffelruz about his column about Metaphysics, and ArtificialDriver talking about the drawbacks of OneDest and the benefits of direct rails, and one from four reputable players within the Civ community, reflecting on the past year, like I usually do.
+
+Of course, I wouldn't be in this newsletter for nothing. I still am writing about important news around the game, highlighting excellent work around Civ as per usual, and heading the monthly polls like I usually do; that won't be going away for at least a little bit as they were the most successful portions of the original newsletter, but on a more macro level than before.
+
+I hope you enjoy this very first edition of the newsmagazine -- and if you're interested in writing for this in the future, let me know, at `@specificlanguage` on Discord.
+
+---
+
+*This newsletter was proudly sponsored by Monument Bank, VEC Incorporated, ArtificialIndustries, Tusk Armory and Onyx Netherite. You'll see their ads sprinkled throughout the newsletter.*
+
+---
+
+## Table of Contents
+
+<div className="space-y-2">
+
+  <ColoredBlock color="bg-teal-600">
+
+    ## Features
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/backstage-theater')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/olympics')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/metacivics')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/pavian-stock-exchange')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/rails')}
+      arrowDirection="right"
+    />
+
+  </ColoredBlock>
+
+  <ColoredBlock color="bg-blue-300 dark:bg-blue-900">
+
+    ## Around the Server
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/news')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/icenian-news')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/economic-news')}
+      arrowDirection="right"
+    />
+
+  </ColoredBlock>
+
+  <ColoredBlock color="bg-purple-300 dark:bg-purple-900">
+
+    ## Staples
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/fun-stuff')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/polls')}
+      arrowDirection="right"
+    />
+
+    <FeatureLink
+      feature={await getEntry('newsletter', '2025/01/reflections-2024')}
+      arrowDirection="right"
+    />
+
+  </ColoredBlock>
+
+</div>
+
+---
+
+![](https://i.imgur.com/GqNejpI.png)
+
+Join to know more! https://discord.gg/DhPB3yRpwX
+
+*To place an ad here, take a look at https://civwiki.news/ads.*
+
+---
+
+I hope you enjoy reading the newsletter this month!
+
+(This month's cover image is of Winterbourne Harbor, courtesy of PFP_Nexl -- to provide a cool winter spirit in the northern hemisphere.)
+
+---
+
+<NavigationLinks
+  featureRight={await getEntry("newsletter", "2025/01/backstage-theater")}
+  mainArticleURL="2025/01/#table-of-contents"
+  displayDate="(January 2025)"
+/>

@@ -1,0 +1,124 @@
+---
+title: "Poll of the Month"
+date: "Jan 31 2025"
+author: "specificlanguage & Xcios"
+image: "https://i.imgur.com/H5taII9.jpeg"
+description: "What did players think about the game in 2024? Take a look -- and don't forget to vote!"
+---
+import {QuestionType} from "@components/types/pollTypes.js";
+import Poll from "@components/Poll.svelte";
+import ColoredBlock from "@components/ColoredBlock.astro";
+import EdNote from "@components/EdNote.astro";
+import NavigationLinks from "@components/magazine/NavigationLinks.svelte";
+import {getEntry} from "astro:content";
+import FeatureLink from "@components/magazine/FeatureLink.svelte";
+
+As previous, polls are continuing! They're even longer now that the time period to submit is a full month. Unfortunately,  you still have to read the whole writeup to get to the poll.
+
+This poll section is reporting on last month's final poll on the 24th, focusing on Civ's perception's improvements within 2024.
+
+## Gameplay Improvement in 2024
+
+![](https://i.imgur.com/M0hYkNj.png)
+
+I'm sure the admins would love to see this graph. The average was **3.23** and the median was **3**. A reminder that in this rating scale, 3 is the midpoint ("about the same".)
+
+I do remember that during the summer in 2024 the gameplay of Civ did feel a little stagnant, and there was especially some backlash over the Heliodor update in the fall. I think that now that the economy has started to settle, this is relatively indicative that the change has gone over well.
+
+Heliodor definitely provided a much needed late-game wealth sink, it's only temporary and inflation still feels like it's rising again. But, who knows. There were some massive cosmetic improvements throughout the year and the admins invested in a lot of quality of life improvements in the game last year to make it good. Of course there are some downsides and some questions about where the admins will take the genre's direction, but at least there's relatively high hopes for now.
+
+## Community Improvement in 2024
+
+![](https://i.imgur.com/m6fvnQ0.png)
+
+Now this -- this is a much more positive graph. The average was **3.47** and the median was **4**.
+
+I think this was definitely helped by the fact that this was one of the first years we did not have a major, game/server-defining war. After a series of Icenia-Gang Shi wars, and the Generic War, the server has settled into long-term stability, and there's very little for people to fight over anymore besides ideological differences.
+
+While many of you may not have noticed, one thing that significantly helped was the presence of many newfriends that showed up during last year. There was a lot of organic traction (thanks to people like Solitaire) and therefore I feel like a significant amount of newfriend-welcoming nations saw an influx over the course of this year. I think that definitely raised the morale of the community a lot, as we saw a good amount of fresh faces to complement the old guard. It's made the scene a lot livelier, for better or for worse.
+
+Pair those two together, and I think this has been the most stable and lively that mainline Civ has felt in a good while. Some melodrama here and there, but definitely in a much better spot.
+
+---
+
+![](https://i.imgur.com/0wOgimy.png)
+
+*To place an ad here, take a look at [the ads page](/ads)*.
+
+---
+
+## Poll Questions
+
+As a result of being a monthly poll now, I've taken the liberty to add more questions since I don't get to ask things very often. I am also open to your DMs `@specificlanguage` if you have a particular comment about any questions as a whole.
+
+<ColoredBlock color="bg-sky-200" darkColor="dark:bg-sky-950">
+  <Poll client:load submitURL={"/newsletter-05-13-2024"} questions={
+    [
+      {
+        questionID: "new_format",
+        question: "How do you like the newsmagazine format? (feel free to message me for more opinions)",
+        options: [
+          "I love it!",
+          "I like the content, but the navigation/UI needs work",
+          "It's ok, I liked the old version better",
+          "I liked some of the new content, but it didn't resonate with me that much",
+          "It's bad",
+        ],
+        type: QuestionType.Checkboxes,
+        useOther: false,
+        required: false
+      },
+      {
+        questionID: "country_playstyle",
+        question: "On Civ, do you prefer roleplaying a country, or optimizing your play?",
+        options: [
+          "Roleplay",
+          "Lean towards roleplay",
+          "A mix of both",
+          "Lean towards optimization",
+          "Optimization"
+        ],
+        type: QuestionType.MultipleChoice,
+        useOther: false,
+        required: false
+      },
+      {
+        questionID: "weekend_wakeup",
+        question: "What time do you wake up on the weekends, if you had no schedule? (Round to the nearest hour.)",
+        options: [
+          "7am or earlier",
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "12pm",
+          "1pm",
+          "2pm or later",
+        ],
+        type: QuestionType.MultipleChoice,
+        useOther: false,
+        required: false,
+      },
+      {
+        questionID: "civ_vs_other_servers",
+        question: "What aspects do you think differentiate Civ servers from other Minecraft servers?",
+        type: QuestionType.OpenResponse,
+        useOther: false,
+        required: false,
+      },
+    ]
+  }/>
+</ColoredBlock>
+
+---
+
+*The overall article's cover picture was [an overlook at the city of Bloom, Icenia](https://i.imgur.com/H5taII9.jpeg) (cr: Xcios)*
+
+---
+
+<NavigationLinks
+  featureLeft={await getEntry("newsletter", "2025/01/fun-stuff")}
+  featureRight={await getEntry("newsletter", "2025/01/reflections-2024")}
+  mainArticleURL="2025/01/#table-of-contents"
+  displayDate="(January 2025)"
+/>

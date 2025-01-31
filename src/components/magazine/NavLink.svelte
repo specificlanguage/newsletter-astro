@@ -7,7 +7,7 @@
 </script>
 
 <a class={
-        "rounded-3xl my-1 px-2 h-20 flex " +
+        "rounded-3xl my-1 p-2 min-h-28 md:min-h-20 flex " +
         "border-2 border-neutral-500 " +
         "text-neutral-600 dark:text-neutral-400 " +
         "hover:bg-gray-400 dark:hover:bg-gray-700 "
@@ -18,7 +18,7 @@
     <!-- Body flexbox -->
     <div class="flex space-x-2 px-1 w-full">
         {#if arrowDirection === "left"}
-            <div class="my-auto pr-2 text-[24pt] basis-1/12">
+            <div class="md:block hidden my-auto pr-2 text-[24pt] basis-1/12">
                 <i class="fa-solid fa-arrow-left"></i>
             </div>
         {/if}
@@ -27,7 +27,7 @@
             <p class="m-0 text-sm">{feature.data.author}</p>
         </div>
         {#if arrowDirection === "right"}
-            <div class="my-auto pl-2 mx-4 text-[24pt] basis-1/12 flex-1">
+            <div class="md:block hidden my-auto pl-2 mx-4 text-[24pt] basis-1/12 flex-1">
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
         {/if}
