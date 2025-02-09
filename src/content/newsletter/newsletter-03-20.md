@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for March 20, 2023"
 date: "Mar 20 2023"
-image: "westvirginia.png"
+image: "legacy/westvirginia.png"
 author: "specificlanguage"
 ---
 

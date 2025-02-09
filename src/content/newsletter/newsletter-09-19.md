@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for September 19, 2022"
 date: "Sep 19 2022"
-image: "naralibrary.png"
+image: "legacy/naralibrary.png"
 author: "specificlanguage"
 ---
 
@@ -109,7 +109,7 @@ I'm honestly just glad that the admins knew what Civ stood for; it's not a PvP s
 
 ## Liberating Cry for Help
 
-![](/assets/img/vaultbreak.png)
+![](/legacy/vaultbreak.png)
 
 *This section's featured picture is the many people (but not everyone!) present at the Rhode Island vault break, posing in front of a beacon after the raid was completed! This picture was taken by Metriximor.*
 

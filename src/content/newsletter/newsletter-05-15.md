@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for May 15, 2023"
 date: "May 15 2023"
-image: "collage-2.png"
+image: "legacy/collage-2.png"
 author: "specificlanguage"
 ---
 
@@ -336,7 +336,7 @@ Finally, there are a few people who have written for the newsletter but not actu
 - Ahri & Cortwade (for doing the 2022 wrapup)
 - and much, much, MUCH more (I'm certainly forgetting a whole bunch of people, but in the interest of time, I gotta stop)
 
-Additionally, something cool that I've done is made an [archives page on the wiki](/archives), so now you can rummage through all these words, words, words to find the exact source of the thing you want. There's even summaries of the top stories for each page!
+Additionally, something cool that I've done is made an [archives page on the wiki](/newsletter), so now you can rummage through all these words, words, words to find the exact source of the thing you want. There's even summaries of the top stories for each page!
 
 ## Anniversary Cry for Help
 

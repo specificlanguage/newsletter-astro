@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for April 3, 2023"
 date: "Apr 03 2023"
-image: "griffinruins.png"
+image: "legacy/griffinruins.png"
 author: "specificlanguage"
 ---
 

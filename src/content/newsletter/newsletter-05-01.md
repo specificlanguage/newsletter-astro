@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for May 1, 2023"
 date: "May 01 2023"
-image: "iceniaskyline.jpg"
+image: "legacy/iceniaskyline.jpg"
 author: "specificlanguage"
 ---
 

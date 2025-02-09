@@ -38,7 +38,7 @@ I'm serious, last chance, you're going to regret every choice I make...
 
 Well, seeing as you won't go away...
 
-![](/bestof2022.png)
+![](/legacy/bestof2022.png))
 
 This is my way of self-indulging myself and looking back at the year for all the stupid things I like without really anybody caring too much or judging me. Besides, most of these nobody will actually care about.
 

@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for September 12, 2022"
 date: "Sep 12 2022"
-image: "imperialfederation.png"
+image: "legacy/imperialfederation.png"
 author: "specificlanguage"
 ---
 

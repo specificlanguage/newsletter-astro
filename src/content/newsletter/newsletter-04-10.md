@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for April 10, 2023"
 date: "Apr 10 2023"
-image: "paviawindmill.jpg"
+image: "legacy/paviawindmill.jpg"
 author: "specificlanguage"
 ---
 

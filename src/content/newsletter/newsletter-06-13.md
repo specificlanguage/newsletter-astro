@@ -1,7 +1,7 @@
 ---
 title: "CivWiki Monday Newsletter for June 13, 2022"
 date: "Jun 13 2022"
-image: "Lyreanseamap.png"
+image: "legacy/Lyreanseamap.png"
 author: "specificlanguage"
 ---
 
@@ -13,7 +13,7 @@ Good Monday Morning from New England. Hope everyone's had a nice weekend and now
 
 ## Current Events
 
-![](/Lyreanseamap.png)
+![](/legacy/Lyreanseamap.png))
 
 *Today's featured image is a decorative map of the nations surrounding the Lyrean Sea, produced by u/hitobashuru and the Pavian Bureau of Semiography.*
 
