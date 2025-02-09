@@ -8,9 +8,6 @@ import {startOfMonth, format, parseISO, startOfYear} from 'date-fns';
 import FormattedDate from '../../components/FormattedDate.astro';
 import {getNewsletterCollection, readingTime, stripHTML} from "../../lib/frontPageHelpers";
 
-
-export const prerender = true;
-
 const posts = (await getNewsletterCollection())
 
 // Print all dates of posts

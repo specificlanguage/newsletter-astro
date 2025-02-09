@@ -9,6 +9,8 @@ import rehypeExternalLinks from "rehype-external-links";
 export default defineConfig({
   site: 'https://civwiki.news',
   integrations: [svelte(), mdx(), sitemap(), tailwind()],
+  output: "static",
+
   markdown: {
     rehypePlugins: [
       [

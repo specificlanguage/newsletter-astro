@@ -7,9 +7,6 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import {readingTime, stripHTML} from "../../lib/frontPageHelpers";
 
-
-export const prerender = true;
-
 const posts = (await getCollection('extras')).sort(
 	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
