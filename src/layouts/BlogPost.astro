@@ -46,7 +46,7 @@ const { headings, title, description, date, updatedDate, image, author, squareIm
 				<slot />
 			</article>
 		</main>
-		{slug.startsWith('newsletter-') && <Sidebar title={title} headings={headings}/>}
+		{slug.startsWith('newsletter-') || !slug.startsWith('2025/01') && <Sidebar title={title} headings={headings}/>}
 		<Footer />
 	</body>
 </html>
