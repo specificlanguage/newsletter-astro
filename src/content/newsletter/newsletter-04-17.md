@@ -72,7 +72,7 @@ However, once again *I did not get a lot of news this week!* It's definitely tel
 ## Around the Civ
 
 - [Wordbank is making a big comeback on CivMC](https://www.reddit.com/r/CivMC/comments/12ht3r6/submit_words_to_be_included_in_the_wordbank_list/), with RedDevel asking for wordbank submissions. It allows nametags that are specially colored and unique, so it'll be really cool
-- [grepsedawk is campaigning for VPS to be excepted for established players](https://discord.com/channels/912074050086502470/1095730049304506378) so it's easier to run a bot, [such as his framework, Rosegold](https://discord.gg/n9XYHJ5e) on the cloud.
+- [grepsedawk is campaigning for VPS to be excepted for established players](https://discord.com/channels/912074050086502470/1095730049304506378) so it's easier to run a bot, [such as their framework, Rosegold](https://discord.gg/n9XYHJ5e) on the cloud.
 - Guess what's back? [CivMC ads on r/mcservers!](https://www.reddit.com/r/mcservers/comments/12nejzy/civmc_smproleplaypvpsemianarchy_1182nation/)
 - **Return of the Civ** has continued to march on, [with a full revamp of their beta](https://discord.com/channels/1093674046069149706/1093675976925401220/1096570760383975496) following [a vote to reset the map and its plugins.](https://discord.com/channels/1093674046069149706/1093676189928923136/1096487261601800202) It's currently on its second iteration of its beta and is hoping to release the server with its current map.
 - CivCivCiv [is currently contemplating changing names for the third time to the much more sensible CivCubed](https://discord.com/channels/1052830294438330419/1052837096001372200/1096440943214862389)
