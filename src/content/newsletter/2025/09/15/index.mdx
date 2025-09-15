@@ -1,0 +1,583 @@
+---
+title: "CivWiki Newsletter for September 15, 2025"
+date: "Sep 15 2025"
+image: "2025/kaltsburg-sep-2025.png"
+author: "specificlanguage"
+---
+import {QuestionType} from "@components/types/pollTypes.ts";
+import Poll from "@components/Poll.svelte";
+import ColoredBlock from "@components/ColoredBlock.astro";
+import EdNote from "@components/EdNote.astro";
+
+Good morning and happy Monday from the Pacific Northwest!
+
+So for avid readers, you may be noticing that this newsletter is more than a month later than my previous one. While a bunch of things happened which made this newsletter so late, I've been lazy, too, especially when you have mountains of news to trawl through. That's not to say it's been easy though, tracking information for many of these reads were pretty tough.
+
+A significant amount of this writeup happens to be wars or other conflicts regarding this, not to mention a new Civ server opening! There's a lot to cover here, so let's not waste any more time. Are we ready for the news?
+
+---
+
+For the aid of new players, there is a lot of content, according to the ticker, 45 minutes worth of reading. Here are direct links to what I expect are desired sections:
+
+- Featured (just scroll down)
+- [News](#the-news)
+  - [Admin Updates + CivMini](#the-news)
+  - [War News](#hot-pearl-summer)
+  - [Around the Server](#around-the-server)
+- [Fun Stuff / Community Highlights](#the-fun-stuff)
+- [Poll of the Month](#poll-of-the-week)
+  - [Straight to the poll](#vote-now)
+
+---
+
+## Featured
+
+### Featured Image
+
+![](https://i.postimg.cc/br00PWww/2025-09-09-21-52-37.png)
+
+This week's featured image is the Kaltsburg Opera House, one of the newest architectural builds on the server. While the outside fits into their own Prussian-architectural landscape, the inside is covered with gold and deepslate, making it a pretty nice venue for watching opera all things considered. Speaking of which, if all goes according to plan <EdNote>it did not go according to plan</EdNote>, I will be publishing this prior to the Opera House opening and you'll be reading this before then. <EdNote>lmao</EdNote>
+
+I want to thank Nintentoby for touring me around while also simultaneously hosting an event for me in this space! Great work, folks.
+
+### Featured Article
+
+![](https://static.wikitide.net/civwikiwiki/7/7d/Icenia_Bombing.png)
+
+*This featured article is an adaptation from [July 31, 2023](https://civwiki.news/newsletter/newsletter-07-31).*
+
+The [Generic War](https://civwiki.org/wiki/Generic_War) was a major serverwide war on CivMC between [Rhode Island](https://civwiki.org/wiki/Rhode_Island) and [Estalia](https://civwiki.org/wiki/Suramir)’s allies in the [Elysian Pact](https://civwiki.org/wiki/Elysian_Pact). The war started in late July 2022 following continued grievances from [CivClassic](https://civwiki.org/wiki/CivClassic) and [Civcraft](https://civwiki.org/wiki/Civcraft), and is named "Generic" due to its similarity to other wars on those past iterations. Despite efforts to de-escalate tensions between the countries, Rhode Island declared war on Estalia following an incident on one of their citizens. The war was marked by large and disruptive obbybombings in Estalia’s holdings in 0,0, [Pavia](https://civwiki.org/wiki/Pavia) and [Icenia](https://civwiki.org/wiki/Icenia). A third front also occurred in Blockchainistan after accusations from Titan Industries of aiding Rhode Island. Rogue raiders associated with Rhode Island also roamed the newly-launched server, making the war’s effect felt throughout every nation.
+
+On the morning of September 17, CivMC admins announced they banned numerous accounts associated with Rhode Island, declaring their actions to be detrimental to server culture and long-term growth. Shortly after this announcement, a coalition of fighters from all across the server sieged and begun to break the Rhode Island vault, not before minor skirmishes occurred. [Blockchainistan](https://civwiki.org/wiki/Blockchainistan) soon fell a few days later. With coverage from multiple newspapers such as the Daily Nut, [Lambat Post](https://civwiki.org/wiki/Lambat_Post) and Pavian Tribune, the war has been one of the most reported in Civ history.
+
+*This week's featured article picture is Jah Park in Icenia.*
+
+---
+
+## The News
+
+A fair warning with this news section: **it is quite long.** Like, we are talking extremely long, you could probably publish a book with everything under here. I hope you enjoy, but fair warning, you might need to put some [Subway Surfers in the background to continue paying attention here.](https://www.youtube.com/watch?v=7ghSziUQnhs)
+
+---
+
+### Server Surge
+
+![](https://i.postimg.cc/1RCNT0rn/image.png)
+
+*A few new buildings in Mount Augusta, with some skyscrapers imposing over the city (cr: jaybirdino, PumpkinPie134).*
+
+In an ongoing story, CivMC has been reaching incredible player counts, something that we would have never seen in the past year or so.
+
+After a migration to 1.21.8, [an update was made, where the player cap was drastically reduced from 150 to 110, along with the introduction of Happy Ghasts](https://i.postimg.cc/jjTqJJHV/image.png). There was a lot of players that were somewhat unhappy with this change because it could hypothetically lead to vault breaking techniques, especially during the war, but after riding one with Okx, it is so incredibly slow, that its only usecase would be to bypass snitch grids... extremely slowly.
+
+The much more contentious part was that due to the upgrade, the player count had to be reduced drastically, as TPS, ticks per second, a measure of server lag, at these higher player counts was untenable. [There were others that argued that this did not have a degraded experience](https://i.postimg.cc/13qc3bHC/image.png), but it is likely that this was a safeguard and according to estimates this was the only possible solution to keep TPS at a reasonable level (even a slight increase was argued that TPS would be down to 8 or 9).
+
+As expected, CivMC had been reaching the player cap much faster, and a [an FAQ was released outlining the various engineering decisions they had to make to curtail the laggy experiences](https://i.postimg.cc/RCWTY3tx/image.png) with the intention to add a queue in the short term, followed by a migration to Folia (more about that in a second).
+
+Likewise, [the admins instituted a queue system on CivMC on August 12](https://i.postimg.cc/DZQxhrJZ/image.png). Of course, most people reading this already know that, but they at least implemented a short queue bypass system for fast logons during a combat log, which was not possible before. This is the second time a queue system has been imposed on CivMC; [the last time this happened was during the first few weeks launch in 2022](https://www.reddit.com/r/CivMC/comments/v4gpr9/civball_the_queue_experience/). Although this time, it was implemented slightly differently as now the queue [was no longer an Overwatch 2 title screen](https://www.reddit.com/r/CivMC/comments/v4gpr9/civball_the_queue_experience/), but rather the PvP server, so you *technically* had something to do on the server instead. It's probably the first time the PvP server has seen activity.
+
+During peak hours, [this queue would see upwards of 70 people waiting, this would equate to times upwards of an hour.](https://i.postimg.cc/DZQxhrJZ/image.png) Previously, [CivMC's Patreon](https://patreon.com/civ_mc) had stated you would be able to bypass the queue with a patron role, [but this perk was discarded](https://i.postimg.cc/DZQxhrJZ/image.png). The queue cap [would be raised to 125 permanently](https://i.postimg.cc/Hnc96FGf/image.png) in the coming days after some patches in performance.
+
+In terms of what's next for this:
+- [Civ plugins are currently being developed for Folia (specifically Canvas)  by Diet_Cola, Orinnari and friends](https://i.postimg.cc/QtfK283C/image.png), which is a [Minecraft server framework that will make the server (possibly) more efficient](https://papermc.io/software/folia). They've even said in recent days that it's even ready for a test server.
+- I don't want to jinx it too early, but folks might recognize a certain `Joyfuul` logging in, a Minecraft YouTuber who we've (kinda) pestered with [CivMC advertisements in his Civilization theory videos](https://www.youtube.com/watch?v=6WJT-jPV1Mo). Although he's only been here a short time, he's [giving it some pretty high praise.](https://i.postimg.cc/3wr23n6r/image.png)
+- CivMC now runs a second server, which I will talk about it in... well right now!
+
+---
+
+### Miniatures
+
+![](https://i.postimg.cc/ZnLdsHHC/2025-08-31-21-28-51.png)
+
+*One of the Great Ice Walls on CivMini.*
+
+An informal poll was set up by Okx in the previous days, [asking whether a second server would gain support](https://i.postimg.cc/C5h37y6T/image.png), to relieve the load of the primary server. This was met with overwhelming support, and likewise, [RedDevel made a further announcement talking about how it work](https://i.postimg.cc/T1CQLTcv/image.png), explaining the server would be likely much smaller and only be used to test new features and gameplay that will be headed towards live, but won't receive the same attention as the main server. [The initial response was positive but mixed](https://i.postimg.cc/RC22pxNG/image.png), saying that a permanent server would detract from the main server, although admins have outright rejected this suggestion.
+
+Over the course of the week, the admins would unveil the new map, and a small amount of new features, most notably the lack of bots, which although a storied part of Civ gameplay, is also controversial these days.
+
+[They opened CivMini extremely quickly, within the month](https://i.postimg.cc/wjHcBRNG/image.png), and that extra capacity of Civ paid off decently well in the short term, with several players checking out. The [map was fully discovered within hours of launch](https://www.reddit.com/r/CivMC/comments/1n4w9el/civmini_fully_mapped/) with nations already claiming territory. Several unique biomes were also shown off prior to launch, and notably unlike CivMC, a large impassable ice wall surrounds the entire map, once again proving a flat earth exists.
+
+However, at the time of writing (September 9), the server had a decent amount of people at launch but has been lagging in the player count as of late. While claims are still sticking and there are wars still happening (although, so unimportant that I'm not covering it), I haven't particularly seen anything substantial going on. [Okx has been really trying to get folks to play](https://i.postimg.cc/7Z8Zr4dz/image.png), but it doesn't seem to have any interest; [the sticking complaint is the relatively slow progression compared to the Main server.](https://i.postimg.cc/GmFhcNn5/image.png)
+
+Regardless of any of the above, [it's just incredible people are finally seeing the potential of Civ](https://i.postimg.cc/Hnc96FGf/image.png).
+
+---
+
+### Hot Pearl Summer
+
+![](https://i.postimg.cc/y8SsjdvZ/2025-08-24-12-42-20.png)
+
+*A view of Exyria City, as seen after the war.*
+
+I'm sure folks have been all waiting for this one.
+
+Given how complicated this war become, we're going to talk about a couple of things here, but this first section is only talking about what's happened as events **in game**. However, both sides have extremely differing views on their experiences during the war. I would rather keep emotions separate from hard facts in this particular section.
+
+However, as usual, here are the usual disclaimers.
+
+1. As expected with these writeups, I did attempt my best at a decently neutral writeup but **I am in no means unbiased (no writeup is);** please do not take this newsletter as fact besides links to primary sources.
+2. Per established newsletter policy, I [do not leak information unless either previously disclosed, or consented to](https://civwiki.news/newsletter/newsletter-09-09-2024/#the-news).
+3. I did not actually conduct many interviews outside of fact-checks, which is slightly unorthodox for this section. The points made, while many, are somewhat simple and there are enough assertions to back up a decent amount of these posts.
+4. I expect much of this to change throughout the next couple days -- I did not intend to misrepresent something, but if something is incorrect, I will update at the earliest convenience of mine.
+
+The combination of these factors above may misrepresent some ASN perspectives; it is worth noting that there have been very few posts from the ASN following the war. [ASN leadership has said that they have "given up" on any publicly facing posts.](https://i.postimg.cc/QtfK283C/image.png) Many of the posts that I've discussed above were written within hours of each other, and making it hard for the ASN (let alone myself) to deliver an organized response or analysis.
+
+[Last we left](https://civwiki.news/newsletter/2025/08/05/#the-color-purple), Kallos and Exyria were trading blows on a few bunkers within each others' territories.
+
+- Accra, [another nation within Lotus was then skybridged](https://civwiki.org/wiki/ASN%E2%80%93Lotus_War#/media/File:Accra_Skybdige_.png) on August 4.
+- Vinland [eventually joined the war on Volterra's and Kallos' side](https://www.reddit.com/r/CivMC/comments/1mj8nt4/unfit_for_purpose/), citing continued incidents with other Lotus nations.
+- Lotus would eventually attempt another skybridge onto Kallos' Paradise bunker on August 9, but failed along with [limpoporeal, an Exyrian fighter, getting pearled](https://i.postimg.cc/QdcvVWf0/image.png) during a fight outside of the skybridge on the ground.
+- A fight would break out between Toontasker and Salernite fighters on the ground, near Exyria on August 13, where fighting would eventually turn towards neighboring Lambat, part of the Lyrean Commonwealth. [A wall would get constructed shortly after.](https://www.reddit.com/r/CivMC/comments/1mrxu9w/somehow_the_lambat_post_returned_the_lambat_post/) <EdNote>courtesy of the Lambat Post</EdNote>
+- [Icenia and Yoahtl would declare war against Exyria on August 14](https://www.reddit.com/r/CivMC/comments/1mqffsa/war_pigs/), citing leaked screenshots from Lotus discords over bad-faith diplomacy, as well as cooperating with banned players. While these are the three major players in the ASN alongside Volterra, it is important to note that the ASN did not declare war in this instance.
+  - For those unaware, ASN, the alliance the two nations belong to, previously stated that they would not enter the war unless provoked, such as attacking Volterra directly, as that would trigger the mutual defense clause. These declarations were under these own nations' own volition, outside of the alliance mechanism.
+  - It was then shown [that Exyria had recruited several PvPers from Loka](https://imgur.com/a/7RtRBTF) to bolster their defense; their similar but slightly different PvP supposedly would have been a helpful item in this war, but these would come to little effect and others have criticized them for their involvement.
+- Shortly after this post, attention quickly turned to Thanatos vault that evening, where fighting resulted in Renge__ being pearled, [as well as Jbblocker getting pearled](https://i.postimg.cc/pr735QN1/image.png), in separate incidents.
+  - The last pearl was somewhat interesting and controversial given that this was when the server queue was new; [Jbblocker timed out, and was unable to go quickly enough through the priority queue and was pearled.](https://www.reddit.com/r/CivMC/comments/1mqma65/average_civ_war_experience_in_2025/)
+  - Other vaults would quickly fall with the cooperated defense, with Raven Raiments' vault being disabled quickly the same day at 5pm Eastern.
+- Following the attacks and ASN's announcement, both [Iaumea](https://www.reddit.com/r/CivMC/comments/1mqgvip/iaumea_withdrawal_from_lotus/) and Arx announced they would be withdrawing from the war.
+- On August 15, ground tunnels were launched on Exyria's capital, Exilus, but only [resulting in one major pearl, ChrisChrispie](https://www.reddit.com/r/CivMC/comments/1mryb2r/chrischrispies_hiding_place/).
+- Khalkedonia's vault [was also disabled the next day](https://imgur.com/CkY5tpn).
+- By this point, the losses on the Lotus side had been piling up. On August 17, Happy Ghasts would eventually arrive towards Exyria's primary vault, Aperture, with the intention to break bastions. [After Exyrians withdrew from the vault, they would eventually surrender later that day.](https://www.reddit.com/r/CivMC/comments/1msu8zj/dear_asn/) Most pearls would be released shortly after.
+
+This in itself is pretty understandable, but once you get to events following the war, things become quite muddy. Here we go...
+
+---
+
+### Hot Pearl Summer (Taylor's Version)
+
+![](https://i.postimg.cc/kXw9wwQz/image.png)
+
+*Players on the skybridge onto Khalkedonia's vault (cr: ChrisChrispie). However, I feel like it was unnecessary to call it "totally f\*cked\*" in the announcement.*
+
+To understand the motivations on a good amount of these interpersonal posts during this war, it does require a good amount of explanation.
+
+Leaders of Yoahtl and Icenia [made a post on August 14, following their entrance into the war](https://www.reddit.com/r/CivMC/comments/1mqffsa/war_pigs/), alleging that after leaks of various comments throughout the year that Lotus had been planning an offensive war on ASN vaults. Several leaks within the "War Pigs" post do incriminate them heavily, [setting them up for preparation of war with pretty substantial evidence of doing so.](https://imgur.com/a/MfyQG3B) They allege that the scouting of ASN vaults from earlier in the year (as I've mentioned previously, the Volterra vault spying from Jaydon and [several incidents from the Citadel outage](https://civwiki.org/wiki/2025_Citadel_outage)) were in preparation of this. Shadno, in a related statement, said [he was disappointed in Lotus in handling of things](https://www.reddit.com/r/CivMC/comments/1mqfq0z/disappointing/) in addition to the previous statements.
+
+It is worth clarifying here this was *only* Icenia and Yoahtl (and of course Volterra). One continued refrain I have been hearing from Naran folks is that they were not involved in this war, so implicating the ASN as a whole in this war is technically incorrect.
+
+---
+
+Although not part of the ASN anymore, [Vinland declared war on Lotus a few days prior to Yoahtl and Icenia](https://www.reddit.com/r/CivMC/comments/1mj8nt4/unfit_for_purpose/) for similar reasons. A post from jbblocker earlier this summer [claimed to declaim Vinland for newfriend settlements](https://www.reddit.com/r/CivMC/comments/1llzjs4/unclaiming_vinland_for_newfriend_settlement_due/) while he and ThereWalker [raided the country's vault](https://imgur.com/a/Cd1i09x) in late June of this year. They were also similarly entered into their vault [by Fempire leader Jindosh during the aforementioned Citadel outage](https://imgur.com/a/SjwLerI), as well [as snitched by Fempire-associate XiaoHongShu](https://imgur.com/a/rC6wYdP) during an unrelated incident earlier this summer. While admittedly this post was actually poorly received at the time, the reasons were, in retrospect, pretty solid. However, it doesn't help that Vinland's perception by the community is one of relative inactivity despite holding a lot of land.
+
+It is worth noting that because of various players' involvement from previous wars, such as jbblocker and perennial involvement of banned player SlothInASuit, there were further incentives for them to become involved in this war, as they had been some of the higher-target players from previous wars, [namely the Grasslands Gambit](https://civwiki.org/wiki/Grasslands_Gambit#Aftermath).
+
+---
+
+### Post-War Blues
+
+![](https://i.postimg.cc/MGSbBjFG/image.png)
+
+*A parkour course located outside of Altepetl, Yoahtl's capital (cr: x1025)*
+
+<EdNote>This is the part that had to get rewritten the most, since information regarding this is very sparing and narratives and evidence changed the writeup heavily. I still expect this section to change a lot post-launch, so I apologize if there are any inaccuracies lying about.</EdNote>
+
+Post-war, a good amount of controversy has caught up to the ASN, although how much of it does not have foundations is quite shocking.
+
+One issue that popped up was that [Exyria was raided very shortly after the war.](https://www.reddit.com/r/CivMC/comments/1mtf0a9/the_state_of_things_in_exilus/) A [**post from Trubactor** (which is the main source for a bunch of these further claims outlining below,)](https://www.reddit.com/r/CivMC/comments/1mtl5n8/iron_man/) claims that players had been raiding all of Exyria, and that the ASN did not hold their promise.
+
+This is somewhat inaccurate, as my information seems most raiders were Yoahtlan but were not majority acting on behalf of the ASN. They raided what they believed was military areas (although all were not particularly military). While the evidence that's been given to me has been restricted in numerous places, there are a few incidents in the post that can be sufficiently addressed with enough data to back it up:
+
+- These nations [redirected blame of the rest of the raids on the post to Estalia](https://imgur.com/a/1ENUviI), which was incorrect, in post-mortem it seemed it was an incorrect assertion that ran up the flagpole. [Estalia disavowed these raids](https://www.reddit.com/r/CivMC/comments/1mtf0a9/the_state_of_things_in_exilus/n9bkeo1/), and while Gregy has showed up on snitch logs, [he was later given groups and helped removing some materials out of the city.](https://i.postimg.cc/k4Vfrsv5/image.png)
+- [One (downvoted) comment from Gladius notes that many of these snitch logs were very exclusive to one area](https://www.reddit.com/r/CivMC/comments/1mtl5n8/iron_man/n9ck6jf/), the Exyrian "Courthouse" located within the church, which was assumed to be a government building, as they intended to only target military structures.
+- Screenshots that corrobated [the stealing of "Forged's Chevy Silverado"](https://www.reddit.com/r/CivMC/comments/1mtl5n8/iron_man/n9cgtg0/), a horse located in the same area, were notably missing despite the claim; a later check with Wandrum and some discord channels [do show snitch logs of Yoahtlan folks riding *but later dismounting* the horse](https://i.postimg.cc/NfvbV19g/image.png). However, it is then worth noting that [lead attach/detachments are *not* recorded by snitches](https://i.postimg.cc/gkLvBD9J/image.png), which is exactly what happened here.
+- I've [since received screenshots](https://i.postimg.cc/sX7HprVY/image.png) from Wandrum also corroborating continued raids among several areas -- showing some raids [within the Lotus Exchange in the city](https://i.postimg.cc/Y2gBx5Xy/image.png), [some primary storage](https://i.postimg.cc/26ZM2WxB/image.png), other areas [north of the city being griefed](https://i.postimg.cc/MKmkCyJ7/image.png), which doesn't completely match up with military-only raids from the ASN-associated countries.
+- The city had been in rough shape prior and during the war, and this doesn't particularly bode well [considering some of this could have been a pre-existing condition](https://i.postimg.cc/QtTzq8qy/image.png) -- however, considering the amount of buildings located in the original screenshot, I would consider that unlikely unless Exyria did not make an effort to derelict a large portion of their builds.
+
+While this proof does not particularly rule out (beyond a reasonable doubt) Yoahtl did not raid the vast majority of the city, there seems considerable evidence that this was occurring, despite their claims of only targeting "military infrastructure".
+
+Regardless, WackyAki [made an announcement disavowing any raids](https://i.postimg.cc/2644Zhq8/image.png), [after seemingly being involved in these raids](https://imgur.com/a/HjFB0D0), and ChrisChrispie [later made a public statement defending that raids were not happening](https://www.reddit.com/r/CivMC/comments/1mu7fdh/the_asn_has_not_obby_bombed_anything/). Kallos has not made a public announcement regarding these raids. Further contact with ASN and Exyria both maintain these respective arguments, despite the fact that screenshots do claim raids continued after these announcements.
+
+I have since visited Exyria in late August, and [it seems as if the builds have been fixed, with no clear evidence of obbybombing (which, by the way, is the header picture)](https://i.postimg.cc/y8SsjdvZ/2025-08-24-12-42-20.png). I've been told many Yoahtlans made significant efforts to clean exteriors up into its current state, but that chests are still not restored.
+
+---
+
+![](https://i.postimg.cc/7YrGzB73/2025-09-11-22-08-44.png)
+
+*Bashkent, Khalkedonia.*
+
+You may also notice in particular Chris' last post is [more directed towards a separate incidents occurring in Khalkedonia](https://www.reddit.com/r/CivMC/comments/1mvbtf2/the_asn_has_in_fact_obbybombed_khalkedonia/), who were also involved in the Lotus side of the war. This included [bunker raids from Dark_FFC, Stoomer,](https://imgur.com/a/GWZGm4d) and in a separate incident, [obbybombings from The_Orange_Lord](https://www.reddit.com/r/CivMC/comments/1mual16/the_obbybombing_lord/). The latter incident of which was pearled by Icenia (as he claimed to be an Icenian resident).
+
+However, ChrisChrispie and the ASN are correct, as despite the number of these posts attempting to form a narrative, they were misleading as it assumed all were ASN operatives, but none of these are notably ASN-associated.
+
+ASN did call for high-amount bounties [for some of its citizens](https://i.postimg.cc/rw8YFyPr/image.png), and [both Tophat and Lara have since taken some hiatus](https://i.postimg.cc/QMJQBXL2/image.png). The latter has been a sought-after target for several reasons, but ASN preferred to keep this reason private. My inclination is that it seems indirectly related [to a previous incident.](https://www.reddit.com/r/CivMC/comments/1md0ibe/public_apology_to_chrischrispie/)
+
+---
+
+A quick note on Volterra and Kallos: I have not mentioned them too much here, because I have covered [their explanations in another writeup elsewhere](https://civwiki.news/newsletter/2025/08/05). However, for completeness' sake, while also complicated, in short can be summarized to continued grievances from past incidents (e.g. [dredd's leaking of an Exyrian vault](https://civwiki.news/newsletter/2025/07/11/#cold-shoulder), and [the complications regarding his pearling](https://civwiki.news/newsletter/2025/08/05/#the-color-purple)), and Volterra's involvement in previous Kallos-involved affairs (e.g. [vault spying in Volterra](https://civwiki.news/newsletter/2025/07/11/#around-the-server)). These are pretty well explained grievances from their side in previous explanations, and were not particularly involved in any issues regarding the above (notably, the only exception was Lasady in the Exyria raids), so they have been somewhat left out in representation.
+
+---
+
+### Future of Lotus
+
+![](https://i.postimg.cc/d39CpC57/2025-09-09-22-41-08.png)
+
+*Some new buildings across the valley towards Volterra Prime.*
+
+We've been talking a lot about the Kallos-Yoahtl-Icenia-Volterra-bloc. <EdNote>Too early to call it the Kyiv coalition?</EdNote> What about Exyria?
+
+Exyria has attempted to refute their claims regarding the war, but despite the narratives have not been portrayed positively. `_Banana_Blu_` [made a response regarding the war pigs post](https://www.reddit.com/r/CivMC/comments/1mt7wq9/the_real_war_pigs/), claiming its evidence was cherrypicked, but it is also worth noting they are not associated with Lotus. The leaders of Lotus haven't particularly attempted to refute the War Pigs' claims. There were accusations that [those who shotcalled on the Exyria side were association-bannable players](https://www.reddit.com/r/CivMC/comments/1mv90r8/asn_calling_out_exyria_for_banned_players_calling/n9t1i9v/?context=10000), but these claims do not seem substantiated.
+
+Others have also noticed [the victors acting more disgraceful than in past conflicts,](https://www.reddit.com/r/CivMC/comments/1mubtn2/justice_for_khalkedonia/n9hvltn/) although this may be due to the nature of the initial interpersonal conflicts that sparked this war that they have withheld.
+
+In terms of Exyria's future, at least the Volterra party has made efforts to make amends. After surrendering, Wandrum, the ex-second in command from Exyria, went to Pavia for asylum, and had [their claims reconciled from Volterra and Nara](https://www.reddit.com/r/CivMC/comments/1mw9qp5/a_statement_on_wandrum_by_pavia_volterra_and/) despite participating in a considerable amount of the war. Eventually after negotiations with ChilfroySigibald and other Volterrans, [Exyria's former territory was announced to be joining Volterra as a full state.](https://www.reddit.com/r/CivMC/comments/1n2mf9o/exilus_joins_the_union_of_volterra/) Similarly, [Fempire has also been claimed by Estalia](https://www.reddit.com/r/CivMC/comments/1mx3cob/regarding_estalia_and_fempire/), as the two countries were "longtime allies".
+
+Although not completely related to this section, [Limpoporeal posted a very interesting post, accusing Exyria of fumbling the efforts from the start as well,](https://www.reddit.com/r/CivMC/comments/1mt37s9/limpopo_statement_piece/) one of the few negative posts against Lotus during this time.
+
+---
+
+![](https://i.postimg.cc/JzJkgfLd/2025-06-02-16-16-38.png)
+
+*Brunsvik, Salerno. Maybe not mentioned, but the country did exit the war sometime unannounced.*
+
+To round off this section, at the time of writing this specific section on August 26 <EdNote>and as of editing on September ~~9~~ 14</EdNote>, the Kallos-Volterra-Icenia-Yoathl bloc have not yet issued any public sentences for any pearls within their possession -- however it is worth noting that most sentences are getting issued privately to the appropriate nations.
+
+It is worth noting that it has been publicly stated that [Volterra & Kallos will be handling the bulk majority of the sentences](https://www.reddit.com/r/CivMC/comments/1nadtn8/where_is_sentencing_gang/nctr44d/), since they were the primary combatants, but folks are getting [quite antsy about not getting sentences.](https://www.reddit.com/r/CivMC/comments/1n0mzxm/dear_asn_sentence_us/) It's probably worth noting many of these sentences were handed out privately, unlike previous wars. For example...
+
+[ChrisChrispie has stated in Icenia discord that sentences would be handed in a fair manner](https://i.postimg.cc/6QN1vMRt/image.png). So far [there has been at least a somewhat positive reception](https://i.postimg.cc/qRqchKmp/image.png), over a sample size of one: [Kibbles, who turned himself in for a reduced sentence](https://www.reddit.com/r/CivMC/comments/1n228iz/breaking_news_infamous_shitter_and_known_furry/).
+
+---
+
+### Supplemental Reading
+
+![](https://i.postimg.cc/23pdNmDJ/image.png)
+
+*Blue Cove in Icarus with a new ship in tow in their bay (cr: zolo17, ph: jaybirdino)*
+
+So I've tried to cover all dimensions of this war (there were a lot), but there's one I've skipped deliberately since it is a generally separate issue that happened to get roped into this war. I hope this encompassed the full picture, but there are probably things that I have missed.
+
+After doing so much research, I have formed my own perspectives of the war, however, for the sake of this literally being one of the longest news writeups I've ever written, I am attempting to keep these biases out from this writeup.
+
+There are several posts from this era that I read, but don't particularly offer a new perspective I have not shown above. However, the resources on Reddit has been much better compared to most Civ wars, so I've provided a list of supplemental reading material for the entire sections above.
+
+- A summary of events prior to August 8, [from Tal's perspective](https://www.reddit.com/r/CivMC/comments/1miekz4/a_not_very_brief_recounting_of_events/)
+- Walpole's perspective, [talking about how this war's mindset possibly came about and possibly could have been avoided](https://www.reddit.com/r/CivMC/comments/1mil7vi/idiots_take_on_the_kallosexyria_war/)
+- [cynx's perspective, talking about his insiding from the LOTUS alliance](https://www.reddit.com/r/CivMC/comments/1mimq2a/my_point_of_view_on_my_insiding_of_salernolotus/)
+- [Vinland's announcement for their entrance into the war](https://www.reddit.com/r/CivMC/comments/1mj8nt4/unfit_for_purpose/)
+  - A related incident from Hisja [stemming from one particular claim regarding Jindosh's incident during the Citadel outage](https://www.reddit.com/r/CivMC/comments/1mkaonl/what_really_happened_zalvvvs_side_of_the_story/), although for you Civilization video dumpers it may be interesting
+- [Mount Augusta exiting the war](https://www.reddit.com/r/CivMC/comments/1mltqch/a_message_from_mount_augusta/). It is a minor post, but I would like to highlight how much this war affected the whole server despite this nation having exactly one (1) person involved.
+- ["War Pigs" post, signalling Yoahtl and Icenia's entrance into the war](https://www.reddit.com/r/CivMC/comments/1mqffsa/war_pigs/)
+  - Shadno's [personal statement also disavowing this](https://www.reddit.com/r/CivMC/comments/1mqfq0z/disappointing/)
+- [Jbblocker's footage of himself being pearled](https://www.reddit.com/r/CivMC/comments/1mqma65/average_civ_war_experience_in_2025/) (although of course, this doesn't particularly help when the critical 3 seconds you need to watch is of nothing lol)
+- Wandrum's [surrender post](https://www.reddit.com/r/CivMC/comments/1msu8zj/dear_asn/), kindly asking folks to leave the city alone
+- Lokilog's [short opinion post](https://www.reddit.com/r/CivMC/comments/1mt5mn2/the_view_from_within/) regarding the consequences of war
+- Banana_Blu's [defense of the War Pigs post](https://www.reddit.com/r/CivMC/comments/1mt7wq9/the_real_war_pigs) <EdNote>Although it is pretty cherry-picking and does not give a good enough defense</EdNote>
+- ["Iron man" post, a full catalog that I used to source most information regarding the Exyria raids](https://www.reddit.com/r/CivMC/comments/1mtl5n8/iron_man/) <EdNote>However, still not comprehensive and once again does not have sufficient information</EdNote>
+  - ChrisChrispie's [extremely poorly received defense post regarding the Obbybombings](https://www.reddit.com/r/CivMC/comments/1mu7fdh/the_asn_has_not_obby_bombed_anything/)
+  - An earlier post [outlying some of the early reactions of the Exyria raids](https://www.reddit.com/r/CivMC/comments/1mtf0a9/the_state_of_things_in_exilus/)
+- [JessieJinx's post regarding Yoahtl's raid on Wysteria/Bloxneristan](https://www.reddit.com/r/CivMC/comments/1mu1t08/help_yoahtl_raided_me/)
+- [A more insightful post from SpeedyJustice regarding more metagame issues of this war](https://www.reddit.com/r/CivMC/comments/1mvjim9/the_hall_of_shame_incomplete_list_of_people_who/), focusing closer in on moderation and the community <EdNote>I personally think the community aspect is way worse than I think this post has been implying, however.</EdNote>
+- Tophat's post [regarding the obbybombing of Khalkedonia](https://www.reddit.com/r/CivMC/comments/1mvbtf2/the_asn_has_in_fact_obbybombed_khalkedonia/)
+- [A supposed list of those obbybombing Lotus builds](https://www.reddit.com/r/CivMC/comments/1mvjim9/the_hall_of_shame_incomplete_list_of_people_who/)
+- [BritishWanderer's post regarding Wandrum's security within the Lyrean Commonwealth](https://www.reddit.com/r/CivMC/comments/1mw9qp5/a_statement_on_wandrum_by_pavia_volterra_and/)
+- [Estalia securing former Lotus Alliance nation Fempire under their wing](https://www.reddit.com/r/CivMC/comments/1mx3cob/regarding_estalia_and_fempire/)
+- [Bloxneristan's re-establishment within former Wysterian (Exyrian) territory](https://www.reddit.com/r/CivMC/comments/1mxav8z/reclamation_and_restoration_of_bloxernistan/)
+- [Walpole's departure from the game following out-of-game harassment and doxxing](https://www.reddit.com/r/CivMC/comments/1mxh8fb/a_goodbye/)
+- [A general historical background (though, defintely biased towards Gang Shi/Exyria) of the Gang Shi era](https://www.reddit.com/r/CivMC/comments/1myrfjn/gang_shi_butternut_and_the_sec_a_history_lesson/)
+  - Although, I would also take this post with a bigger grain of salt because this also makes Gang Shi [look a little better than at face value](https://www.reddit.com/r/CivMC/comments/1myrfjn/gang_shi_butternut_and_the_sec_a_history_lesson/naftuap/)
+- [Da_duck_tv's post regarding Bloxernistan, Coco Beach, Wysteria, Yoahtl, and continued grudges.](https://www.reddit.com/r/CivMC/comments/1n11yhi/greed_grudges_and_gaslighting_the_yoahtl_way/)
+- [Wandrum and Volterra's announcement that Exyria would be joining Volterra as a state](https://www.reddit.com/r/CivMC/comments/1n2mf9o/exilus_joins_the_union_of_volterra/)
+
+I'd also like to give some thanks to Wandrum, Husky, and i_rs, Drekamor, and Renge__ for proofreading a healthy amount of this writeup.
+
+
+---
+
+### Bloxernistan Tangent
+
+![](https://i.postimg.cc/J0cRbdqd/image.png)
+
+*New buildings going up within Cyrene District in Heikki.* (cr: Erge/Kahina)
+
+Originally, this was a section during the war writeup, I've decided to separate this out since while related to the war, there is enough to make this entirely unrelated.
+
+A quick recap of [the Bloxernistan / Wisteria area](https://civmap.com/map?c=3946,-176) is [that Coco Beach was established on former inactive Bloxernistan land](https://www.reddit.com/r/CivMC/comments/1jb5na1/official_claim_of_coco_beach/) sometime in April 2025, and [an attempt to take it back from Bloxernistan was squashed and their pearl held in Exyria's vault](https://www.reddit.com/r/CivMC/comments/1jfd4cu/the_diamond_chronicler_stewedseeker983_announces/), although at the end of this situation [they were unhappy of this being supported by Lotus](https://www.reddit.com/r/CivMC/comments/1jex9oc/i_talked_to_both_sides_about_the_bloxernistan/). However, the primary post regarding this [has since been deleted](https://www.reddit.com/r/CivMC/comments/1jegx5f/deleted_by_user/miiwama/?context=3); [an abridged version of these events can be seen on the CivWiki.](https://civwiki.org/wiki/Bloxernistan#Calavera_War)
+
+This land was [then taken over by Wysteria, a nation formed with Buttsmoke and JessieJinx](https://www.reddit.com/r/CivMC/comments/1mprci4/introducing_wysteria_a_fresh_start_for_our/). It was later revealed that the nation was [founded with the assistance of Wandrum](https://www.reddit.com/r/CivMC/comments/1mu1t08/help_yoahtl_raided_me/). Following the war and the downfall of Exyria, they evacuated to Pavia, [as Yoahtl would seemingly raid the area shortly after,](https://www.reddit.com/r/CivMC/comments/1mu1t08/help_yoahtl_raided_me/) although snitch logs are heavily redacted to only show names with a lack of ["raiding proof" substantiated from both sides](https://www.reddit.com/r/CivMC/comments/1mu1t08/help_yoahtl_raided_me/n9gegrp/?context=10000). Bloxernistan [would eventually be "reestablished" shortly after,](https://www.reddit.com/r/CivMC/comments/1mxav8z/reclamation_and_restoration_of_bloxernistan/) partially because [Buttsmoke, another player in Wysteria, was an active combatant during the Lotus war on the Exyrian side](https://www.reddit.com/r/CivMC/comments/1n11yhi/greed_grudges_and_gaslighting_the_yoahtl_way/nav0a0r/).
+
+[A leaked ticket with Da_duck_tv](https://www.reddit.com/r/CivMC/comments/1mxav8z/reclamation_and_restoration_of_bloxernistan/), seemingly showed that there was support within the ASN to restore Bloxernistan [which would be funded through Duck's reps](https://i.postimg.cc/Jn63hkK2/image.png). Although many were not sympathetic to JessieJinx's post, [the following post by StewedSeeker983](https://www.reddit.com/r/CivMC/comments/1mxav8z/reclamation_and_restoration_of_bloxernistan/) was quite poorly received, [with folks arguing that re-establishing an inactive nation was actively worse instead of a nation that was developing](https://www.reddit.com/r/CivMC/comments/1mxav8z/reclamation_and_restoration_of_bloxernistan/na4gt4s/), let alone so new. Da_duck_tv [would later make a post regarding the entire saga](https://www.reddit.com/r/CivMC/comments/1n11yhi/greed_grudges_and_gaslighting_the_yoahtl_way/); the short version is they are continuing accusations of Yoahtl treating other players extremely poorly, which was echoed in the comments. While [it has not publicly addressed why this was done](https://imgur.com/a/6vCFaA0), I have been made aware this was due to Stewed to "buy additional time" in negotiations, since he wasn't technically fighting.
+
+Interestingly, [StewedSkewer was pearled on September 9](https://i.postimg.cc/jd98XGHF/image.png), although I have not investigated the reason of why this was done. It is worth noting Yoahtl has not publicly addressed any claims of this section.
+
+### Around the Server
+
+![](https://i.postimg.cc/kMpBwJ7W/image.png)
+
+*A small market in the middle of Groveheart (cr: Gidein).*
+
+I guess I need to preface the rest of this section by saying, if I didn't get to your news piece, there's just too much to comb through, and I'm sorry. The bar for "what is notable enough to talk about" is much higher this time than the usual newsletter.
+
+#### Important News
+
+- A second conflict occurred between Anisso and the Temporal Empire in mid-August as well.
+  - The war was hinted at on August 11, when [Kaiyaukutan leader lynxgirlpaws asserted that they would not be joining Anisso](https://www.reddit.com/r/CivMC/comments/1msj4o8/dear_civmc_again_we_are_not_joining_anisso/), despite other attempts from them and Olive/Thyme Nation.
+  - On August 13, PhysicsGamer declared war on Anisso, [citing continued aggressions from the country on the Temporal Empire and its neighbors.](https://www.reddit.com/r/CivMC/comments/1mu44ay/a_declaration_of_war_on_the_principality_of_anisso/)
+  - A post came from Varbo later the next day, [citing these claims as skeptical](https://www.reddit.com/r/CivMC/comments/1mv3kih/physicsgamer_te_vs_szepess_anisso_the_way_i_see_it/), but PhysicsGamer [professed that the ultimate goal was to dethrone szepess.](https://www.reddit.com/r/CivMC/comments/1mv3kih/physicsgamer_te_vs_szepess_anisso_the_way_i_see_it/n9nwf62/) The same comment would reveal that Anisso contracted mercenaries to fight for Anisso, such as Dark_FFC.
+  - The conflict ended two days later, as two Anissites were pearled and [PhysicsGamer sent out sentences for Anisso the next day,](https://www.reddit.com/r/CivMC/comments/1mvsmb2/the_end_of_the_temporal_empireanisso_war/) with szepess set to serve an undetermined amount of time.
+  - [Anisso Foreign Minister Trubactor would then come back a week later following up on these talks](https://www.reddit.com/r/CivMC/comments/1n24ejb/state_of_things_in_anisso/), stating that they would put the past szepess' rule behind them, and look forward to the nation under their new princess, Megan.
+- Clebonia is a new nation that has been part of some minor but notable conflicts.
+  - The country had been part of [a conflict with Pavia while on the main server, after they deceived the nation by stealing materials.](https://www.reddit.com/r/CivMC/comments/1mf0av3/pavia_is_evil_and_corrupt/n6dl9dn/)
+  - [A different conflict with Olive Nation, SSG's nation](https://www.reddit.com/r/CivMC/comments/1n75to8/end_of_clebonia/) also occurred while setting up in the first few days of CivMini after [claims of a fascist party.](https://www.reddit.com/r/CivMC/comments/1n71ino/clebonian_fascist_party_yes_this_is_real_yea/)
+- A new agency called [the "Eastern Railway Association" was created in the middle of the Eastern jungle](https://www.reddit.com/r/CivMC/comments/1n83ar3/welcome_to_the_era/), notably in an area pretty much dominated by Yoahtl's Great Overland Railway.
+  - It's interesting [due to the number of comments](https://www.reddit.com/r/CivMC/comments/1n83ar3/welcome_to_the_era/ncc36lo/), with many questioning the niche that another railway would provide for the region.
+- An incident regarding a slime in Volterra resulted in CrackerVolley's pearled, but [he was freed after a genuine apology](https://www.reddit.com/r/CivMC/comments/1mvyto8/a_formal_apologies_for_my_sins_against_volterra/) -- <EdNote>but does this highlight that maybe you should ask if maybe there was a misunderstanding before going for a pearl? even for three days?</EdNote>
+- [The ASN unclaimed parts of Alaska](https://www.reddit.com/r/CivMC/comments/1mu37uw/from_the_desk_of_the_wokesmoron_official_act_of/), which is not a US state, but [an entire nation that ASN also fought a different war with earlier this year.](https://civwiki.org/wiki/Operation_Deadliest_Catch)
+- JuniorTide posted [the results of Icenia's elections with some analysis regarding the race.](https://www.reddit.com/r/CivMC/comments/1n763xl/icenian_september_elections_icenia_goes_full_mta/)
+- [The Southern Protection Alliance announced Nara's withdrawal from the alliance](https://www.reddit.com/r/CivMC/comments/1mu7mmo/regarding_the_southern_protection_alliance_spa/), along with announcing Eldoria's incorporation into Nara, along with reflections regarding the alliance's effectiveness.
+- [Mount Augusta joined the Lyrean Commonwealth](https://www.reddit.com/r/CivMC/comments/1nhnb7f/announcing_the_accession_of_mta_to_the_lyrean/) as its newest member.
+
+#### Fun News
+
+- An [opera performance was held in Pavia with a large turnout and really good opera music!](https://www.reddit.com/r/CivMC/comments/1mk8mhj/concert_in_pavia_the_conclusion/).
+  - [A second performance was held](https://www.reddit.com/r/CivMC/comments/1nge408/grand_opening_of_the_kaltsburg_opera_house/) in Kaltsburg nearly a month later, to celebrate the country's Opera House's opening.
+  - Operaheimer is actually studying opera at university, I think it's an understatement that we're blessed with his talents on a funny geopolitics server.
+  - Interestingly, squidhasthebad was pearled during Kaltsburg's opera performance as he was POS for a while -- although it happened with little time left to research, so I'm not discussing this further.
+- It must be really funny for [people to first discover what pissdog is](https://i.postimg.cc/9FtH0dvM/image.png), [when SPQR holds a pissdog day](https://www.reddit.com/r/CivMC/comments/1mn7aop/spqr_celebrates_pissdog_day/)
+- As a means to help war refugees, [Nara established the Relief and Work Agency to help refugees from the war.](https://www.reddit.com/r/CivMC/comments/1mqmg95/formation_of_naran_relief_and_work_agency/)
+- A new build agency, the [Orion Build Corporation has been announced,](https://www.reddit.com/r/CivMC/comments/1nd5jwt/orion_build_co/) with a pretty good portfolio of builds
+- [Monument Bank released their August 2025 disclosure](https://www.reddit.com/r/CivMC/comments/1ndd417/monument_bank_monthly_disclosure_august_2025/), seeing funnily enough a net loss in June and July, but its impressive amount of client growth is a testament to the amount that server surge has fueled CivMC.
+- Pretty [sure the Icenia Olympics is still happening, right?](https://www.reddit.com/r/CivMC/comments/1nf2daa/the_civ_olympics/ndwc7ly/)
+
+### Metagame Highlights
+
+![](https://i.postimg.cc/BQ6tbQZ1/image.png)
+
+*Lambat City, along with a great view of the large builds in Katipan in the background (cr: Jaybirdino).*
+
+This is probably the first time in more than 130+ newsletters, that this section has seen more than five lines of news.
+
+#### Mods, Tools, Code, etc.
+
+- MrJeremyFisher has gone through the very arduous task of updating [CombatRadar and Healthbar](https://www.reddit.com/r/CivMC/comments/1n234dy/combatradar_and_healthbar_finally_updated/), some commonly used legal mods on Civ.
+- A new website, CivHub, is [currently in development](https://www.reddit.com/r/CivMC/comments/1muxl3b/civhubnet_all_things_civmc_in_one_place/) (at the time of writing).
+  - I had a quick chance to [play around with the Alpha](https://civhub.net) while writing this newsletter. I think there's some opportunities, but [there's much to be improved in terms of desired functionality](https://i.postimg.cc/TYDMCZC4/image.png)
+
+#### Resources
+
+- On some more positive notes, [PresidentOfYes12 has reposted a full set of previous iteration maps](https://www.reddit.com/r/CivMC/comments/1mvmb1w/hey_there/), I need to remind myself to throw these links on the wiki one of these days.
+- Earlier in August, I was writing a [CivMC FAQ](https://civwiki.org/wiki/CivMC_FAQ), and even despite its current length I don't think it's finished yet, [despite me asking for questions](https://www.reddit.com/r/CivMC/comments/1ml3j59/what_are_some_frequently_asked_questions_you_get/)
+- [Here is TheJmqn's perfectly timed claims post](https://www.reddit.com/r/CivMC/comments/1mq99s1/civmc_unofficial_claims_map_39_rock_and_roll_part/)
+- Solitaire has been [maintaining a shop & price list of everything on Pavia Main Street!](https://www.reddit.com/r/CivMC/comments/1mz54yk/spreadsheet_of_every_exchange_in_pavia_city/) I remember I used to do something with Shopside back in the day, nice to see this tradition continuing!
+- I think I have to commend Bronnakus [for compiling the CivMC map so quickly post-launch](https://www.reddit.com/r/CivMC/comments/1n4w9el/civmini_fully_mapped/)
+
+#### Histories Past
+
+- What's [your favorite memories of Civ?](https://www.reddit.com/r/CivMC/comments/1ng0zyz/whats_your_favorite_memory_on_civ/)
+- I think if you've been around for a while, you maybe don't realize that [this server is simply more busy compared to past iterations](https://www.reddit.com/r/CivMC/comments/1n8j2u6/how_active_is_civmc_in_comparison_to_the_original/), once again showing that CivMC is in somewhat of a golden era right now
+- Who's [the most famous Civ player?](https://www.reddit.com/r/CivMC/comments/1nf6skr/who_is_the_most_famous_civ_player/)
+- [Admire the efforts to attempt ask those who participated during the past wars](https://www.reddit.com/r/CivMC/comments/1mwpm6e/looking_for_people_involved_in_gs_butternut_sec/), but honestly it's probably a lost cause even for research, that boat has long since sailed
+  - That being said, [this comment has a great list of resources during the Gang Shi - SEC era.](https://www.reddit.com/r/CivMC/comments/1mwpm6e/looking_for_people_involved_in_gs_butternut_sec/n9zwgke/)
+
+#### That's Just a Theory
+
+- Part of the reason why we had a surge this summer was [because of active investment in wplace](https://www.reddit.com/r/CivMC/comments/1mj86pb/in_times_of_division_like_this_how_about_people/), I remember [Pavia](https://i.postimg.cc/RCJG0P51/image.png) and [Salerno](https://i.postimg.cc/WbR8qMTB/image.png) both advertising their nations in their real-life cities and it actually paid off somehow
+- [A suggestion from Husky to add `[Mini]` as a flair](https://www.reddit.com/r/CivMC/comments/1n44gfr/all_civmini_reddit_content_should_be_prefixed/) for any CivMC posts has been widely adopted despite not being a formal rule.
+- [Is Winterbourne still alive?](https://www.reddit.com/r/CivMC/comments/1n6i6zq/a_question_regarding_winterbourne/)
+- [Yodabird was suggesting some ways to increase server recruitment amid the surge](https://www.reddit.com/r/CivMC/comments/1moigq4/the_gravity_of_the_moment/), although I personally think retention is a harder problem to focus on right now.
+- A notable number of players [have been pinged excessively](https://i.postimg.cc/JhB5Pq3c/image.png) resulting in requests to redirect their pings towards elsewhere. Absolutely no reason why I'm pointing this out.
+- I've noted that I've had several [rage-baiting/aggressive Reddit alts have appeared on the CivMC subreddit](https://www.reddit.com/r/CivMC/comments/1mz3gq5/there_has_never_been_a_better_time_to_launch_a/nagfpww/) spouting absolutely garbage opinions -- it seems to be a much bigger problem than in previous iterations.
+- SpeedyJustice [has a long writeup talking about how CivMC interactions have felt very confrontational as of late](https://www.reddit.com/r/CivMC/comments/1mv9fuv/youre_not_alone_in_feeling_hopeless_about_this/) and calling out moderation team to have a heavier hand in moderation
+- Quanton_Biscuit has written up a treatise on how Minecraft cities should be designed -- which [there are considerable number of different design camps you can see in the comments.](https://www.reddit.com/r/CivMC/comments/1neivez/the_death_and_life_of_great_civ_cities/)
+
+---
+
+## The Fun Stuff
+
+![](https://i.postimg.cc/Sx5PYsxb/image.png)
+
+*A statue of Patt in Bedford, the Lady of the Bedford Commons (cr: Seekinq).*
+
+Similar to the news, the bar on this section is much higher compared to other weeks, only since there's so much to go through.
+
+### Builds
+
+- [OrangeWizard has posted a second part to his tour, this time through Altepetl](https://www.reddit.com/r/CivMC/comments/1mknrzk/orange_wizards_world_tour_part_two_altepetl/), although following this he has disappeared yet again. At least it was a nice writeup!
+- [wlent also went on a similar world tour after his pearling, too](https://www.reddit.com/r/CivMC/comments/1mlc8lh/wlent_world_tour/)
+- Another kind of world tour included [a slow, scenic view of various CivMC locales on a happy ghast on its initial release](https://www.reddit.com/r/CivMC/comments/1mm8yso/from_pavia_to_icenia_to_derne_and_blue_cove/)
+- [Nice pictures of the new Citadel of t in Pavia](https://www.reddit.com/r/CivMC/comments/1mrp4i0/the_most_holy_citadel_of_t_off_the_coast_from_the/) (cr: zzaarr)
+- It's not entirely builds, but [I really like the orbiting-planet-like-structure at the CW-Cree Friendship Monument](https://www.reddit.com/r/CivMC/comments/1mzeou0/cree_commonwealth_friendship_day_august_24_2025/) (cr: reffelruz)
+- I also had the chance [to head through new builds located in Volterra Prime](https://www.reddit.com/r/CivMC/comments/1nb290c/successful_buildnight_in_volterra_prime/), weirdly it reminded me of the similar shaped plaza in Pacem right now
+- Jaybirdino has been on fire lately with a series of renders for several areas across CivMC:
+  - Of course, [his home Mount Augusta is here](https://www.reddit.com/r/CivMC/comments/1naq8ce/mt_augusta_in_the_morning_fog/) with its new larger extent of builds in the region
+  - You'll [probably recognize a dodecahedron-like shape at Gemstone, Micronook](https://www.reddit.com/r/CivMC/comments/1ncamhq/gemstone_micronook_cr_thecrazygrape/), which I already took a picture in this newsletter, but you definitely see the bigger scale in a picture like this
+  - I haven't particularly showed a lot of Petergrad, Commonwealth in this newsletter [so it's extra cool when there's more builds to show](https://www.reddit.com/r/CivMC/comments/1nd5jsu/petergrad_commonwealth_cr_sturdyshelf/)
+  - [My pictures on the ground in Icarus also don't really show the scale of the builds across Blue Cove](https://www.reddit.com/r/CivMC/comments/1ne09li/blue_cove_icarus/)
+  - The comeback of Lambat [also brings a new render of the nation as well](https://www.reddit.com/r/CivMC/comments/1neli09/lambat_city_kingdom_of_lambat/)
+- The [Kaltsburg lights dotting the city at night look like a little city from the overhead](https://i.postimg.cc/1tPPVP6F/image.png) (cr: deyan)
+- [Ok, who withheld the fighting dragon builds? This is actually an S+ tier build right here](https://i.postimg.cc/WbDR3tKK/image.png) (cr: Zefs)
+- Yeah [so Heikki has some great brownstones](https://i.postimg.cc/ryPbvMm9/image.png), that I definitely didn't highlight earlier this newsleter already (cr: Erge/Kahina)
+- Not even a joke, I was trying to find an Altepetl picture as the clock was running out last night, and [lo and behold, I really like the parkour course with some incredible landscaping that's nearby](https://i.postimg.cc/hGCWvxSk/image.png) (cr: x1025)
+- As usual nothing can really beat [Pavia's massively scope within the city with great tiny neighborhood pockets](https://i.postimg.cc/KzV6r23Q/image.png) (cr: Gobblin)
+- [I really like the triple-dome structure of Arx's City Hall](https://i.postimg.cc/9Xw5Xrsk/image.png) (cr: Aziumthal)
+- [Bloom is of course doing some great work on the many builds, with even more domes](https://i.postimg.cc/mDFX4FhN/image.png) (cr: Xcios)
+
+### Cool Content
+
+#### Art & Maps
+
+- I really like [the hand-drawn style of the Great Thrall Clan's map](https://www.reddit.com/r/CivMC/comments/1n3p5xn/map_of_the_great_thrall_clan_civmini/), nice to see these folks return
+- A pretty nice [art piece of various Yoahtlans from Lokilog](https://www.reddit.com/r/CivMC/comments/1mn425r/happy_eoahtl_day_2025/) is pretty cool.
+- [Actually really cool Kawaii art from Kaiyaukuta](https://www.reddit.com/r/CivMC/comments/1moqexr/art_i_made_for_the_kitsune_peak_tribal_nation_in/) (cr: LunarKitsune_)
+- It's so on theme that [SPQR has a map that highlights everything that looks like an old Roman map](https://www.reddit.com/r/CivMC/comments/1n5p54e/official_map_of_rome/)
+
+#### Videos & More
+
+- [Codey has made an incredible, 11-minute short film focusing on Jbblocker](https://www.youtube.com/watch?v=uFNcSUM6xpM) and his experiences during the Gang Shi war-era. I wish I could have put this in a much more exciting newsletter.
+- That's definitely not to mention [his really quick turnaround with the latest war's Happy Ghast mission](https://www.reddit.com/r/CivMC/comments/1mytjft/a_lil_bit_of_something/)
+- One benefit to seeing Lambat return is that there's a whole bunch of new content with great graphic design:
+  - [It's so nice seeing the Lambat Post return with a refreshed design](https://www.reddit.com/r/CivMC/comments/1mrxu9w/somehow_the_lambat_post_returned_the_lambat_post/)
+  - [Good recruitment posts return as well!](https://www.reddit.com/r/CivMC/comments/1n19dha/in_the_midst_of_chaos_and_uncertainty_we_rise/)
+  - A literal [ode to the old Portucale in Lusitania,](https://www.reddit.com/r/CivMC/comments/1n6ghyd/ode_to_portucale_we_all_need_to_touch_grass_for_a/) a close ally of Lambat during its activity
+- Kinda have to commend BritishWanderer [for creating an impressive amount of graphs for Monument Bank's August statement](https://www.reddit.com/r/CivMC/comments/1ndd417/monument_bank_monthly_disclosure_august_2025/)
+
+### Memes
+
+There was a Jet2 holiday meme regarding the war I was trying to find for the longest time, but I've since given up on finding it.
+
+- [I love John Civilization, most favorite oldfriend of all time](https://www.reddit.com/r/CivMC/comments/1ng2958/this_is_john_civilization_ask_him_anything/)
+- [Yep, this is accurate of how I felt this time writing this newsletter](https://www.reddit.com/r/CivMC/comments/1mvn2xh/speclang_doing_research_for_the_next_newsletter/)
+- [Pinging experience from BritishWanderer, but also the admins and myself in the past few weeks](https://www.reddit.com/r/CivMC/comments/1mmo8pc/day_in_the_life_of_britishwanderer/)
+- [I think it is a good thing that Chud was censored from the discord, low quality posts are not good](https://www.reddit.com/r/CivMC/comments/1mk31fe/a_more_pressing_concern_for_our_time_the_word/)
+- [Welcome back, CivMC queue!](https://www.reddit.com/r/CivMC/comments/1mxnu3u/big_vrother_is_watching/)
+- [is this beerposting](https://www.reddit.com/r/CivMC/comments/1mqfzb3/so_anyways_i_am_going_one_shot_for_every_bastion/)
+- [how prophetic](https://www.reddit.com/r/CivMC/comments/1mqnicu/jbbs_generational_return_to_civmc/)
+  - [yes, truly prophetic](https://www.reddit.com/r/CivMC/comments/1mrpah9/chrischrispies_generational_return_to_civmc/)
+- [man this reminds me that we haven't seen a lot of Varkanos gifs](https://www.reddit.com/r/CivMC/comments/1mrpfh1/on_jbblockers_pearling/)
+- [is this maybe the first good use of the osama bin laden meme on CivMC?](https://www.reddit.com/r/CivMC/comments/1mryb2r/chrischrispies_hiding_place/)
+- [hitler downfall memes are still pretty good, right](https://www.reddit.com/r/CivMC/comments/1mszey9/im_sure_were_gonna_win_the_next_time/)
+- [Claude probably only knows about CivMC](https://www.reddit.com/r/CivMC/comments/1mwv1n3/so_claude_ai_knows_a_bit_about_the_civ_genre/) because of the tens of thousands of words I've written for this newsletter
+- I just want to [highlight this very comment](https://www.reddit.com/r/CivMC/comments/1mx0zma/ransackistan_20/na1k9p2/), that was on a very serious post, top tier response
+
+### Non-Civ Content
+
+It's been a little more than month since I made a newsletter. Since then, I've done quite a few things, going to Portland and San Francisco, riding my bike around, drinking liters of tea, reading and buying a bunch of books. However, the only thing I will offer here to save some reading length is some good music I've been listening, while trying to finish this newsletter. It does skew a certain way this time, though. Maybe too much...
+
+- [Moving Out (Anthony's Song)](https://www.youtube.com/watch?v=GUvQx3ZpQ50), *Sammy Rae & the Friends* for the Billy Joel fans
+- [Help is on the Way](https://www.youtube.com/watch?v=5yrjl-9RPxo) and [Promotion](https://www.youtube.com/watch?v=5CVOqR79sEw), *Lake Street Dive & Lawrence* for some crazy riffs, solos, and upright bass fans
+- [Jessie](https://www.youtube.com/watch?v=0Z6KpJlqxvw), *Couch* for the best brass section consisting of two people as well as a sick bass riff
+- [I'm a Kid](https://www.youtube.com/watch?v=9Lbhq-baY4M), *Phoebe Katis* if you want to figure out where Bill Wurtz has been these years
+
+I got too lazy to incorporate these as "post themes", so feel free to use these, I guess. Their albums (or EPs, in *Couch*'s case) have basically the same vibe, so check 'em out.
+
+---
+
+## Poll of the Week
+
+![](https://i.postimg.cc/1R0D8xy9/2025-09-09-22-29-46.png)
+
+*Night at the Micronook Hexagon. Folks from Civcraft 2.0 might recognize the structure of this easily.*
+
+Last week, we had **42 responses,** which is a little lower than usual. I do wonder if the retention in this section is going down, because more and more people care about the news and less about these polls -- either that or my questions are actually garbage recently LOL.
+
+### Timezones
+
+I occasionally ask what time zone people are in as a pretty basic diagnostic check as it's a proxy to essentially poll people on two things: general location, and schedule optimization for event planners. However, usually these results are not particularly exciting:
+
+![](https://i.postimg.cc/G3NZqNV4/timezones-2025.png)
+
+What may be different from [last year's question](https://civwiki.news/newsletter/newsletter-06-24-2024/) compared to this years is that there's a significantly more diverse population in Civ. Typically, events are usually held around to simply suit either the US East or Western Europe timzeones. However, there's a much higher percentage of people in US West, surprisingly a historically underrepresented population in Civ, and also a good amount in East Asia and Australia, both which are usually not particularly large portions of the Civ population. This being said, we have a sample size that's even smaller than last year, so we'll see.
+
+> Not answering this question, placing a complaint that you missed the +9.5 timezone in Australia. This is erasure!
+
+I compressed a lot of these timezones into buckets just to give a little easier histogram, but to be fair, I also erased the +5.5 timezone in India, so.... yeah...
+
+### Discovering Civ & First Nations
+
+Recently we've had a lot of people finding Civ through various channels. I also wanted to know what places people tended to go once they joined; however I didn't get enough responses for this to be meaningful. Typically, this question is reserved as a means of nostalgia for old players, but I attempted to use this question as a way for newfriends to relay their initial experience.
+
+> I discovered civ thru alcoholism, Transylvania was where I brewed enough weed to land me life in prison, it's somewhere in Transylvania. Go ham.
+
+> Through mcserver subreddit, then I saw King_Cupar's post about the IF. So I joined the IF as soon as I joined CivMC first time.
+
+> don't remember, i was into discord nation roleplay and played Minecraft so i was probably searching for Minecraft nation roleplay. joined yoahtl.
+
+> googled 'civcraft', found classics, joined CW, still here
+
+> i discovered civ from civ youtubers and my first nation was anisso however i left near instantly for Kaltsburg
+
+> i discovered civ after seeing one of those 1000 player civ videos and looking up servers on reddit, my first nation was (unfortunately) Eldoria
+
+well, at least you're here. Welcome!
+
+> i was in a Fempire protectorate, one of my friends (and content creator lynxgirlpaws) invited me to play. I was there for a couple of months before she "quit civ" for a year or so.
+
+> I was looking for town servers to play on with one of my partners and found this! I spawned in Suramir, Estalia took me in and I've been here ever since!
+
+Glad to see Estalia is turning a new leaf these days.
+
+> I got motivated to search Civ based MC servers after watching "1000 players in two islands create civilization" videos. I'm currently contributing to the Lambat nation in rebuilding security and maintaining buildings!
+
+I don't think I would have ever seen those two vastly different experiences in the same response, but glad you're enjoying things so far on Civ!
+
+While this is a subset of responses and the majority is filled with a bunch of other oldfriends, the fact that many are talking about (what seem to be) very recent events is a pretty good indication that there's more newfriends than usual, so once again have to commend all of these crazy idiots like Solitaire & Presidentofyes for doing a great job at raising Civ awareness.
+
+### Vote Now!
+
+<ColoredBlock color="bg-sky-200" darkColor="dark:bg-sky-950">
+  <Poll client:load submitURL={"/newsletter-05-13-2024"} questions={
+    [
+      {
+        questionID: "news-sections-2025",
+        question: "What section(s) of this newsletter did you read today?",
+        options: [
+          "Featured articles",
+          "Admin & CivMini news",
+          "Lotus War news",
+          "Nation news that isn't the above",
+          "Fun stuff / Community highlights (builds, media, memes)",
+          "Poll section (the writeup above, not this poll)",
+          "I haven't read the rest of the newsletter yet when I filled out this poll"
+        ],
+        type: QuestionType.Checkboxes,
+        useOther: false,
+        required: false
+      },
+      {
+        questionID: "civmini-2025",
+        question: "Do you think CivMini is enjoyable to play on as a server?",
+        options: [
+          "Yes (5)",
+          "Kinda (4)",
+          "Neutral (3)",
+          "Not really (2)",
+          "No (1)"
+        ],
+        type: QuestionType.MultipleChoice,
+        useOther: false,
+        required: false
+      },
+      {
+        questionID: "explanations-september2025",
+        question: "Feel free to explain your answer to any of questions above.",
+        type: QuestionType.OpenResponse,
+        useOther: false,
+        required: false,
+      },
+    ]
+  }/>
+</ColoredBlock>
+
+---
+
+## Operatic Cry for Help
+
+![](https://i.postimg.cc/DzwSB84d/image.png)
+
+*Players gathering in Pavia's Wisteria Theater attending Operaheimer's performance (cr: Madzhis).*
+
+Thanks for reading this week's newsletter.
+
+And of course, we're back here, to my rambling section of all places. I've complained multiple times that this newsletter took a while to compile. I honestly didn't mean for this newsletter to be quite a read to go through, but there are [various reasons why I wasn't able to finish a newsletter this quickly this time](https://www.reddit.com/r/CivMC/comments/1mvn2xh/speclang_doing_research_for_the_next_newsletter/), Given the amount of content, you could probably tell it was a monumental effort to produce one this time. Remember when this used to be weekly?
+
+I originally going to have a much more rambly and ranty section about how the newsletter is causing a lot of turnover in my life, and honestly, this may be one of the last "long" newsletters I will write. My tenative plan is *to try something a radically different that deviates heavily from the typical newsletter format*, so it once again frees up time for my to do other things^TM. Think of it akin to a top-10.... if received well, it may become the "formal" replacement for the newsletter that's way more manageable for everyone, because I'm not sure if people are reading this slop all the way to the end. Stay tuned for that soon^TM.
+
+Once again, I want to thank you for getting all the way down here, reading this, and taking all this time out of your day. Until next time...
+
+---
+
+[***EDIT CIVWIKI***](https://civwiki.org)
+
+---
+
+- [**< < < Last week's newsletter (August 5)**](/newsletter/2025/08/05)
+- Suggest a featured article to `@specificlanguage` on Discord!
+- [View and post comments on r/CivWiki](https://reddit.com/r/civwiki)
