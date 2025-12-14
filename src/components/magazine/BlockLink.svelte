@@ -21,7 +21,7 @@
         <span class="flex flex-nowrap space-x-2">
             <h4 class="truncate m-0 text-[18px] ">{title}</h4>
             {#if icon_class !== undefined}
-                <p class="m-0"><i class={icon_class}/></p>
+                <p class="m-0"><i class={icon_class}></i></p>
             {/if}
         </span>
         {#if author !== undefined}
