@@ -15,7 +15,7 @@ const {title, headings} = Astro.props;
 ---
 
 {(headings != undefined && headings.length != 0) &&
-<div class="fixed z-20 top-32 bottom-0 right-[max(calc(50%-42rem))] w-78
+<div class="fixed z-20 top-32 bottom-0 inset-y-0 right-[calc(50%-37em)] w-78
             py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[260px]">
     <a href="#"><h6 class="text-base mb-2">{title}</h6></a>
     <ColoredBlock color="bg-neutral-100" darkColor="dark:bg-stone-950">
