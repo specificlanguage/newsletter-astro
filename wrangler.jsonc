@@ -1,5 +1,4 @@
 {
-  "main": "@astrojs/cloudflare/entrypoints/server",
   "name": "my-astro-app",
   // Update to today's date
   "compatibility_date": "2026-08-17",
