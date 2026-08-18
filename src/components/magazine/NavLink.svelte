@@ -12,7 +12,7 @@
         "text-neutral-600 dark:text-neutral-400 " +
         "hover:bg-gray-400 dark:hover:bg-gray-700 "
     }
-   href={'/newsletter/' + feature.slug}>
+   href={'/newsletter/' + feature.id}>
 
 
     <!-- Body flexbox -->

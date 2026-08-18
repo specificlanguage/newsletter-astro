@@ -17,7 +17,7 @@
         "text-neutral-600 dark:text-neutral-400 " +
         "hover:bg-gray-400 dark:hover:bg-gray-700 "
     }
-   href={"/" + feature.collection + "/" + feature.slug}>
+   href={"/" + feature.collection + "/" + feature.id}>
 
     <!-- Body flexbox -->
     <div class="flex flex-col">

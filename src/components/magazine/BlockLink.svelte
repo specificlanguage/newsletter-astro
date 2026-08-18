@@ -32,7 +32,7 @@
 
     <!-- Image section -->
     <div class="hidden sm:block sm:w-1/3 h-full">
-        <img src={img_url} class="object-cover h-full w-full rounded" alt={description}/>
+        <img src={img_url} class="object-cover h-full w-full rounded-sm" alt={description}/>
     </div>
 
 </a>

@@ -3,127 +3,173 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-body {
-	@apply bg-neutral-300 dark:bg-neutral-900 dark:text-neutral-300 font-sans-serif text-lg;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@source '../**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}';
+
+@utility container {
+  margin-inline: auto;
 }
 
-main, header {
-	@apply mx-auto px-4 max-w-3xl my-8;
+@theme {
+  --font-*: initial;
+  --font-sans-serif: Quattrocento Sans, ui-sans-serif;
+  --font-serif: PT Serif, Georgia, Times New Roman, ui-serif;
+  --font-headings: Noto Sans, ui-serif;
+
+  --color-bg-gray: #282828;
 }
 
-main h1 {
-	@apply text-6xl my-4 tracking-tight font-headings
-}
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-main h2 {
-	@apply text-3xl my-4 tracking-tight font-headings
-}
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
 
-main h3 {
-	@apply text-[24px] my-4 tracking-tight font-headings
-}
 
-main h4 {
-	@apply text-[20px] my-4 font-headings
-}
+	body {
+		@apply bg-neutral-300 dark:bg-neutral-900 dark:text-neutral-300 font-sans-serif text-lg;
+	}
 
-main h5, main h6 {
-	@apply text-lg my-4
-}
+	main, header {
+		@apply mx-auto px-4 max-w-3xl my-8;
+	}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-	color: #333;
-	@apply dark:text-neutral-100 font-bold;
-}
+	main h1 {
+		@apply text-6xl my-4 tracking-tight font-headings
+	}
 
-b, strong {
-	@apply font-bold
-}
+	main h2 {
+		@apply text-3xl my-4 tracking-tight font-headings
+	}
 
-main p {
-	line-height: 1.5;
-	@apply my-4 text-lg/7 font-serif;
-}
+	main h3 {
+		@apply text-[24px] my-4 tracking-tight font-headings
+	}
 
-main ul, main ol {
-	@apply my-4 font-serif list-outside pl-10 text-lg/7;
-}
+	main h4 {
+		@apply text-[20px] my-4 font-headings
+	}
 
-main ol {
-	@apply list-decimal;
-}
+	main h5, main h6 {
+		@apply text-lg my-4
+	}
 
-main ul {
-	@apply list-disc;
-}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	strong,
+	b {
+		color: #333;
+		@apply dark:text-neutral-100 font-bold;
+	}
 
-main li {
-	@apply my-1
-}
+	b, strong {
+		@apply font-bold
+	}
 
-main ul ul {
-	@apply my-0
-}
+	main p {
+		line-height: 1.5;
+		@apply my-4 text-lg/7 font-serif;
+	}
 
-main a, main a strong, footer a {
-	color: #015db2;
-	@apply hover:text-neutral-600 dark:hover:text-[#888] dark:text-[#3ca2fc];
-}
+	.front-card-utils main p {
+		line-height: 1.5;
+		@apply text-lg/6
+	}
 
-nav a {
-	margin-right: 10px;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-table {
-	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-}
-code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
-	@apply dark:bg-neutral-900 dark:text-white text-black;
-}
+	main ul, main ol {
+		@apply my-4 font-serif list-outside pl-10 text-lg/7;
+	}
 
-pre {
-	@apply p-1;
-}
-pre > code {
-	all: unset;
-}
+	main ol {
+		@apply list-decimal;
+	}
 
-blockquote {
-	color: #222;
-	padding: 2px 20px 2px 20px;
-	margin: 0;
-	font-style: italic;
+	main ul {
+		@apply list-disc;
+	}
 
-	@apply dark:text-neutral-400;
-}
+	main li {
+		@apply my-1
+	}
 
-hr {
-	@apply border-neutral-800 my-4 dark:border-neutral-300;
-}
+	main ul ul {
+		@apply my-0
+	}
 
-.paginate > div > a{
-	@apply border-2 border-neutral-600 text-neutral-500 dark:border-neutral-400 p-3 hover:bg-neutral-500 hover:text-white
-}
+	main a, main a strong, footer a {
+		color: #015db2;
+		@apply hover:text-neutral-600 dark:hover:text-[#888] dark:text-[#3ca2fc];
+	}
 
-img {
-	@apply rounded-2xl
+	nav a {
+		margin-right: 10px;
+	}
+
+	textarea {
+		width: 100%;
+		font-size: 20px;
+	}
+
+	input {
+		font-size: 20px;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		@apply rounded-2xl
+	}
+
+	code {
+		padding: 2px 5px;
+		background-color: #f2f2f2;
+		@apply dark:bg-neutral-900 dark:text-white text-black;
+	}
+
+	pre {
+		@apply p-1;
+	}
+
+	pre > code {
+		all: unset;
+	}
+
+	blockquote {
+		color: #222;
+		padding: 2px 20px 2px 20px;
+		margin: 0;
+		font-style: italic;
+
+		@apply dark:text-neutral-400;
+	}
+
+	hr {
+		@apply border-neutral-800 my-4 dark:border-neutral-300;
+	}
+
+	.paginate > div > a {
+		@apply border-2 border-neutral-600 text-neutral-500 dark:border-neutral-400 p-3 hover:bg-neutral-500 hover:text-white
+	}
 }

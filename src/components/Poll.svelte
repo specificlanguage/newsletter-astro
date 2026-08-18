@@ -60,7 +60,7 @@
         {#each questions as question}
             <PollQuestion question={question}/>
         {/each}
-        <button class="rounded mt-2 p-2 bg-blue-500 text-white" disabled={submitting} type="submit">
+        <button class="rounded-sm mt-2 p-2 bg-blue-500 text-white" disabled={submitting} type="submit">
             {#if !submitting}
                 Submit
             {:else}

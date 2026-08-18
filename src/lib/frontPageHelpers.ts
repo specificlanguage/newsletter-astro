@@ -19,8 +19,8 @@ export function readingTime(str: string){
 
 export async function getNewsletterCollection(): Promise<CollectionEntry<"newsletter">[]> {
     return await getCollection("newsletter",
-        ({id}) =>
-            (id.startsWith("newsletter") || id.match(/^\/?\d{4}\/\d{2}\/(\d{2}\/)?index.mdx/) !== null
-        )
+        ({id}) => {
+            return (id.startsWith("newsletter") || id.match(/^\/?\d{4}\/\d{2}\/(\d{2})/) !== null)
+        }
     )
 }

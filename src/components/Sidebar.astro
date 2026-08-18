@@ -5,15 +5,17 @@ import ColoredBlock from "./ColoredBlock.astro";
 import ProgressBar from "./ProgressBar.svelte";
 
 type Props = {
+    title: string;
     headings: MarkdownHeading[];
 };
 
 export const ssr = false;
 const {title, headings} = Astro.props;
+
 ---
 
 {(headings != undefined && headings.length != 0) &&
-<div class="fixed z-20 top-[8rem] bottom-0 right-[max(calc(50%-42rem))] w-[19.5rem]
+<div class="fixed z-20 top-32 bottom-0 right-[max(calc(50%-42rem))] w-78
             py-10 overflow-hidden overflow-y-auto hidden 2xl:block max-w-[260px]">
     <a href="#"><h6 class="text-base mb-2">{title}</h6></a>
     <ColoredBlock color="bg-neutral-100" darkColor="dark:bg-stone-950">
@@ -22,9 +24,9 @@ const {title, headings} = Astro.props;
             if (hd.depth > MAX_HEADER_DEPTH) return;
             if (hd.depth == 2) {
                 return (
-                        <li class={"mt-1 list-outside"}>
-                            <a href={"#" + hd.slug}>{hd.text}</a>
-                        </li>
+                    <li class={"mt-1 list-outside"}>
+                        <a href={"#" + hd.slug}>{hd.text}</a>
+                    </li>
                 )
             } else if (hd.depth == 3) {
                 return (
@@ -36,13 +38,13 @@ const {title, headings} = Astro.props;
                 )
             } else {
                 return (
-                        <ul class="px-4 ml-1">
-                            <ul class="px-3 ml-1">
-                                <li class={"my-0.5 indent-0 list-outside"}>
-                                    <a href={"#" + hd.slug}>{hd.text}</a>
-                                </li>
-                            </ul>
+                    <ul class="px-4 ml-1">
+                        <ul class="px-3 ml-1">
+                            <li class={"my-0.5 indent-0 list-outside"}>
+                                <a href={"#" + hd.id}>{hd.text}</a>
+                            </li>
                         </ul>
+                    </ul>
                 )
             }
         })}

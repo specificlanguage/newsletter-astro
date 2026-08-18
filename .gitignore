@@ -21,3 +21,5 @@ functions/
 
 # macOS-specific files
 .DS_Store
+
+.wrangler

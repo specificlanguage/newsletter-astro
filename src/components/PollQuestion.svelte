@@ -54,7 +54,7 @@
     {:else }
         <div class="h-fit m-1">
             <textarea name={question.questionID} placeholder="Type some answer here... (but you don't have to!)"
-            class="rounded-md p-1 w-3/4 text-black text-lg border-4 border-transparent"></textarea>
+            class="rounded-md p-1 w-3/4 text-black text-lg border-4 border-transparent bg-neutral-300"></textarea>
         </div>
     {/if}
 </div>

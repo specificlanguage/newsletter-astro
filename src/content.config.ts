@@ -1,7 +1,10 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection} from 'astro:content';
+import { z } from "astro/zod";
+import { glob } from 'astro/loaders';
 
 const newsletter = defineCollection({
 	// Type-check frontmatter using a schema
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/newsletter" }),
 	schema: z.object({
 		title: z.string(),
 		// description: z.string(),
@@ -23,6 +26,7 @@ const newsletter = defineCollection({
 
 const extras = defineCollection({
 	// Type-check frontmatter using a schema
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/extras" }),
 	schema: z.object({
 		title: z.string(),
 		// description: z.string(),
