@@ -11,6 +11,7 @@
     "enabled": true
   },
   "assets": {
+    "binding": "ASSETS",
     "directory": "./dist"
   }
 }
