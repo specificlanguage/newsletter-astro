@@ -3,6 +3,6 @@
   // Set this to today's date
   "compatibility_date": "2026-08-18",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist/client"
   }
 }
