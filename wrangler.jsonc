@@ -9,5 +9,8 @@
   ],
   "observability": {
     "enabled": true
+  },
+  "assets": {
+    "directory": "./dist"
   }
 }
