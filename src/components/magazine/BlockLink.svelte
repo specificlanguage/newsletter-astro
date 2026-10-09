@@ -18,11 +18,13 @@
 
     <!-- Content section -->
     <div class="w-full sm:w-2/3 pr-4 flex flex-col justify-center min-h-0 ">
-        <span class="flex flex-nowrap space-x-2">
-            <h4 class="truncate m-0 text-[18px] ">{title}</h4>
-            {#if icon_class !== undefined}
-                <p class="m-0"><i class={icon_class}></i></p>
-            {/if}
+        <span class="flex flex-nowrap space-x-3">
+            <h4 class="truncate m-0 text-[18px]">
+                {title}
+                {#if icon_class !== undefined}
+                <i class={icon_class}></i>
+                {/if}
+            </h4>
         </span>
         {#if author !== undefined}
             <p class="m-0 text-sm truncate">{author}</p>
